@@ -1,0 +1,50 @@
+<style>
+  
+  .module-container {  
+    visibility:hidden;
+  }
+  
+</style>
+
+
+<div class="rte">
+  {{ page.content }}
+</div>
+
+
+{% section '2-new-imageTextOverlay' %}
+
+{% section 'home-text' %}
+
+{% section 'home-testimonials' %}
+
+{% section '2-new-imageTextOverlay02' %}
+
+{% section '2-new-imageTextOverlay03' %}
+
+{% section '2-new-imageTextOverlay04' %}
+
+{% section 'video-video-with-text' %}
+
+{% section '2-new-imageTextOverlay05' %}
+
+{% section 'video-alternating-content' %}
+
+
+
+<script>
+  
+  window.onload = function(){
+    
+    var element = document.getElementById("control-main");
+
+    element.classList.remove("main-content");
+    
+    var visibility_control = document.getElementsByClassName('module-container');
+
+    for(var i = 0; i < visibility_control.length; i++){    
+    	visibility_control[i].style.visibility = 'visible';
+    }
+  };
+
+</script>

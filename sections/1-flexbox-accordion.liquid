@@ -1,0 +1,96 @@
+
+<section class="hide-mobile ">
+  <ul class="accordion">
+    <li class="accordio_blank">
+   	</li>
+    <li id="one" class="accordion">
+<!--       <div class="section-title">
+        <h2>Section 1</h2>
+
+      </div> -->
+      <div class="section-content">
+      </div>
+    </li>
+    <li id="two" class="accordion">
+<!--       <div class="section-title">
+        <h2>Section 2</h2>
+      </div> -->
+
+    </li>
+    <li id="thr" class="accordion">
+<!--       <div class="section-title">
+        <h2>Section 3</h2>
+      </div> -->
+    </li>
+	<li class="accordio_blank">
+    </li>
+  </ul>
+</section>
+
+{% schema %}
+  {
+  "name": "flexbox-accordion",
+  "settings": [],
+  "presets": [
+  {
+  "name": "flexbox-accordion",
+  "category": "new"
+  }
+  ]
+  }
+
+{% endschema %}
+
+{% stylesheet %}
+
+{% endstylesheet %}
+
+{% javascript %}
+var section = $('li');
+$('li').on('click', toggleAccordion);
+function toggleAccordion() {
+	var id = $(this).attr("id");
+	if($(this).hasClass("active")){
+		section.removeClass('active');
+		document.getElementById(id).setAttribute("id", id.substr(0,3));
+		if(document.getElementById('oneone') != null ){
+			document.getElementById('oneone').setAttribute("id", "one");
+		}
+		if(document.getElementById('twotwo') != null){
+			document.getElementById('twotwo').setAttribute("id", "two");
+		}
+		if(document.getElementById('thrthr') != null){
+			document.getElementById('thrthr').setAttribute("id", "thr");
+		}
+	}else{
+		if(document.getElementById('one_active') != null && id != "one_active" ){
+			document.getElementById('one_active').setAttribute("id", "oneone");
+		}
+		if(document.getElementById('two_active') != null && id != "two_active"){
+			document.getElementById('two_active').setAttribute("id", "twotwo");
+		}
+		if(document.getElementById('thr_active') != null && id != "thr_active"){
+			document.getElementById('thr_active').setAttribute("id", "thrthr");
+		}	
+		section.removeClass('active');		
+		//open one section and remove images of two other section.
+		if(id == "one" ){
+			console.log( id );
+			document.getElementById('two').setAttribute("id", "twotwo");
+			document.getElementById('thr').setAttribute("id", "thrthr");
+		}
+		else if(id == "two"){
+			document.getElementById('one').setAttribute("id", "oneone");
+			document.getElementById('thr').setAttribute("id", "thrthr");
+		}
+		else if(id == "thr"){
+			document.getElementById('one').setAttribute("id", "oneone");
+			document.getElementById('two').setAttribute("id", "twotwo");
+		}
+		$(this).addClass('active');
+		if(!id.includes("active")){
+			document.getElementById(id).setAttribute("id", id.substr(0,3) + '_active');
+		}
+	 }
+}
+{% endjavascript %}

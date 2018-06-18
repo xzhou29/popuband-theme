@@ -1,0 +1,96 @@
+{% assign image = section.settings.image %}
+{% assign image_2 = section.settings.image_2 %}
+
+
+<section> 
+	  <div class="splitview skewed">
+        <div class="panel_001 bottom_001">
+            <div class="content_001">
+                <div class="description_001 hide-mobile">
+                    <h1>{{section.settings.title_1}}</h1>
+                    <p>{{section.settings.caption_1}}</p>
+                </div>
+               <img
+                  alt="Original"
+     			 src="{{ image | img_url: image_size }}">
+           </div>
+        </div>
+
+        <div class="panel_001 top_001">
+            <div class="content_001">
+                <div class="description_001 hide-mobile">
+                    <h1>{{section.settings.title_2}}</h1>
+                    <p>{{section.settings.caption_2}}</p>
+                </div>
+
+                <img alt="Duotone"
+                      src="{{ image_2 | img_url: image_size }}">
+
+            </div>
+        </div>
+
+        <div class="handle"></div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Split Screen",
+  "settings": [
+
+    {
+      "type": "text",
+      "id": "title_1",
+      "label": "Heading_1",
+      "default": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "title_2",
+      "label": "Heading_2",
+      "default": "Heading"
+    },
+
+    {
+      "type": "richtext",
+      "id": "caption_1",
+      "label": "Text_1",
+      "default": "<p>content</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "caption_2",
+      "label": "Text_2",
+      "default": "<p>content</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image_2"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Customize",
+      "name": "Split Screen"
+    }
+  ]
+}
+
+{% endschema %}
+
+
+
+{% stylesheet %}
+
+
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

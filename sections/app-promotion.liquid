@@ -1,0 +1,131 @@
+<section
+  class="module-container home-promotion {{ section.settings.style }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="promotion">
+  <article class="module-inner">
+
+    <div class="home-promotion-text">
+      {% if section.settings.title != blank %}
+        <h1 class="feature-title">{{ section.settings.title | escape }}</h1>
+      {% endif %}
+
+      {% if section.settings.subtitle != blank %}
+        <h2 class="feature-subtitle">{{ section.settings.subtitle | escape }}</h2>
+      {% endif %}
+
+      {% if section.settings.text != blank %}
+        <p class="video-description">{{ section.settings.text | escape }}</p>
+      {% endif %}
+
+      {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+        <a class="button" href="{{ section.settings.button_link }}">{{ section.settings.button_text | escape }}</a>
+      {% endif %}
+    </div>
+
+    <div class="home-left-right-media">
+      <div class="video-wrapper">
+        {% if section.settings.video_url != blank %}
+          {% if section.settings.video_url.type == "youtube" %}
+            <iframe
+              src="//www.youtube.com/embed/{{ section.settings.video_url.id }}?rel=0&showinfo=0&vq=720&autoplay=1&mute=1&controls=0&showinfo=0&rel=0​&modestbranding=1&loop=1&playlist={{ section.settings.video_url.id }}"
+              width="850"
+              height="500"
+              frameborder="0"
+              allowfullscreen="allowfullscreen"
+              mozallowfullscreen="mozallowfullscreen"
+              msallowfullscreen="msallowfullscreen"
+              oallowfullscreen="oallowfullscreen"
+              webkitallowfullscreen="webkitallowfullscreen"></iframe>
+          {% endif %}
+          {% if section.settings.video_url.type == "vimeo" %}
+            <iframe
+              src="//player.vimeo.com/video/{{ settings.video_url.id }}?byline=0&portrait=0&badge=0"
+              width="850"
+              height="480"
+              frameborder="0"
+              allowfullscreen></iframe>
+          {% endif %}
+        {% else %}
+          <iframe
+            src="//www.youtube.com/embed/_9VUPq3SxOc?rel=0&showinfo=0&vq=720"
+            width="850"
+            height="480"
+            frameborder="0"></iframe>
+        {% endif %}
+      </div>
+    </div>
+
+  </article>
+</section>
+
+{% schema %}
+{
+  "name": "Promotion",
+  "settings": [
+    {
+      "type": "select",
+      "id": "style",
+      "label": "Style",
+      "options": [
+        {
+          "value": "default-style",
+          "label": "Default"
+        },
+        {
+          "value": "accent-style",
+          "label": "Accent"
+        },
+        {
+          "value": "contrast-style",
+          "label": "Contrast"
+        }
+      ],
+      "default": "default-style"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Welcome"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subheading",
+      "default": "This is the featured promotion section."
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text",
+      "default": "Use this area to promote a single item with an video on the right."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Link URL"
+    },
+    {
+      "type": "video_url",
+      "id": "video_url",
+      "label": "Youtube or Vimeo link",
+      "accept": [
+        "youtube",
+        "vimeo"
+      ],
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+    }
+  ],
+  "presets": [
+    {
+      "category": "App Page",
+      "name": "Video Promotion"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,203 @@
+<section>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script> 
+	  $(function() {
+	            $("#showImage_1").animate({
+		        	top: '-75vh',
+		            left: '80%',
+		            opacity: '1.0',
+		            height: '100px',
+		            width: '60px'
+		        }, 500);
+	           $("#showImage_2").animate({
+		        	top: '-70vh',
+		            left: '80%',
+		            opacity: '1.0',
+		            height: '100px',
+		            width: '60px'
+		        }, 500);
+	          	$("#showImage_3").animate({
+		        	top: '-65vh',
+		            left: '80%',
+		            opacity: '1.0',
+		            height: '100px',
+		            width: '60px'
+		        }, 500);
+	  });
+	</script> 
+  
+</section>
+
+
+ <section class="custom_section">
+ 	<div class="parent">
+	   	<img  id="ball" class="image1" src="https://www.w3schools.com/howto/img_fjords.jpg" />
+	   	<img  id="theImage_1" class="image2" src="https://i2.wp.com/picsartediting.com/wp-content/uploads/2017/12/Animal-PNG-By-Picsart-Editing.com-5.png" />
+	   	<img  id="theImage_2" class="image3" src="https://vignette.wikia.nocookie.net/epicrapbattlesofhistory/images/4/41/Squirrel.png" />
+	   	<img  id="theImage_3" class="image4" src="https://purepng.com/public/uploads/large/51502306185qgm7goy4yxccepo38n6v8pmwrmttpahzenrfznpugnaymrqgz3s38rsftxrspwpxlrrwobw2g4gx5crjne3nucymoydjscwfatp0.png" />
+	</div>
+
+
+   <div> 
+	<div data-playon="hover" id="ball"></div>
+
+	<div>
+		<img id="showImage_1" src="https://www.justinguitar.com/images/BC_images/132-C-chord.gif"  width="6" height="10" >
+	</div>
+
+	<div>
+		<img id = "showImage_2" src="https://www.justinguitar.com/images/BC_images/111-D%20chord.gif" width="6" height="10">
+	</div>
+	
+	<div>
+		<img  id = "showImage_3" src="https://www.justinguitar.com/images/BC_images/113-E-chord.gif" width="6" height="10">
+	</div>
+		 
+     	<div>  <button  id="stop_showImage" style=" position:relative;
+	      transition: .5s ease;
+	      top: -60vh;
+	      left: 80%;
+			">stop</button>
+	  	</div> 
+   
+
+ </section>
+
+
+
+<style type="text/css">
+
+	#showImage_1{
+		opacity: 0;
+		position:relative;
+	    transition: .5s ease;
+	    top: -65vh;
+	    left: 20%;
+
+	}
+	#showImage_2{
+		opacity: 0;
+		position:relative;
+	    transition: .5s ease;
+	    top: -60vh;
+     	left: 20%;
+
+	}
+	#showImage_3{
+		opacity: 0;
+		position:relative;
+	    transition: .5s ease;
+	    top: -55vh;
+     	left: 20%;
+
+	}
+
+	.parent {
+	  position: relative;
+	  top: 0;
+	  left: 0;
+	}
+	.image1 {
+	  height: 85vh;
+	  width: 100vw;
+	  position: relative;
+	  top: 0;
+	  left: 0;
+	  visibility: visible;
+
+	}
+	.image2 {
+	  height: 30vw;
+	  width: 30vw;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  visibility: hidden;
+	}
+	.image3 {
+      height: 30vw;
+	  width: 30vw;
+	  position: absolute;
+	  top: 0;
+	  left: 40px;
+	  visibility: hidden;
+	}
+	.image4 {
+      height: 30vw;
+	  width: 30vw;
+	  position: absolute;
+	  top: 0;
+	  left: 80px;
+	  visibility: hidden;
+	}
+	@keyframes mynewmove{
+		  0%   { opacity: 0; }
+  		100% { opacity: 1; }
+	}
+	@-webkit-keyframes mynewmove {
+		  0%   { opacity: 0; }
+  		100% { opacity: 1; }
+	}
+
+</style>
+
+<script>
+	showImage_1.addEventListener("mouseover", function(){
+		document.getElementById("theImage_1").style.animation = "mynewmove 0.8s infinite";
+		document.getElementById("theImage_1").style.visibility = "visible";
+
+		document.getElementById("theImage_2").style.visibility = "hidden";
+		document.getElementById("theImage_3").style.visibility = "hidden";
+	});
+	showImage_2.addEventListener("mouseover", function(){
+		document.getElementById("theImage_2").style.animation = "mynewmove 0.8s infinite";
+		document.getElementById("theImage_2").style.visibility = "visible";
+
+		document.getElementById("theImage_1").style.visibility = "hidden";
+		document.getElementById("theImage_3").style.visibility = "hidden";
+	});
+	showImage_3.addEventListener("mouseover", function(){
+		document.getElementById("theImage_3").style.animation = "mynewmove 0.8s infinite";
+		document.getElementById("theImage_3").style.visibility = "visible";
+
+		document.getElementById("theImage_1").style.visibility = "hidden";
+		document.getElementById("theImage_2").style.visibility = "hidden";
+	});
+
+	stop_showImage.addEventListener("mouseover", function(){
+		//document.getElementById("theImage_3").style.animation = "mynewmove 0.8s infinite";
+		document.getElementById("theImage_1").style.visibility = "hidden";
+		document.getElementById("theImage_2").style.visibility = "hidden";
+		document.getElementById("theImage_3").style.visibility = "hidden";
+	});
+
+</script>
+
+
+{% schema %}
+  {
+    "name": "test section",
+	"settings": [
+    {
+      "type": "checkbox",
+      "id": "show_description",
+      "label": "Show collection descriptions",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "category": "test",
+      "name": "test_2"
+    }
+  ]
+  }
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

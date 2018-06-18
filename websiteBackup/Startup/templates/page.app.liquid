@@ -1,0 +1,76 @@
+
+<style type="text/css"> 
+
+  
+
+@keyframes tipsy {
+  0 {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+.populele-app {
+  color: #ff8c1a;
+  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  font-size: 60px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: -3px;
+  margin: 0;
+  position: absolute;
+  top: 25vh;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
+.populele-app:before,
+.populele-app:after {
+  content: '';
+  padding: .9em .4em;
+  position: absolute;
+  left: 50%;
+  width: 110%;
+  top: 50%;
+  display: block;
+  border: 10px solid red;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation: 10s infinite alternate ease-in-out tipsy;
+}
+  
+@media only screen and (max-width: 600px) {
+  .populele-app {font-size: 30px; top: 20vh;}
+  .populele-app:before,
+  .populele-app:after { border: 5px solid;}
+}
+
+.populele-app:before {
+  border-color: #ffb366 #ffb366 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+.populele-app:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ffb366 #ffb366;
+  box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+</style>
+
+<section> 
+
+	<h1 class="page-title populele-app" target="_blank">Populele App</h1>
+
+</section>
+
+	
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- {% section 'app-promotion' %}
+{% section 'customize-feature-group-icons' %}
+{% section 'customize-lights-twinkle' %}
+{% section 'app-alternating-content' %}
+{% comment %}{% section 'app-text-columns-with-videos' %}{% endcomment %}
+{% section 'app-record-and-share' %}
+{% section 'app-download-badges' %} -->

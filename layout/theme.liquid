@@ -1,0 +1,113 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9 lt-ie10 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+
+  <meta name="google-site-verification" content="dAnlPi3jH09UZteEVJuje5geLcwrY5qMmSg_bVQxCPI" />
+<!--   {% include 'guru-theme_scss_css' %}
+  {% include 'guru-customize_scss_css' %}
+  {% include 'guru-googlefonts-b0781b48-096b-413e-92fd-cb3a5005d409' %}
+   -->
+  <!-- PAGESPEED GURU OPTIMIZED /10/28/2017 6:25:52 AM -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="msvalidate.01" content="AFD47CB8410E43D4B615E8074D0EB110" />
+  <meta name="msvalidate.01" content="2B5561C5F85B113DB85BF826A2E5C221" />
+  <link rel="shortcut icon" href="{{ 'favicon.ico' | asset_url }}" type="image/x-icon" />
+
+  {% if template == 'index' %}
+    <title>{{ shop.name }} | {{ page_title }}</title>
+  {% elsif template == '404' %}
+    <title>Page Not Found | {{ shop.name }}</title>
+  {% else %}
+    <title>{{ page_title }} | {{ shop.name }}</title>
+  {% endif %}
+
+  {% if page_description %}
+    <meta name="description" content="{{ page_description | escape }}" />
+  {% endif %}
+
+  <link rel="canonical" href="{{ canonical_url }}" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  {{ content_for_header }}
+
+  {% include 'social-meta' %}
+
+  <!-- Theme CSS -->
+  {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+  {{ 'customize.scss.css' | asset_url | stylesheet_tag }}
+  
+  <!-- Third Party JS Libraries -->
+  {{ 'modernizr-2.7.1.min.js' | asset_url | script_tag }}
+
+  {% include 'fonts' %}
+
+  <!-- Store object -->
+  {% include 'theme-options' %}
+{% if template contains 'product' %}
+  <link rel="amphtml" href="//{{shop.domain}}/apps/fireamp/products/{{product.handle}}" >
+{% endif %}{% if template contains 'collection' %}
+  <link rel="amphtml" href="//{{shop.domain}}/apps/fireamp/collections/{{collection.handle}}" >
+{% endif %}
+{% if template contains 'blog' %}  
+      <link rel="amphtml" href="//{{shop.domain}}/apps/fireamp/blogs/{{blog.handle}}" >
+{% endif %}
+{% if template contains 'article' %}
+      <link rel="amphtml" href="//{{shop.domain}}/apps/fireamp/blogs/{{article.handle}}" >
+{% endif %}  </head>
+
+
+
+
+<body id="remove-bottom" class="template-{{ template | replace: '.', '-' | handle }} {% if customer %}customer-logged-in{% endif %}">
+
+  {% section '2-new-header' %}
+
+  <main
+    class="main-content"
+    role="main"
+    id="control-main"
+   >
+<!--      data-main-content  removed for new header effect -->
+
+    {% unless template contains 'index' or template contains 'product' %}
+      {% include 'breadcrumbs' %}
+    {% endunless %}
+
+    {{ content_for_layout }}
+  </main>
+
+  {% section 'mailchimp-newsletter' %}
+
+  {% section 'general-footer' %}
+
+  <!-- Scripts -->
+  {{ 'jquery-1.10.0.min.js' | asset_url | script_tag }}
+  {{ 'api.jquery.js' | shopify_asset_url | script_tag }}
+
+  {% if template contains 'cart' %}
+    {{ '/services/javascripts/countries.js' | script_tag }}
+    {{ "shopify_common.js" | shopify_asset_url | script_tag }}
+    {{ 'jquery.cart.min.js' | asset_url | script_tag }}
+  {% endif %}
+
+  {% if template contains 'customers' %}
+    {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
+    {{ 'customer_area.js'  | shopify_asset_url | script_tag }}
+  {% endif %}
+
+  {% if settings.show-currency-switcher %}
+    {{ "//cdn.shopify.com/s/javascripts/currencies.js" | script_tag }}
+    {{ "jquery.currencies.js" | asset_url | script_tag }}
+  {% endif %}
+
+  {{ 'plugins.js'  | asset_url | script_tag }}
+  {{ 'theme.js'  | asset_url | script_tag }}
+
+  {% include 'structured-data' %}
+</body>
+</html>

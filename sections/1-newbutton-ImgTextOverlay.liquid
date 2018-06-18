@@ -1,0 +1,286 @@
+{% assign image = section.settings.image %}
+{% assign has_cta = false %}
+{% assign has_link_wrapper = false %}
+
+{%- if section.settings.title != blank or section.settings.caption != blank -%}
+  {% assign has_content = true %}
+{%- endif -%}
+
+{%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
+  {% assign has_cta = true %}
+  {% assign has_content = true %}
+{%- endif -%}
+
+{%- if section.settings.button_text == blank and section.settings.button_link != blank -%}
+  {% assign has_link_wrapper = true %}
+{%- endif -%}
+
+{% if image != blank %}
+  {% assign image_size = '2048x2048' %}
+  {% assign background_image = image | img_url: image_size %}
+  {%- capture feature_image -%}
+    <img
+      class="feature-image"
+      alt="{{ image.alt | escape }}"
+      src="{{ image | img_url: image_size }}">
+  {%- endcapture -%}
+{% else %}
+  {%- capture background_image -%}
+    {%- include 'placeholder_svg_uri' placeholder: 'lifestyle-1' -%}
+  {%- endcapture -%}
+  {%- capture feature_image -%}
+    {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg feature-image' }}
+  {%- endcapture -%}
+{% endif %}
+
+{%- capture section_class -%}
+  {{ section.settings.style }}
+  full-width-background
+
+  {% unless has_content %}no-content{% endunless %}
+{%- endcapture -%}
+
+
+
+
+<section 
+  class="module-container home-full-width-feature  {{ section_class | strip_newlines }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="image-with-text-overlay"
+  data-image-with-text-layout="background"
+  style="background-image: url('{{ background_image | strip }}'); background-size: 100% 100%;">
+
+  {% if has_link_wrapper %}
+  <a class="home-full-width-feature-link-wrapper" href="{{ section.settings.button_link }}"> </a>
+  {% endif %}
+
+  {{ feature_image | strip }}
+
+  <div class="home-module-overlay opacity-{{ section.settings.overlay_opacity_strength }}"></div>
+
+  {% if has_content %}
+    <div class="home-full-width-feature-content" style="top:40%;">
+<!--       data-feature-conten -->
+      <article class="module-inner ">
+        {% if section.settings.title != blank %}
+          <h1 class="feature-title">{{ section.settings.title | escape }}</h1>
+        {% endif %}
+
+        {% if section.settings.caption != blank %}
+          <div class="rte">{{ section.settings.caption }}</div>
+        {% endif %}
+
+<!--        			 <div id="app" class="fancy-button" onclick="window.location.href='collections/frontpage'"></div> -->
+<!--         		<a class="button_2" href="{{ section.settings.button_link }}">
+                  {{ section.settings.button_text | escape }}</a> -->
+      </article>
+    </div>
+  {% endif %}
+
+  {% if section.settings.button_link != blank %}
+      <div class="home-module-cta">
+        
+      </div>
+  {% endif %}
+
+
+ 
+</section>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/0.14.2/react.js'></script>
+
+<script type="text/javascript">
+  'use strict';
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var FancyButton = function (_React$Component) {
+	_inherits(FancyButton, _React$Component);
+
+	function FancyButton() {
+		_classCallCheck(this, FancyButton);
+
+		return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+	}
+
+	FancyButton.prototype.render = function render() {
+		// Mask id and styling
+		// need unique id's for multiple buttons
+		var maskId = 'mask_1';
+		var maskStyle = '#fancy-masked-element_' + maskId + ' { mask: url(#' + maskId + '); -webkit-mask: url(#' + maskId + ')}';
+
+		var buttonStyle = {
+			width: this.props.width,
+			height: this.props.height
+		};
+
+		var fancyFrontStyle = {
+			transform: 'rotateX(0deg) translateZ(' + this.props.height / 2 + 'px )'
+		};
+
+		var fancyBackStyle = {
+			transform: 'rotateX(90deg) translateZ( ' + this.props.height / 2 + 'px )'
+		};
+
+		// SVG attributes
+		var textTransform = 'matrix(1 0 0 1 ' + this.props.width / 2 + ' ' + this.props.height / 1.6 + ')';
+		var viewBox = '0 0 ' + this.props.width + ' ' + this.props.height;
+
+		return React.createElement(
+			'div',
+			{ className: 'fancy-button',
+				style: buttonStyle,
+				ref: 'fancyButton' },
+			React.createElement(
+				'div',
+				{ className: 'fancy-flipper' },
+				React.createElement(
+					'div',
+					{ className: 'fancy-front', style: fancyFrontStyle },
+					React.createElement(
+						'svg',
+						{
+							height: this.props.height,
+							width: this.props.width,
+							viewBox: viewBox },
+						React.createElement(
+							'defs',
+							null,
+							React.createElement(
+								'mask',
+								{ id: maskId },
+								React.createElement('rect', { width: '100%', height: '100%', fill: '#FFFFFF' }),
+								React.createElement(
+									'text',
+									{ className: 'mask-text button-text', fill: '#000000', transform: textTransform, fontFamily: '\'intro_regular\'', fontSize: this.props.fontSize, width: '100%', textAnchor: 'middle', letterSpacing: '1' },
+									this.props.buttonText
+								)
+							)
+						),
+						React.createElement(
+							'style',
+							null,
+							maskStyle
+						),
+						React.createElement('rect', { id: 'fancy-masked-element_' + maskId, fill: this.props.color, width: '100%', height: '100%' })
+					)
+				),
+				React.createElement(
+					'div',
+					{ className: 'fancy-back', style: fancyBackStyle },
+					React.createElement(
+						'svg',
+						{
+							height: this.props.height,
+							width: this.props.width,
+							viewBox: viewBox },
+						React.createElement('rect', { stroke: this.props.color,
+							strokeWidth: this.props.borderWidth,
+							fill: 'transparent',
+							width: '100%',
+							height: '100%' }),
+						React.createElement(
+							'text',
+							{ className: 'button-text', transform: textTransform, fill: this.props.color, fontFamily: '\'intro_regular\'', fontSize: this.props.fontSize, textAnchor: 'middle', letterSpacing: '1' },
+							this.props.buttonText
+						)
+					)
+				)
+			)
+		);
+	};
+
+	return FancyButton;
+}(React.Component);
+
+FancyButton.defaultProps = {
+	color: '#ff8c1a',
+	width: 287,
+	height: 70,
+// 	fontSize: 40,
+	borderWidth: 10,
+	buttonText: 'BUY NOW'
+};
+
+React.render(React.createElement(FancyButton, null), document.getElementById('app'));
+
+</script>
+
+
+
+{% schema %}
+{
+  "name": "NewButton ImgText",
+  "settings": [
+    {
+      "type": "select",
+      "id": "style",
+      "label": "Style",
+      "options": [
+        {
+          "value": "default-style",
+          "label": "Default"
+        },
+        {
+          "value": "accent-style",
+          "label": "Accent"
+        },
+        {
+          "value": "contrast-style",
+          "label": "Contrast"
+        }
+      ],
+      "default": "default-style"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Image with text overlay"
+    },
+    {
+      "type": "richtext",
+      "id": "caption",
+      "label": "Text",
+      "default": "<p>Select imagery and text that relates to your style and story.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Link URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity_strength",
+      "label": "Overlay opacity",
+      "min": 0,
+      "max": 90,
+      "step": 10,
+      "unit": "%",
+      "default": 90
+    }
+  ],
+  "presets": [
+    {
+      "category": "Image",
+      "name": "NewButton ImgText"
+    }
+  ]
+}
+
+{% endschema %}

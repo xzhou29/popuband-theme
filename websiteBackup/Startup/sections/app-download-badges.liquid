@@ -1,0 +1,88 @@
+{% assign has_content = false %}
+
+{%- if section.settings.title != blank or section.settings.caption != blank -%}
+  {% assign has_content = true %}
+{%- endif -%}
+
+{%- capture section_class -%}
+  {{ section.settings.style }}
+  {% unless has_content %}no-content{% endunless %}
+{%- endcapture -%}
+
+<section
+  class="module-container home-full-width-feature {{ section_class | strip_newlines }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="image-with-text">
+
+  <article class="module-inner home-full-width-feature-content" data-feature-content>
+    {% if section.settings.title != blank %}
+      <h1 class="feature-title">{{ section.settings.title | escape }}</h1>
+    {% endif %}
+
+    {% if section.settings.caption != blank %}
+      <div class="rte">{{ section.settings.caption }}</div>
+    {% endif %}
+
+    <div class="download-app-wrap">
+      <a href='{{ section.settings.google_link }}'><img class="download-badge" alt='Get it on Google Play' src='https://cdn.shopify.com/s/files/1/2021/3861/files/google-play-badge.png'/></a>
+      <a href='{{ section.settings.apple_link }}'><img class="download-badge" alt='Get it on App Store' src='https://cdn.shopify.com/s/files/1/2021/3861/files/app-store-badge.png'/></a>
+    </div>
+  </article>
+</section>
+
+{% schema %}
+{
+  "name": "Download Badges",
+  "settings": [
+    {
+      "type": "select",
+      "id": "style",
+      "label": "Style",
+      "options": [
+        {
+          "value": "default-style",
+          "label": "Default"
+        },
+        {
+          "value": "accent-style",
+          "label": "Accent"
+        },
+        {
+          "value": "contrast-style",
+          "label": "Contrast"
+        }
+      ],
+      "default": "default-style"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Download"
+    },
+    {
+      "type": "richtext",
+      "id": "caption",
+      "label": "Text",
+      "default": "<p>Select imagery and text that relates to your style and story.</p>"
+    },
+    {
+      "type": "url",
+      "id": "google_link",
+      "label": "Google Play Link URL"
+    },
+    {
+      "type": "url",
+      "id": "apple_link",
+      "label": "App Store Link URL"
+    }
+  ],
+  "presets": [
+    {
+      "category": "App Page",
+      "name": "Download Badges"
+    }
+  ]
+}
+
+{% endschema %}

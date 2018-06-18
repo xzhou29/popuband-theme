@@ -1,0 +1,1935 @@
+{
+  "current": {
+    "background-color": "#ffffff",
+    "body-text-color": "#051923",
+    "accent-color": "#fa8c01",
+    "heading-color": "#51595d",
+    "border-color": "#d7dcde",
+    "primary-button-color": "#ffffff",
+    "header-link-color": "#51595d",
+    "header-dropdown-color": "#d7dcde",
+    "form-select-background": "#f4f5f5",
+    "form-select-color": "#fa8c01",
+    "form-select-border-color": "#d7dcde",
+    "footer-background-color": "#272b32",
+    "footer-header-color": "#fa8c01",
+    "footer-accent-color": "#ffffff",
+    "body_background_image": "",
+    "contrast_background_image": "",
+    "footer_background_image": "",
+    "body_font": "Google_Open+Sans_400,700",
+    "logo_font": "Google_Open+Sans_400,700",
+    "logo_font_weight": "700",
+    "logo_font_capitalize": false,
+    "heading_font": "Google_Open+Sans_400,700",
+    "heading_font_weight": "700",
+    "heading_font_capitalize": false,
+    "section_heading_font_weight": "700",
+    "section_heading_font_capitalize": false,
+    "meta_font_weight": "700",
+    "meta_font_capitalize": false,
+    "button_font": "Google_Roboto_400,700",
+    "button_font_weight": "700",
+    "button_font_capitalize": true,
+    "breadcrumbs_enable": false,
+    "product_show_vendor": false,
+    "product_stock_overlay": false,
+    "product_stock_overlay_show": 5,
+    "social_facebook_url": "https:\/\/www.facebook.com\/populele.us\/",
+    "social_twitter_url": "https:\/\/twitter.com\/PopubandMusic",
+    "social_google_url": "",
+    "social_pinterest_url": "",
+    "social_instagram_url": "https:\/\/www.instagram.com\/popuband.us\/",
+    "social_vimeo_url": "",
+    "social_youtube_url": "https:\/\/www.youtube.com\/channel\/UCBf5GNWHsrHxtf7NWKQ5_0A",
+    "social_rss_url": "",
+    "show-currency-switcher": false,
+    "currency-switcher-format": "money_with_currency_format",
+    "currency-switcher-supported-currencies": "INR GBP CAD USD AUD EUR JPY",
+    "currency-switcher-default": "USD",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#197bbd",
+    "checkout_button_color": "#197bbd",
+    "checkout_error_color": "#e32c2b",
+    "contrast-background-color": "#E05E60",
+    "meta-color": "#a0a2a3",
+    "error-color": "#b84949",
+    "header-show-breadcrumbs": false,
+    "sections": {
+      "general-header": {
+        "type": "general-header",
+        "settings": {
+          "header_sticky": true,
+          "show_cart": true,
+          "buy_button": true,
+          "show_search": false,
+          "header_logo": "shopify:\/\/shop_images\/shopify_logo.png",
+          "menu": "new-web-menu",
+          "menu_style": "header",
+          "color_override": "default",
+          "header_logo_alternate": "",
+          "promotion_style": "accent-style",
+          "promotion_text": "",
+          "promotion_url": ""
+        }
+      },
+      "general-newsletter": {
+        "type": "general-newsletter",
+        "settings": {
+          "enable": true,
+          "style": "default-style",
+          "title": "",
+          "caption": ""
+        }
+      },
+      "module-product-slideshow": {
+        "type": "module-product-slideshow",
+        "settings": {
+          "slideshow_color": "#2e3438",
+          "slideshow_layout": "content-width",
+          "slideshow_transition": "transition-slide",
+          "autoplay": false,
+          "frequency": 5,
+          "thumbnail_pagination": true
+        }
+      },
+      "home-slideshow": {
+        "type": "home-slideshow",
+        "blocks": {
+          "slide-1": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner_5.29.gif",
+              "image_mobile": "shopify:\/\/shop_images\/banner_9509b3df-15ef-4e55-b979-25ddc3c1a625.jpg",
+              "text_color": "#ffffff",
+              "title": "Populele U1",
+              "subtitle": "",
+              "caption": "The Word's First Smart Ukulele",
+              "button": "Buy Now",
+              "link": "shopify:\/\/products\/populele-with-accessory",
+              "button2": "Learn More",
+              "link2": "shopify:\/\/pages\/faq",
+              "text_position": "left"
+            }
+          }
+        },
+        "block_order": [
+          "slide-1"
+        ],
+        "settings": {
+          "enable": false,
+          "show_shadows": false,
+          "slideshow_layout": "opening-screen",
+          "slideshow_transition": "transition-slide",
+          "autoplay": true,
+          "frequency": 4
+        }
+      },
+      "home-featured-product": {
+        "type": "home-featured-product",
+        "disabled": true,
+        "blocks": {
+          "1522443380679": {
+            "type": "additional_info",
+            "settings": {
+              "info_text": "",
+              "info_url": "",
+              "info_icon": "info"
+            }
+          }
+        },
+        "block_order": [
+          "1522443380679"
+        ],
+        "settings": {
+          "style": "default-style",
+          "title": "",
+          "product": "populele-with-accessory",
+          "description": "<p>Tell customers about the look, feel, and style of your product. Add details on color, materials, sizing, and where it was made.<\/p>",
+          "enable_zoom": false,
+          "product_show_vendor": false,
+          "linked_options": true,
+          "variants_style": "select",
+          "product_cart_redirect": true
+        }
+      },
+      "general-footer": {
+        "type": "general-footer",
+        "settings": {
+          "show_headings": true,
+          "footer_newsletter": true,
+          "menu_1": "footer",
+          "menu_2": "new-web-menu",
+          "show_payment_icons": false
+        }
+      },
+      "test": {
+        "type": "test",
+        "blocks": {
+          "1528817095163": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner4.gif",
+              "image_mobile": "",
+              "text_color": "#68574d",
+              "title": "Test",
+              "subtitle": "",
+              "caption": "test",
+              "button": "test",
+              "link": "shopify:\/\/blogs\/news\/backtoschool-reading-list-ukuelel-edition",
+              "button2": "",
+              "link2": "",
+              "text_position": "left"
+            }
+          }
+        },
+        "block_order": [
+          "1528817095163"
+        ],
+        "settings": {
+          "enable": true,
+          "show_shadows": false,
+          "slideshow_layout": "opening-screen",
+          "slideshow_transition": "transition-slide",
+          "autoplay": true,
+          "frequency": 5
+        }
+      },
+      "test2": {
+        "type": "test2",
+        "settings": {
+          "show_description": true
+        }
+      },
+      "template-collection": {
+        "type": "template-collection",
+        "settings": {
+          "show_featured_image": false,
+          "show_description": true,
+          "tag_filtering": false,
+          "products_in_rows": 2,
+          "numbers_of_rows": 5
+        }
+      },
+      "module-product": {
+        "type": "module-product",
+        "settings": {
+          "center_product_details": false,
+          "enable_zoom": true,
+          "product_show_vendor": false,
+          "linked_options": true,
+          "variants_style": "radio",
+          "product_cart_redirect": true,
+          "single_column_product": false,
+          "show_share_buttons": false,
+          "show_related_products": false
+        }
+      },
+      "1520879966084": {
+        "type": "customize-lights-twinkle",
+        "disabled": true,
+        "settings": {
+          "style": "default-style",
+          "title": "The World’s First Smart Ukulele",
+          "subtitle": "",
+          "text": "<p>Bringing technology and music together to make a truly unique, fun, and quick learning experience for beginners and advanced players alike.<\/p>",
+          "button_text": "Buy Now",
+          "button_link": "shopify:\/\/collections\/frontpage",
+          "android_link": "",
+          "ios_link": "",
+          "content_image_default": "shopify:\/\/shop_images\/banner2_0f2c9ae0-66d1-44a5-9b3f-fb9615dc3be5.gif",
+          "content_image_twinkle": ""
+        }
+      },
+      "template-cart": {
+        "type": "template-cart",
+        "settings": {
+          "product_show_vendor": false,
+          "enable_order_notes": true,
+          "show_shipping_calculator": false,
+          "shipping_calculator_default_country": "United States"
+        }
+      },
+      "template-blog": {
+        "type": "template-blog",
+        "settings": {
+          "layout": "list",
+          "show_rss_icon": true,
+          "show_tags": true,
+          "show_share_buttons": true,
+          "show_featured_image": true,
+          "show_author": false,
+          "show_comment_count": false
+        }
+      },
+      "1522858235668": {
+        "type": "1-popup_iframVideo",
+        "settings": {
+          "overlay_opacity_strength": 0
+        }
+      },
+      "1523127970493": {
+        "type": "1-accordion_2",
+        "settings": {}
+      },
+      "1524609245235": {
+        "type": "1-newTestimonials",
+        "blocks": {
+          "1527349977740": {
+            "type": "testimonial",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/CNBC_4.png",
+              "content": "“It connects to an app where users can get instant feedback and correct themselves.”",
+              "source": "&mdash; CNBC",
+              "link": ""
+            }
+          },
+          "1527350012601": {
+            "type": "testimonial",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/GMA_4.png",
+              "content": "\"An app-enable ukulele that teaches your kids how to play? Awesome!”",
+              "source": "&mdash; Good Morning America",
+              "link": ""
+            }
+          },
+          "1527350053820": {
+            "type": "testimonial",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/TC_4.jpg",
+              "content": "“The best thing about the Populele then is how easily you can get started. The games show you how to chord a few notes while the songbook lets you follow along.”",
+              "source": "&mdash; TechCrunch",
+              "link": ""
+            }
+          },
+          "1527350099687": {
+            "type": "testimonial",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/tut_4.png",
+              "content": "“This is an awesome ukulele: fun, educational, and just plain cool; it’s a really good entry-level uke its own right, it’s a lot of fun to play while the app, too!”",
+              "source": "&mdash; The Ukulele Teacher",
+              "link": ""
+            }
+          },
+          "1527350132586": {
+            "type": "testimonial",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/TV_4.png",
+              "content": "“Like any stringed instrument, learning chords is a bit of pain. We can solve this with technology.”",
+              "source": "&mdash; The Verge",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1527349977740",
+          "1527350012601",
+          "1527350053820",
+          "1527350099687",
+          "1527350132586"
+        ],
+        "settings": {
+          "style": "default",
+          "title": "Testimonials"
+        }
+      },
+      "1525099900461": {
+        "type": "1-newbutton-ImgTextOverlay",
+        "disabled": true,
+        "settings": {
+          "style": "default-style",
+          "title": "",
+          "caption": "<p>&nbsp; &nbsp;&nbsp;<\/p>",
+          "button_text": "BUY NOW",
+          "button_link": "shopify:\/\/collections\/all",
+          "image": "shopify:\/\/shop_images\/banner4.gif",
+          "overlay_opacity_strength": 0
+        }
+      },
+      "1525273747685": {
+        "type": "home-image-with-text-overlay",
+        "disabled": true,
+        "settings": {
+          "style": "default-style",
+          "title": "asdasdf asdzxcfa szxcf",
+          "caption": "<p>&nbsp; asdasdas<\/p>",
+          "button_text": "sefse",
+          "button_link": "shopify:\/\/pages\/contact-us",
+          "image": "shopify:\/\/shop_images\/banner4.gif",
+          "overlay_opacity_strength": 0
+        }
+      },
+      "2-new-product-page": {
+        "type": "2-new-product-page",
+        "settings": {
+          "image_1": "shopify:\/\/shop_images\/led.jpg",
+          "title_1": "state-of-the-art",
+          "content_1": "72-LED silk smooth fretboard shows you exactly where to put your fingers to learn chords and enhance muscle memory.",
+          "image_2": "shopify:\/\/shop_images\/1.1.jpg",
+          "title_2": "Premium quality",
+          "content_2": "Comfortable grip with 18:1 quasi-closed tuning pegs, lightweight and durable build.",
+          "image_3": "shopify:\/\/shop_images\/8100940-2__4.jpg",
+          "title_3": "Premium Materials",
+          "content_3": "First class spruce soundboard and Aquaila strings create clear and sweet sound.",
+          "image_4": "shopify:\/\/shop_images\/4.2.jpg",
+          "title_4": "wireless connection",
+          "content_4": "Bluetooth enabled smart ukulele  that connects to the free APP. Can be charged by regular power source with USB to Micro USB cable.",
+          "image_5": "shopify:\/\/shop_images\/3.1.jpg",
+          "title_5": "Accessory Package",
+          "content_5": "Get all tools you need to play from a beginner to pro.",
+          "mobile_image_1": "shopify:\/\/shop_images\/iPhone_6-7-8_5.jpg",
+          "mobile_image_2": "shopify:\/\/shop_images\/iPhone_6-7-8_7_e29e00e6-21fd-4afa-bf06-41ecc3122a71.jpg",
+          "mobile_image_3": "shopify:\/\/shop_images\/iPhone_6-7-8_6.jpg",
+          "mobile_image_4": "shopify:\/\/shop_images\/iPhone_6-7-8_8_3f1e6d57-f416-4be1-8bf1-51b4570610ad.jpg",
+          "mobile_image_5": "shopify:\/\/shop_images\/iPhone_6-7-8_9_1ac01409-6374-4b77-9a40-201168398744.jpg"
+        }
+      },
+      "2-new-slideshow": {
+        "type": "2-new-slideshow",
+        "blocks": {
+          "1526320851518": {
+            "type": "slider",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/Facebook-Ads14.jpg"
+            }
+          },
+          "1526321384314": {
+            "type": "slider",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/IMG_0153_284be570-31ad-4d24-a058-101274847f15.jpg"
+            }
+          },
+          "1526320853569": {
+            "type": "slider",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/IMG_0035_7beb0d98-1c7c-4cfa-b383-09b06be379d7.png"
+            }
+          },
+          "1527883639996": {
+            "type": "slider",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/afashionnerd_4_082017_b5192fda-2cf2-4292-9578-39236b19a75a.jpg"
+            }
+          },
+          "1527883833178": {
+            "type": "slider",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/brittanyleighbergquist_949eb44d-3d1f-4b24-b739-b89a26d45d4c.jpg"
+            }
+          },
+          "1527883931895": {
+            "type": "slider",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/IMG_9052__2_538e2ddf-17cb-47f2-a643-cb7c3e2acc44.jpg"
+            }
+          },
+          "1527884777270": {
+            "type": "slider",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/Meghan_Yancy_1_9ca3e811-9ef2-4b8d-9c6f-d588d95d2923.jpg"
+            }
+          },
+          "1527890340292": {
+            "type": "slider",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/IMG_3450_4618d372-e932-49ef-8014-f897cf0c0ad8.jpg"
+            }
+          },
+          "1527890440043": {
+            "type": "slider",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/IMG_9181_1fbc6ad8-0721-4b29-8775-5f4ed80656c0.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1526320851518",
+          "1526321384314",
+          "1526320853569",
+          "1527883639996",
+          "1527883833178",
+          "1527883931895",
+          "1527884777270",
+          "1527890340292",
+          "1527890440043"
+        ],
+        "settings": {
+          "background_image": "shopify:\/\/shop_images\/qweewq.jpg"
+        }
+      },
+      "2-product-feature-tabs": {
+        "type": "2-product-feature-tabs",
+        "blocks": {
+          "1528152319341": {
+            "type": "product_description",
+            "settings": {
+              "product_title": "",
+              "numberOfItems": 2,
+              "item_icon_1": "shopify:\/\/shop_images\/populele_f808b6ae-eff2-447b-b7c6-7529330a7e15.png",
+              "item_1": "Populele * 1",
+              "item_icon_2": "shopify:\/\/shop_images\/cable_027c2ffc-7595-4ca5-b8a1-3e84c843a855.png",
+              "item_2": "Charging Cable *1",
+              "item_icon_3": "",
+              "item_3": "",
+              "item_icon_4": "",
+              "item_4": "",
+              "item_icon_5": "",
+              "item_5": "",
+              "item_icon_6": "",
+              "item_6": "",
+              "item_icon_7": "",
+              "item_7": "",
+              "item_icon_8": "",
+              "item_8": "",
+              "item_icon_9": "",
+              "item_9": "",
+              "item_icon_10": "",
+              "item_10": ""
+            }
+          },
+          "1528152324339": {
+            "type": "product_description",
+            "settings": {
+              "product_title": "",
+              "numberOfItems": 6,
+              "item_icon_1": "shopify:\/\/shop_images\/populele_f808b6ae-eff2-447b-b7c6-7529330a7e15.png",
+              "item_1": "Populele * 1",
+              "item_icon_2": "shopify:\/\/shop_images\/bag1.2_459cad7f-bf77-45d3-9de3-5778e228c46b.png",
+              "item_2": "Canvas Case * 1",
+              "item_icon_3": "shopify:\/\/shop_images\/capo_263d9458-871b-4aac-aecb-936a86dfd0ca.png",
+              "item_3": "Capo * 1",
+              "item_icon_4": "shopify:\/\/shop_images\/strings1.2_065f7ee1-08a6-4ee4-aaa9-a95348393dff.png",
+              "item_4": "String Set * 1",
+              "item_icon_5": "shopify:\/\/shop_images\/pick_fb2c186b-592f-4f6c-ae99-9bc8c39788fe.png",
+              "item_5": "Picks * 2",
+              "item_icon_6": "shopify:\/\/shop_images\/cable_027c2ffc-7595-4ca5-b8a1-3e84c843a855.png",
+              "item_6": "Charging Cable * 1",
+              "item_icon_7": "",
+              "item_7": "",
+              "item_icon_8": "",
+              "item_8": "",
+              "item_icon_9": "",
+              "item_9": "",
+              "item_icon_10": "",
+              "item_10": ""
+            }
+          },
+          "1527105465200": {
+            "type": "icon",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/icons_QUALITY_19f53333-0003-42d0-bebe-f7dd45a98084.png",
+              "avatar_text": "Premium Quality"
+            }
+          },
+          "1527105324559": {
+            "type": "icon",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/icons_tuner.png",
+              "avatar_text": "Tuner&Tools"
+            }
+          },
+          "1527105395578": {
+            "type": "icon",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/icons_smart.png",
+              "avatar_text": "Smart Devices"
+            }
+          },
+          "1527105497760": {
+            "type": "icon",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/icons_ukulele_a68d0bf3-78ad-4896-92cf-6a76843e5c37.png",
+              "avatar_text": "Real Acoustic"
+            }
+          },
+          "1527105722771": {
+            "type": "icon",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/icons_songs.png",
+              "avatar_text": "Song Library"
+            }
+          },
+          "1527105739571": {
+            "type": "icon",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/icons_app_3aaa7847-57c7-48f8-a06b-26bc2037b2ec.png",
+              "avatar_text": "Free APP"
+            }
+          },
+          "1527105749524": {
+            "type": "icon",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/icons_led.png",
+              "avatar_text": "LED Fretboard"
+            }
+          },
+          "1527105770063": {
+            "type": "icon",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/icons_bluetooth.png",
+              "avatar_text": "Bluetooth"
+            }
+          },
+          "1527105782150": {
+            "type": "icon",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/icons_notes.png",
+              "avatar_text": "Notes Recognition"
+            }
+          },
+          "1527105811537": {
+            "type": "icon",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/icons_Phone.png",
+              "avatar_text": "iOS & Android"
+            }
+          },
+          "1527105829981": {
+            "type": "icon",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/icons_game.png",
+              "avatar_text": "Game Mode"
+            }
+          },
+          "1527105840357": {
+            "type": "icon",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/icons_video.png",
+              "avatar_text": "Video Tutorials"
+            }
+          },
+          "1527176765067": {
+            "type": "block-3",
+            "settings": {
+              "faq_trigger": "1",
+              "faq_question": "1. What size is Populele?",
+              "faq_answer": "Left-handed version Populele is not yet available. Updates and news about our products will be posted on popuband.com."
+            }
+          },
+          "1528219116972": {
+            "type": "block-3",
+            "settings": {
+              "faq_trigger": "2",
+              "faq_question": "2. Is there a left-handed version available?",
+              "faq_answer": "Left-handed version Populele is not yet available. Updates and news about our products will be posted on popuband.com."
+            }
+          },
+          "1528226444867": {
+            "type": "block-3",
+            "settings": {
+              "faq_trigger": "3",
+              "faq_question": "3. Where can I find the list of available songs?",
+              "faq_answer": "Please click HERE to view the song list."
+            }
+          },
+          "1528226493837": {
+            "type": "block-3",
+            "settings": {
+              "faq_trigger": "4",
+              "faq_question": "4. Is the app free?",
+              "faq_answer": "Yes! Not only the App is free, our constantly updated song library is also free to all Populele users."
+            }
+          },
+          "1528226616806": {
+            "type": "block-3",
+            "settings": {
+              "faq_trigger": "5",
+              "faq_question": "5. Does the sound play through a Bluetooth speaker?",
+              "faq_answer": "Populele is an acoustic ukulele and its sound does not amplify through Bluetooth speaker. However, you may purchase and use a pickup to create similar effect."
+            }
+          },
+          "1528226782697": {
+            "type": "block-3",
+            "settings": {
+              "faq_trigger": "6",
+              "faq_question": "6. Does the app work for Android or iOS?",
+              "faq_answer": "The Populele App works on both IOS and Android devices."
+            }
+          },
+          "1528226895665": {
+            "type": "block-3",
+            "settings": {
+              "faq_trigger": "7",
+              "faq_question": "7. What tools does the app offer? Does it come with a tuner?",
+              "faq_answer": "Pretty much everything you need as a beginner! --Tuner, Chord Library, Song Library, Tutorial Videos of the most common techniques, Customized LEDs, and more!"
+            }
+          },
+          "1528227007497": {
+            "type": "block-3",
+            "settings": {
+              "faq_trigger": "8",
+              "faq_question": "8. How does the song library work, does it show you the lyrics to sing as you play?",
+              "faq_answer": "Song Library is a Karaoke-style song learning and recording tool for beginners and advanced players. Songs are categorized by difficulty scale. Recorded playing can be shared through social media."
+            }
+          },
+          "1527788775109": {
+            "type": "block-2",
+            "settings": {
+              "avatar_icon": "shopify:\/\/shop_images\/User-11.png",
+              "review_content": "\"Super fun! A great way for someone who has net played any instrument previously. The company stands behind their product!\"",
+              "review_author": "Gilbert F. Pa.",
+              "date": "May 8th"
+            }
+          },
+          "1527797164830": {
+            "type": "block-2",
+            "settings": {
+              "avatar_icon": "shopify:\/\/shop_images\/User-17.png",
+              "review_content": "\"My Populele came and I am OBSESSED.  I can already play 3 chords and win the game on my phone! (Yes, this is pretty much geared towards kids - which is why I freaking LOVE it!)\"",
+              "review_author": "Amy C.  Ky.",
+              "date": "May, 2018"
+            }
+          },
+          "1528127065730": {
+            "type": "block-2",
+            "settings": {
+              "avatar_icon": "shopify:\/\/shop_images\/User-9.png",
+              "review_content": "\"I've had this for about a week now and I love it! I had never touched a ukulele in my life before I bought this but I'm already strumming along to full songs. As it says, the populele lights up to show you where your fingers go to play with the music on the app. This has made learning a new instrument pretty simple.  The app has 11 lessons, a chord library where you can review finger patterns, a tuner, and a place to customize the lights on the fretboard. It also has a song library with about 40 songs and the needed chords and strumming patterns.  I'm through 9 of the lessons already and feel like I'll know the basics of playing a ukulele by the time I finish them all. Obviously, with 11 lessons, you aren't going to master this instrument, but this really did do a fantastic job of making it easy to get into ukulele. From my experience, getting into a new instrument is the hardest part. Once you know the basics, it becomes easier to expand.  Finally, I wouldn't be able to tell if this is a quality instrument or not, but I have 2 relatives that make a living as professional musicians and they both said it is a well built instrument that produces a good sound.\"",
+              "review_author": "Marc C. Okla.",
+              "date": "March 28th"
+            }
+          },
+          "1528215999214": {
+            "type": "block-2",
+            "settings": {
+              "avatar_icon": "shopify:\/\/shop_images\/User-8.png",
+              "review_content": "\"Bought one two weeks ago and I absolutely love it! I had been trying to teach myself for months and within two weeks of getting the Populele, I’m already playing over 10 chords and numerous songs. If you want to learn to play, this is the way to go!\"",
+              "review_author": "Dina L. Fla.",
+              "date": "Jan 15th"
+            }
+          },
+          "1528128178811": {
+            "type": "block-2",
+            "settings": {
+              "avatar_icon": "shopify:\/\/shop_images\/User-19.png",
+              "review_content": "\"Musical instruments intimidate me, I can never tune anything, and struggle teaching my children. My children have been asking to take music lessons but I can’t afford the cost of 4 kids taking lessons. The Populele is amazing! I’m so happy we decided to order this product. The app makes sure you tune properly, and it really is great fun! Even I’m learning, and my kids have made practice a competition to see who gets the best sores during the lesson (the 4 year old is winning!). Wonderful purchase for our family and when I have a little extra we will buy another for our home.\"",
+              "review_author": "Thomas C. Vt.",
+              "date": "March 4th"
+            }
+          },
+          "1528216457464": {
+            "type": "block-2",
+            "settings": {
+              "avatar_icon": "shopify:\/\/shop_images\/User-5.png",
+              "review_content": "\"I purchased one of these for myself a few weeks ago and I'm SO impressed with how much I've actually learned! One of my biggest regrets was not taking orchestra in Middle School, even though I was obsessed with the violin (and still am). I felt as an adult, I didn't have enough time or commitment to be able to learn a stringed instrument. I have made it much farther in these past couple weeks with the Populele than any other time I've tried to teach myself an instrument! I can't put it down! Thank you!!\"",
+              "review_author": "Lauren J.  Okla.",
+              "date": "Dec 28th"
+            }
+          },
+          "1528088211120": {
+            "type": "block-2",
+            "settings": {
+              "avatar_icon": "shopify:\/\/shop_images\/user-10.png",
+              "review_content": "\"So excited! My son is on the autism spectrum and he loves learning from his iPad. He is so excited to get this and start to learn the ukulele. Excuse me, the Populele.\"",
+              "review_author": "Chris M.  Wash.",
+              "date": "Jan 12th"
+            }
+          },
+          "1528088293739": {
+            "type": "block-2",
+            "settings": {
+              "avatar_icon": "shopify:\/\/shop_images\/User-7.png",
+              "review_content": "\"Here's my personal review on my Populele . I LOVE IT! This is a super cool learning and teaching tool. I love the way the Populele connects to the app through Bluetooth. The app makes playing and learning super fun for all ages. I have been using it for personal growth as well as to teach ukulele to some very young beginners and it has been a wonderful experience. It has made the whole experience fun for everyone. The LED fretboard is such a helpfully tool in the whole learning process. If I had to find 1 issue with the Populele it would be that you need to be in a somewhat quiet room or environment to use the app because it uses your devices internal mic to pick up the sound of what your playing. I have personally found that it works best with a set of headphones with a mic on them. I would suggest the Populele to anyone that is looking to learn to play ukulele!\"",
+              "review_author": "Mai T.  Fla.",
+              "date": "Jan 8th"
+            }
+          },
+          "1528128340693": {
+            "type": "block-2",
+            "settings": {
+              "avatar_icon": "shopify:\/\/shop_images\/user-20_2aa97a64-19bc-454d-900c-d378c14630a9.png",
+              "review_content": "\"This is my first ukulele and I purchased this smart ukulele because I like the idea that it could help me learn to play. The quality of the instrument as well as the packaging really impressed me. This is made to a much much higher standard than my friend’s cheaper ukulele. This does not feel like a toy, it is a real instrument. The app has been great for me in learning and I haven’t had any glitches like some other reviewers have stated. And the song library has a lot of popular songs. This is a great ukulele and I would recommend it to anyone that is interested in learning to play.\"",
+              "review_author": "Chris L.  Pa.",
+              "date": "May 8th"
+            }
+          }
+        },
+        "block_order": [
+          "1528152319341",
+          "1528152324339",
+          "1527105465200",
+          "1527105324559",
+          "1527105395578",
+          "1527105497760",
+          "1527105722771",
+          "1527105739571",
+          "1527105749524",
+          "1527105770063",
+          "1527105782150",
+          "1527105811537",
+          "1527105829981",
+          "1527105840357",
+          "1527176765067",
+          "1528219116972",
+          "1528226444867",
+          "1528226493837",
+          "1528226616806",
+          "1528226782697",
+          "1528226895665",
+          "1528227007497",
+          "1527788775109",
+          "1527797164830",
+          "1528127065730",
+          "1528215999214",
+          "1528128178811",
+          "1528216457464",
+          "1528088211120",
+          "1528088293739",
+          "1528128340693"
+        ],
+        "settings": {
+          "showCharLength": 21,
+          "reviewFontSize": 19
+        }
+      },
+      "video-alternating-content": {
+        "type": "video-alternating-content",
+        "blocks": {
+          "1526419008398": {
+            "type": "image",
+            "settings": {
+              "media_alignment": "left",
+              "title": "Perfect Musical Gift for Everyone",
+              "caption": "A perfect musical gift for everyone",
+              "button_text": "Learn More",
+              "button_link": "shopify:\/\/pages\/musical-gift",
+              "image": "shopify:\/\/shop_images\/theadamgregory.jpg"
+            }
+          },
+          "1526419012768": {
+            "type": "image",
+            "settings": {
+              "media_alignment": "right",
+              "title": "Smart Music Learning Tool",
+              "caption": "A pferfect musical gift for everyone",
+              "button_text": "Learn more",
+              "button_link": "shopify:\/\/pages\/ukulele-learning",
+              "image": "shopify:\/\/shop_images\/2.jpg"
+            }
+          },
+          "1526419018656": {
+            "type": "image",
+            "settings": {
+              "media_alignment": "left",
+              "title": "For All Music Lovers",
+              "caption": "A perfect musical gift for music lovers.",
+              "button_text": "Learn more",
+              "button_link": "shopify:\/\/pages\/music-lovers",
+              "image": "shopify:\/\/shop_images\/square10.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1526419008398",
+          "1526419012768",
+          "1526419018656"
+        ],
+        "settings": {
+          "style": "default-style",
+          "title": "",
+          "show_borders": true
+        }
+      },
+      "2-specifications": {
+        "type": "2-specifications",
+        "settings": {}
+      },
+      "1526654821414": {
+        "type": "2-new-imageTextOverlay",
+        "settings": {
+          "style": "default-style",
+          "text_color": "#ffffff",
+          "text_position": "left",
+          "title": "POPULELE U1",
+          "caption": "The World's First Smart Ukulele",
+          "button_text": "BUY NOW",
+          "button_link": "shopify:\/\/products\/populele-with-accessory",
+          "button_text_2": "LEARN MORE",
+          "button_link_2": "shopify:\/\/pages\/faq",
+          "image_mobile": "shopify:\/\/shop_images\/banner_9509b3df-15ef-4e55-b979-25ddc3c1a625.jpg",
+          "image": "shopify:\/\/shop_images\/banner_5.29.gif",
+          "overlay_opacity_strength": 0
+        }
+      },
+      "1-contentGrid": {
+        "type": "1-contentGrid",
+        "settings": {}
+      },
+      "2-new-header": {
+        "type": "2-new-header",
+        "settings": {
+          "header_sticky": true,
+          "show_cart": true,
+          "buy_button": true,
+          "show_search": false,
+          "header_logo": "shopify:\/\/shop_images\/shopify_logo.png",
+          "menu": "new-web-menu",
+          "menu_style": "header",
+          "color_override": "default",
+          "header_logo_alternate": "",
+          "promotion_style": "accent-style",
+          "promotion_text": "",
+          "promotion_url": ""
+        }
+      },
+      "mailchimp-newsletter": {
+        "type": "mailchimp-newsletter",
+        "settings": {
+          "enable": false,
+          "style": "default-style",
+          "title": "",
+          "caption": ""
+        }
+      },
+      "2-new-slideshow-2": {
+        "type": "2-new-slideshow-2",
+        "settings": {}
+      },
+      "2-specifications-2": {
+        "type": "2-specifications-2",
+        "settings": {}
+      },
+      "home-image-with-text-overlay": {
+        "type": "home-image-with-text-overlay",
+        "settings": {
+          "style": "default-style",
+          "title": "Image with text overlay",
+          "caption": "<p>Select imagery and text that relates to your style and story.<\/p>",
+          "button_text": "",
+          "button_link": "",
+          "image": "shopify:\/\/shop_images\/theadamgregory.jpg",
+          "overlay_opacity_strength": 30
+        }
+      },
+      "home-alternating-content": {
+        "type": "home-alternating-content",
+        "blocks": {
+          "1528732465582": {
+            "type": "image",
+            "settings": {
+              "media_alignment": "left",
+              "title": "Alternating content",
+              "caption": "Employ up to three alternating features with an option to align images or videos to the left\/right and include a call to action below.",
+              "button_text": "",
+              "button_link": "",
+              "image": "shopify:\/\/shop_images\/business-newspaper-coffee-time.jpg"
+            }
+          },
+          "1528732468618": {
+            "type": "video",
+            "settings": {
+              "media_alignment": "right",
+              "title": "Alternating content",
+              "caption": "Employ up to three alternating features with an option to align images or videos to the left\/right and include a call to action below.",
+              "button_text": "",
+              "button_link": "",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+            }
+          }
+        },
+        "block_order": [
+          "1528732465582",
+          "1528732468618"
+        ],
+        "settings": {
+          "style": "default-style",
+          "title": "",
+          "show_borders": false
+        }
+      },
+      "2-new-imageTextOverlay": {
+        "type": "2-new-imageTextOverlay",
+        "settings": {
+          "style": "default-style",
+          "text_color": "#000000",
+          "text_position": "center",
+          "title": "The Perfect Smart Musical Gift for Everyone",
+          "caption": "Start to enjoy the fun of music with no background",
+          "button_text": "SHOP NOw",
+          "button_link": "shopify:\/\/products\/populele-with-accessory",
+          "button_text_2": "",
+          "button_link_2": "",
+          "image_mobile": "shopify:\/\/shop_images\/the_road_to_space-wallpaper-1920x540.jpg",
+          "image": "shopify:\/\/shop_images\/BANNER1.png",
+          "overlay_opacity_strength": 20
+        }
+      },
+      "2-musicGift-imageTextOverlay": {
+        "type": "2-musicGift-imageTextOverlay",
+        "settings": {
+          "style": "default-style",
+          "title": "Image with text overlay",
+          "caption": "<p>Select imagery and text that relates to your style and story.<\/p>",
+          "button_text": "",
+          "button_link": "",
+          "button_text_2": "",
+          "button_link_2": "",
+          "image_mobile": "",
+          "image": "shopify:\/\/shop_images\/women-who-dance.jpg",
+          "overlay_opacity_strength": 10
+        }
+      },
+      "2-musicGift-imageTextOverlay2": {
+        "type": "2-musicGift-imageTextOverlay2",
+        "settings": {
+          "style": "default-style",
+          "title": "Image with text overlay",
+          "caption": "<p>Select imagery and text that relates to your style and story.<\/p>",
+          "button_text": "",
+          "button_link": "",
+          "button_text_2": "",
+          "button_link_2": "",
+          "image_mobile": "",
+          "image": "shopify:\/\/shop_images\/women-plank-pose.jpg",
+          "overlay_opacity_strength": 90
+        }
+      },
+      "1528747341774": {
+        "type": "home-alternating-content",
+        "disabled": true,
+        "blocks": {
+          "1528747341774-0": {
+            "type": "image",
+            "settings": {
+              "media_alignment": "left",
+              "title": "Alternating content",
+              "caption": "Employ up to three alternating features with an option to align images or videos to the left\/right and include a call to action below.",
+              "button_text": "",
+              "button_link": "",
+              "image": "shopify:\/\/shop_images\/business-newspaper-coffee-time.jpg"
+            }
+          },
+          "1528747341774-1": {
+            "type": "video",
+            "settings": {
+              "media_alignment": "right",
+              "title": "Alternating content",
+              "caption": "Employ up to three alternating features with an option to align images or videos to the left\/right and include a call to action below.",
+              "button_text": "",
+              "button_link": "",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+            }
+          },
+          "1528747341774-2": {
+            "type": "image",
+            "settings": {
+              "media_alignment": "left",
+              "title": "Alternating content",
+              "caption": "Employ up to three alternating features with an option to align images or videos to the left\/right and include a call to action below.",
+              "button_text": "",
+              "button_link": "",
+              "image": ""
+            }
+          }
+        },
+        "block_order": [
+          "1528747341774-0",
+          "1528747341774-1",
+          "1528747341774-2"
+        ],
+        "settings": {
+          "style": "default-style",
+          "title": "",
+          "show_borders": false
+        }
+      },
+      "1528747374896": {
+        "type": "home-alternating-content",
+        "disabled": true,
+        "blocks": {
+          "1528747374896-0": {
+            "type": "image",
+            "settings": {
+              "media_alignment": "left",
+              "title": "Alternating content",
+              "caption": "Employ up to three alternating features with an option to align images or videos to the left\/right and include a call to action below.",
+              "button_text": "",
+              "button_link": "",
+              "image": ""
+            }
+          },
+          "1528747374896-1": {
+            "type": "video",
+            "settings": {
+              "media_alignment": "right",
+              "title": "Alternating content",
+              "caption": "Employ up to three alternating features with an option to align images or videos to the left\/right and include a call to action below.",
+              "button_text": "",
+              "button_link": "",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+            }
+          }
+        },
+        "block_order": [
+          "1528747374896-0",
+          "1528747374896-1"
+        ],
+        "settings": {
+          "style": "default-style",
+          "title": "",
+          "show_borders": false
+        }
+      },
+      "home-testimonials": {
+        "type": "home-testimonials",
+        "blocks": {
+          "1528919992520": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "Great little uke! It is well made and has a good sound and feel. My 10 year old and 8 year old really enjoy the game aspect of learning and chord lights, it makes practice something they enjoy. Overall I highly recommend it for young and old.",
+              "source": "R. Siler",
+              "avatar": "shopify:\/\/shop_images\/User-19.png"
+            }
+          },
+          "1528919996061": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "Musical instruments intimidate me, I can never tune anything, and struggle teaching my children. Even I'm leaning, and my kids have made practice a competition to see who gets the best scores during the lessons (the 4 year old is winning!).",
+              "source": "C. Thomas",
+              "avatar": "shopify:\/\/shop_images\/user-10.png"
+            }
+          }
+        },
+        "block_order": [
+          "1528919992520",
+          "1528919996061"
+        ],
+        "settings": {
+          "style": "default-style",
+          "title": ""
+        }
+      },
+      "video-video-with-text": {
+        "type": "video-video-with-text",
+        "settings": {
+          "style": "default-style",
+          "title": "Video with text",
+          "caption": "<p>Select video and text that relates to your style and story.<\/p>",
+          "button_text": "",
+          "button_link": "",
+          "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+          "media_layout": "regular"
+        }
+      },
+      "home-image-with-text": {
+        "type": "home-image-with-text",
+        "settings": {
+          "style": "default-style",
+          "title": "Image with text",
+          "caption": "<p>Select imagery and text that relates to your style and story.<\/p>",
+          "button_text": "",
+          "button_link": "",
+          "image": "shopify:\/\/shop_images\/11_8d0d5ef9-27b4-4609-98ec-08b8e22dfd5a.jpg",
+          "media_layout": "regular"
+        }
+      },
+      "2-new-imageTextOverlay02": {
+        "type": "2-new-imageTextOverlay02",
+        "settings": {
+          "style": "default-style",
+          "text_color": "#ff6161",
+          "text_position": "center",
+          "title": "",
+          "caption": "",
+          "button_text": "",
+          "button_link": "",
+          "button_text_2": "",
+          "button_link_2": "",
+          "image_mobile": "",
+          "image": "shopify:\/\/shop_images\/s1-2.jpg",
+          "overlay_opacity_strength": 20
+        }
+      },
+      "2-new-imageTextOverlay03": {
+        "type": "2-new-imageTextOverlay03",
+        "settings": {
+          "style": "default-style",
+          "text_color": "#ffffff",
+          "text_position": "left",
+          "title": "",
+          "caption": "",
+          "button_text": "",
+          "button_link": "",
+          "button_text_2": "",
+          "button_link_2": "",
+          "image_mobile": "",
+          "image": "shopify:\/\/shop_images\/Capture.PNG",
+          "overlay_opacity_strength": 0
+        }
+      },
+      "home-text": {
+        "type": "home-text",
+        "blocks": {
+          "1528995191906": {
+            "type": "rich_text",
+            "settings": {
+              "title": "MORE THAN AN UKULELE",
+              "content": "<p>Learn &amp; Play in minutes! With no music background, you are able to follow the easy tutorials and start to play chords and songs in minutes!&nbsp;<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1528995191906"
+        ],
+        "settings": {
+          "style": "default-style",
+          "show_borders": false
+        }
+      },
+      "2-new-imageTextOverlay04": {
+        "type": "2-new-imageTextOverlay04",
+        "settings": {
+          "style": "default-style",
+          "text_color": "#000",
+          "text_position": "center",
+          "title": "Image with text overlay",
+          "caption": "<p>Select imagery and text that relates to your style and story.<\/p>",
+          "button_text": "",
+          "button_link": "",
+          "button_text_2": "",
+          "button_link_2": "",
+          "image_mobile": "",
+          "image": "shopify:\/\/shop_images\/banner2.png",
+          "overlay_opacity_strength": 90
+        }
+      },
+      "2-new-imageTextOverlay05": {
+        "type": "2-new-imageTextOverlay05",
+        "settings": {
+          "style": "default-style",
+          "text_color": "#000",
+          "text_position": "center",
+          "title": "Image with text overlay",
+          "caption": "<p>Select imagery and text that relates to your style and story.<\/p>",
+          "button_text": "",
+          "button_link": "",
+          "button_text_2": "",
+          "button_link_2": "",
+          "image_mobile": "",
+          "image": "shopify:\/\/shop_images\/Untitled-1_8d338d2a-9f57-4967-bcb0-26ac7dde6d84.jpg",
+          "overlay_opacity_strength": 90
+        }
+      }
+    },
+    "content_for_index": [
+      "1526654821414",
+      "1525099900461",
+      "1525273747685",
+      "1522858235668",
+      "1524609245235",
+      "1523127970493",
+      "1520879966084",
+      "home-featured-product",
+      "1528747341774",
+      "1528747374896"
+    ]
+  },
+  "presets": {
+    "Home": {
+      "background-color": "#ffffff",
+      "contrast-background-color": "#FAF7F6",
+      "body-text-color": "#988980",
+      "accent-color": "#FF5555",
+      "heading-color": "#68574D",
+      "meta-color": "#b7aba3",
+      "error-color": "#B84949",
+      "border-color": "#EDE7E4",
+      "primary-button-color": "#ffffff",
+      "header-link-color": "#988980",
+      "header-dropdown-color": "#ede7e4",
+      "form-select-background": "#ede7e4",
+      "form-select-color": "#988980",
+      "form-select-border-color": "#ede7e4",
+      "footer-background-color": "#2C211B",
+      "footer-header-color": "#ffffff",
+      "footer-accent-color": "#988980",
+      "body_font": "Google_Roboto_400,700",
+      "logo_font": "Google_Bitter_400,700",
+      "logo_font_weight": "700",
+      "heading_font": "Google_Bitter_400,700",
+      "heading_font_weight": "700",
+      "section_heading_font_weight": "700",
+      "meta_font_weight": "400",
+      "button_font": "Google_Roboto_400,700",
+      "button_font_weight": "700",
+      "logo_font_capitalize": true,
+      "heading_font_capitalize": false,
+      "section_heading_font_capitalize": true,
+      "meta_font_capitalize": true,
+      "button_font_capitalize": true,
+      "header-show-breadcrumbs": false,
+      "sections": {
+        "general-header": {
+          "type": "general-header",
+          "settings": {
+            "menu_style": "drawer",
+            "color_override": "default"
+          }
+        },
+        "general-newsletter": {
+          "type": "general-newsletter",
+          "settings": {
+            "enable": true,
+            "style": "contrast-style"
+          }
+        },
+        "module-product-slideshow": {
+          "type": "module-product-slideshow",
+          "settings": {
+            "slideshow_color": "#68574d",
+            "slideshow_layout": "full-bleed",
+            "slideshow_transition": "transition-slide",
+            "autoplay": true,
+            "frequency": 5
+          }
+        },
+        "home-slideshow": {
+          "type": "home-slideshow",
+          "blocks": {
+            "slide-1": {
+              "type": "slide",
+              "settings": {
+                "alignment": "center"
+              }
+            },
+            "slide-2": {
+              "type": "slide",
+              "settings": {
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slide-1",
+            "slide-2"
+          ],
+          "settings": {
+            "enable": true,
+            "text_color": "#68574d",
+            "slideshow_layout": "full-bleed",
+            "autoplay": true,
+            "frequency": 6
+          }
+        },
+        "home-image-with-text": {
+          "type": "home-image-with-text",
+          "settings": {
+            "style": "default-style",
+            "media_layout": "regular"
+          }
+        },
+        "home-text-columns-with-images": {
+          "type": "home-text-columns-with-images",
+          "blocks": {
+            "column-1": {
+              "type": "text_column",
+              "settings": {}
+            },
+            "column-2": {
+              "type": "text_column",
+              "settings": {}
+            },
+            "column-3": {
+              "type": "text_column",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "column-1",
+            "column-2",
+            "column-3"
+          ],
+          "settings": {
+            "style": "contrast-style"
+          }
+        },
+        "home-testimonials": {
+          "type": "home-testimonials",
+          "blocks": {
+            "testimonial-1": {
+              "type": "testimonial",
+              "settings": {}
+            },
+            "testimonial-2": {
+              "type": "testimonial",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "testimonial-1",
+            "testimonial-2"
+          ],
+          "settings": {
+            "style": "default-style"
+          }
+        },
+        "home-featured-product": {
+          "type": "home-featured-product",
+          "settings": {
+            "style": "contrast-style",
+            "title": "Featured product"
+          }
+        },
+        "home-instagram": {
+          "type": "home-instagram",
+          "settings": {
+            "style": "default-style"
+          }
+        }
+      },
+      "content_for_index": [
+        "home-image-with-text",
+        "home-text-columns-with-images",
+        "home-testimonials",
+        "home-featured-product",
+        "home-instagram"
+      ]
+    },
+    "Tech": {
+      "background-color": "#ffffff",
+      "contrast-background-color": "#E05E60",
+      "body-text-color": "#51595D",
+      "accent-color": "#2FC496",
+      "heading-color": "#E05E60",
+      "meta-color": "#a0a2a3",
+      "error-color": "#b84949",
+      "border-color": "#D7DCDE",
+      "primary-button-color": "#ffffff",
+      "header-link-color": "#2cbb84",
+      "header-dropdown-color": "#d7dcde",
+      "footer-background-color": "#272B32",
+      "footer-header-color": "#ffffff",
+      "footer-accent-color": "#2CBB84",
+      "form-select-background": "#f4f5f5",
+      "form-select-color": "#2cbb84",
+      "form-select-border-color": "#d7dcde",
+      "body_font": "Google_Open+Sans_400,700",
+      "logo_font": "Google_Open+Sans_400,700",
+      "logo_font_weight": "700",
+      "heading_font": "Google_Open+Sans_400,700",
+      "heading_font_weight": "700",
+      "section_heading_font_weight": "700",
+      "meta_font_weight": "400",
+      "button_font": "Google_Roboto_400,700",
+      "button_font_weight": "700",
+      "logo_font_capitalize": false,
+      "heading_font_capitalize": false,
+      "section_heading_font_capitalize": false,
+      "meta_font_capitalize": false,
+      "button_font_capitalize": true,
+      "header-show-breadcrumbs": false,
+      "sections": {
+        "general-header": {
+          "type": "general-header",
+          "settings": {
+            "header_sticky": true,
+            "menu_style": "header"
+          }
+        },
+        "general-newsletter": {
+          "type": "general-newsletter",
+          "settings": {
+            "enable": true,
+            "style": "default-style"
+          }
+        },
+        "module-product-slideshow": {
+          "type": "module-product-slideshow",
+          "settings": {
+            "slideshow_color": "#2e3438",
+            "slideshow_layout": "content-width",
+            "autoplay": false
+          }
+        },
+        "home-slideshow": {
+          "type": "home-slideshow",
+          "blocks": {
+            "slide-1": {
+              "type": "slide",
+              "settings": {
+                "alignment": "center"
+              }
+            },
+            "slide-2": {
+              "type": "slide",
+              "settings": {
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slide-1",
+            "slide-2"
+          ],
+          "settings": {
+            "enable": false,
+            "text_color": "#2e3438",
+            "slideshow_layout": "content-width",
+            "autoplay": false
+          }
+        },
+        "home-promotion": {
+          "type": "home-promotion",
+          "settings": {
+            "style": "default-style"
+          }
+        },
+        "home-image-with-text": {
+          "type": "home-image-with-text",
+          "settings": {
+            "style": "contrast-style",
+            "media_layout": "regular"
+          }
+        },
+        "home-alternating-content": {
+          "type": "home-alternating-content",
+          "blocks": {
+            "home-alternating-content-1": {
+              "type": "image",
+              "settings": {
+                "media_alignment": "left"
+              }
+            },
+            "home-alternating-content-2": {
+              "type": "image",
+              "settings": {
+                "media_alignment": "right"
+              }
+            }
+          },
+          "block_order": [
+            "home-alternating-content-1",
+            "home-alternating-content-2"
+          ],
+          "settings": {
+            "style": "default-style",
+            "title": "Alternating content",
+            "show_borders": false
+          }
+        },
+        "home-testimonials": {
+          "type": "home-testimonials",
+          "blocks": {
+            "testimonial-1": {
+              "type": "testimonial",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "testimonial-1"
+          ],
+          "settings": {
+            "style": "contrast-style"
+          }
+        },
+        "home-featured-product": {
+          "type": "home-featured-product",
+          "settings": {
+            "style": "default-style",
+            "title": "Featured product"
+          }
+        },
+        "home-instagram": {
+          "type": "home-instagram",
+          "settings": {
+            "style": "contrast-style"
+          }
+        }
+      },
+      "content_for_index": [
+        "home-promotion",
+        "home-image-with-text",
+        "home-alternating-content",
+        "home-testimonials",
+        "home-featured-product",
+        "home-instagram"
+      ]
+    },
+    "Cloth": {
+      "background-color": "#ffffff",
+      "contrast-background-color": "#2E3438",
+      "body-text-color": "#838B8F",
+      "accent-color": "#729BB4",
+      "heading-color": "#2E3438",
+      "meta-color": "#838b8f",
+      "error-color": "#b8474f",
+      "border-color": "#EDF0F2",
+      "primary-button-color": "#ffffff",
+      "header-link-color": "#838B8F",
+      "header-dropdown-color": "#D7DCDE",
+      "form-select-background": "#F4F5F5",
+      "form-select-color": "#838B8F",
+      "form-select-border-color": "#D7DCDE",
+      "footer-background-color": "#729BB4",
+      "footer-header-color": "#ffffff",
+      "footer-accent-color": "#ffffff",
+      "body_font": "Google_Open+Sans_400,700",
+      "logo_font": "Google_Open+Sans_400,700",
+      "logo_font_weight": "700",
+      "heading_font": "Google_Volkhov_400,700",
+      "heading_font_weight": "700",
+      "section_heading_font_weight": "400",
+      "meta_font_weight": "400",
+      "button_font": "Google_Volkhov_400,700",
+      "button_font_weight": "700",
+      "logo_font_capitalize": true,
+      "heading_font_capitalize": false,
+      "section_heading_font_capitalize": true,
+      "meta_font_capitalize": true,
+      "button_font_capitalize": true,
+      "header-show-breadcrumbs": false,
+      "sections": {
+        "general-header": {
+          "type": "general-header",
+          "settings": {
+            "menu_style": "below-header"
+          }
+        },
+        "general-newsletter": {
+          "type": "general-newsletter",
+          "settings": {
+            "enable": true,
+            "style": "contrast-style"
+          }
+        },
+        "module-product-slideshow": {
+          "type": "module-product-slideshow",
+          "settings": {
+            "slideshow_color": "#989ea0",
+            "slideshow_layout": "content-width",
+            "autoplay": false
+          }
+        },
+        "home-slideshow": {
+          "type": "home-slideshow",
+          "blocks": {
+            "slide-1": {
+              "type": "slide",
+              "settings": {
+                "alignment": "center"
+              }
+            },
+            "slide-2": {
+              "type": "slide",
+              "settings": {
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slide-1",
+            "slide-2"
+          ],
+          "settings": {
+            "enable": true,
+            "show_shadows": true,
+            "text_color": "#989ea0",
+            "slideshow_layout": "full-width",
+            "autoplay": false
+          }
+        },
+        "home-image-with-text": {
+          "type": "home-image-with-text",
+          "settings": {
+            "style": "default-style",
+            "media_layout": "regular"
+          }
+        },
+        "home-text-columns-with-images": {
+          "type": "home-text-columns-with-images",
+          "blocks": {
+            "column-1": {
+              "type": "text_column",
+              "settings": {}
+            },
+            "column-2": {
+              "type": "text_column",
+              "settings": {}
+            },
+            "column-3": {
+              "type": "text_column",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "column-1",
+            "column-2",
+            "column-3"
+          ],
+          "settings": {
+            "style": "contrast-style"
+          }
+        },
+        "home-testimonials": {
+          "type": "home-testimonials",
+          "blocks": {
+            "testimonial-1": {
+              "type": "testimonial",
+              "settings": {}
+            },
+            "testimonial-2": {
+              "type": "testimonial",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "testimonial-1",
+            "testimonial-2"
+          ],
+          "settings": {
+            "style": "default-style"
+          }
+        },
+        "home-featured-product": {
+          "type": "home-featured-product",
+          "settings": {
+            "style": "default-style",
+            "title": "Featured product"
+          }
+        },
+        "home-instagram": {
+          "type": "home-instagram",
+          "settings": {
+            "style": "default-style"
+          }
+        },
+        "home-alternating-content": {
+          "type": "home-alternating-content",
+          "blocks": {
+            "home-alternating-content-1": {
+              "type": "image",
+              "settings": {
+                "media_alignment": "left"
+              }
+            },
+            "home-alternating-content-2": {
+              "type": "image",
+              "settings": {
+                "media_alignment": "right"
+              }
+            },
+            "home-alternating-content-3": {
+              "type": "image",
+              "settings": {
+                "media_alignment": "left"
+              }
+            }
+          },
+          "block_order": [
+            "home-alternating-content-1",
+            "home-alternating-content-2",
+            "home-alternating-content-3"
+          ],
+          "settings": {
+            "style": "default-style",
+            "title": "Alternating content",
+            "show_borders": true
+          }
+        },
+        "home-featured-collection": {
+          "type": "home-featured-collection",
+          "settings": {
+            "style": "default-style",
+            "title": "Featured collection"
+          }
+        },
+        "home-logo-list": {
+          "type": "home-logo-list",
+          "blocks": {
+            "logo-1": {
+              "type": "logo",
+              "settings": {}
+            },
+            "logo-2": {
+              "type": "logo",
+              "settings": {}
+            },
+            "logo-3": {
+              "type": "logo",
+              "settings": {}
+            },
+            "logo-4": {
+              "type": "logo",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "logo-1",
+            "logo-2",
+            "logo-3",
+            "logo-4"
+          ],
+          "settings": {
+            "style": "default-style"
+          }
+        }
+      },
+      "content_for_index": [
+        "home-image-with-text",
+        "home-alternating-content",
+        "home-text-columns-with-images",
+        "home-testimonials",
+        "home-featured-product",
+        "home-featured-collection",
+        "home-logo-list",
+        "home-instagram"
+      ]
+    },
+    "Art": {
+      "background-color": "#ffffff",
+      "contrast-background-color": "#6FC3C4",
+      "body-text-color": "#060C0C",
+      "accent-color": "#6fc3c4",
+      "heading-color": "#060C0C",
+      "meta-color": "#a0a2a3",
+      "error-color": "#b84949",
+      "border-color": "#e8eced",
+      "primary-button-color": "#ffffff",
+      "header-link-color": "#6a9898",
+      "header-dropdown-color": "#b8c8c8",
+      "form-select-background": "#ffffff",
+      "form-select-color": "#6a9898",
+      "form-select-border-color": "#b8c8c8",
+      "footer-background-color": "#050D0E",
+      "footer-header-color": "#ffffff",
+      "footer-accent-color": "#5FB8B7",
+      "body_font": "Google_Montserrat_400,700",
+      "logo_font": "Google_Montserrat_400,700",
+      "logo_font_weight": "700",
+      "heading_font": "Google_Montserrat_400,700",
+      "heading_font_weight": "700",
+      "section_heading_font_weight": "700",
+      "meta_font_weight": "400",
+      "button_font": "Google_Montserrat_400,700",
+      "button_font_weight": "700",
+      "logo_font_capitalize": true,
+      "heading_font_capitalize": false,
+      "section_heading_font_capitalize": true,
+      "meta_font_capitalize": true,
+      "button_font_capitalize": true,
+      "header-show-breadcrumbs": false,
+      "sections": {
+        "general-header": {
+          "type": "general-header",
+          "settings": {
+            "header_sticky": true,
+            "menu_style": "header"
+          }
+        },
+        "general-newsletter": {
+          "type": "general-newsletter",
+          "settings": {
+            "enable": true,
+            "style": "contrast-style"
+          }
+        },
+        "module-product-slideshow": {
+          "type": "module-product-slideshow",
+          "settings": {
+            "slideshow_color": "#060c0c",
+            "slideshow_layout": "content-width",
+            "autoplay": false
+          }
+        },
+        "home-slideshow": {
+          "type": "home-slideshow",
+          "blocks": {
+            "slide-1": {
+              "type": "slide",
+              "settings": {
+                "alignment": "center"
+              }
+            },
+            "slide-2": {
+              "type": "slide",
+              "settings": {
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slide-1",
+            "slide-2"
+          ],
+          "settings": {
+            "enable": false,
+            "text_color": "#060c0c",
+            "slideshow_layout": "full-width",
+            "autoplay": false
+          }
+        },
+        "home-promotion": {
+          "type": "home-promotion",
+          "settings": {
+            "style": "default-style"
+          }
+        },
+        "home-image-with-text": {
+          "type": "home-image-with-text",
+          "settings": {
+            "style": "contrast-style",
+            "media_layout": "regular"
+          }
+        },
+        "home-featured-product": {
+          "type": "home-featured-product",
+          "settings": {
+            "style": "default-style",
+            "title": "Featured product"
+          }
+        },
+        "home-featured-collection": {
+          "type": "home-featured-collection",
+          "settings": {
+            "style": "contrast-style",
+            "title": "Featured collection"
+          }
+        },
+        "home-testimonials": {
+          "type": "home-testimonials",
+          "blocks": {
+            "testimonial-1": {
+              "type": "testimonial",
+              "settings": {}
+            },
+            "testimonial-2": {
+              "type": "testimonial",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "testimonial-1",
+            "testimonial-2"
+          ],
+          "settings": {
+            "style": "default-style"
+          }
+        },
+        "home-instagram": {
+          "type": "home-instagram",
+          "settings": {
+            "style": "contrast-style"
+          }
+        }
+      },
+      "content_for_index": [
+        "home-promotion",
+        "home-image-with-text",
+        "home-featured-product",
+        "home-featured-collection",
+        "home-testimonials",
+        "home-instagram"
+      ]
+    }
+  }
+}

@@ -1,0 +1,140 @@
+
+<section
+  class="module-container home-promotion {{ section.settings.style }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="promotion">
+  <article class="module-inner">
+
+    <div class="home-promotion-text">
+      {% if section.settings.title != blank %}
+        <h1 class="feature-title">{{ section.settings.title | escape }}</h1>
+      {% endif %}
+
+         <div id="app" class="button" onclick="window.location.href='collections/frontpage'"></div>
+      
+      {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+          
+        <a class="button" href="{{ section.settings.button_link }}">{{ section.settings.button_text | escape }}</a>
+      {% endif %}
+
+      {% if section.settings.subtitle != blank %}
+        <h2 class="feature-subtitle">{{ section.settings.subtitle | escape }}</h2>
+      {% endif %}
+
+      {% if section.settings.text != blank %}
+        {{ section.settings.text }}
+      {% endif %}
+
+      {% if section.settings.android_link != blank and section.settings.ios_link != blank %}
+        <a href="{{ section.settings.android_link }}"><img class="download-badge" alt='Get it on Google Play' src='https://cdn.shopify.com/s/files/1/2021/3861/files/google-play-badge.png'/></a>
+        <a href="{{ section.settings.ios_link }}"><img class="download-badge" alt='Get it on App Store' src='https://cdn.shopify.com/s/files/1/2021/3861/files/app-store-badge.png'/></a>
+      {% endif %}
+    </div>
+
+    <div class="home-promotion-image twinkle-wrap">
+      {% if section.settings.content_image_default and section.settings.content_image_twinkle %}
+        <img
+          alt="{{ section.settings.content_image_default.alt }}"
+          src="{{ section.settings.content_image_default | img_url: '1440x640' }}">
+        <img
+          alt="{{ section.settings.content_image_twinkle.alt }}"
+          src="{{ section.settings.content_image_twinkle | img_url: '1440x640' }}"
+          class="light-breath-in">
+      {% else %}
+        <img
+          alt="{{ section.settings.content_image_default.alt }}"
+          src="https://cdn.shopify.com/s/files/1/2021/3861/files/app-screenshot1-white.jpg">
+        <img
+          src="https://cdn.shopify.com/s/files/1/2021/3861/files/app-screenshot2-white.jpg"
+          class="light-breath-in">
+      {% endif %}
+    </div>
+
+  </article>
+</section>
+
+
+
+{% schema %}
+{
+  "name": "New Button Welcome",
+  "settings": [
+    {
+      "type": "select",
+      "id": "style",
+      "label": "Style",
+      "options": [
+        {
+          "value": "default-style",
+          "label": "Default"
+        },
+        {
+          "value": "accent-style",
+          "label": "Accent"
+        },
+        {
+          "value": "contrast-style",
+          "label": "Contrast"
+        }
+      ],
+      "default": "default-style"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Welcome"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subheading",
+      "default": "This is the featured promotion section."
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Use this area to promote a single item with an image on the right.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Link URL"
+    },
+    {
+      "type": "url",
+      "id": "android_link",
+      "label": "Android Link URL"
+    },
+    {
+      "type": "url",
+      "id": "ios_link",
+      "label": "iOS Link URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "content_image_default",
+      "label": "Default Image",
+      "info": "640 x 640px .jpg recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "content_image_twinkle",
+      "label": "Twinkle Image",
+      "info": "640 x 640px .jpg recommended"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Customize",
+      "name": "New Button Twinkle Images"
+    }
+  ]
+}
+{% endschema %}

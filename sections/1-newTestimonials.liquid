@@ -1,0 +1,300 @@
+
+<section>
+          
+ <div class="col-md-12 text-center"><h3>  </h3></div>
+<div class="">
+<div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel">
+  <div class="carousel-inner" style="margin-right:4%;">
+
+        
+    <div class="item active" style="" >
+
+      <div class="col-md-4 col-sm-6 col-xs-12" >
+
+
+        <div class="testimonial_img">
+          <br>
+          <img 
+               height="60" width="64" 
+               src="https://cdn.shopify.com/s/files/1/2021/3861/files/TODAY_4.png?17574969305477732892" class="img-responsive">
+        </div> 
+
+
+        <div class="testimonial_text" style="-webkit-hyphens: auto;
+                                             -moz-hyphens: auto;
+                                             hyphens: auto;" >
+          <p class="testimonial-content">“This is awesome in terms of being able to learn music in a fun and also connected way! You can learn through the app step by step, it listens to you and gives you corrections.”</p>
+
+          <p align="right"><a href="#" > &mdash; Today </a> &nbsp;&nbsp;&nbsp;&nbsp;</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    {% for block in section.blocks %}
+      {% if block.settings.content %}
+        
+        <div class="item" style="" >
+
+          <div class="col-md-4 col-sm-6 col-xs-12" >
+
+
+            <div class="testimonial_img">
+              <br>
+              <img src="{{block.settings.avatar | img_url: "64 x 60"}} height="60" width="64" " class="img-responsive">
+            </div> 
+
+
+            <div class="testimonial_text" style="-webkit-hyphens: auto;
+                                                 -moz-hyphens: auto;
+                                                 hyphens: auto;" >
+              <p class="testimonial-content"> {{block.settings.content}} </p>
+
+              <p align="right"><a href="{{block.settings.link}} " >  {{block.settings.source}} </a> &nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </div>
+          </div>
+
+        </div>
+
+      {% endif %}
+    {% endfor %} 
+    
+
+ 
+   
+
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left" style="color:black"></i></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right" style="color:black"></i></a>
+</div>
+</div>
+  
+</section>
+
+
+<script type='text/javascript' src="https://cdn.shopify.com/s/files/1/2021/3861/files/bootstrap_3_1_0.min.js"></script>
+
+
+
+<!-- JavaScript jQuery code from Bootply.com editor  -->
+        
+<script type='text/javascript'>
+
+  $(document).ready(function() {
+
+    $('.carousel[data-type="multi"] .item').each(function(){
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      if(screen.width > 767)
+          next.children(':first-child').clone().appendTo($(this));
+
+      for (var i=0;i<1;i++) {
+        next=next.next();
+        if (!next.length) {
+          next = $(this).siblings(':first');
+        }
+
+      if(screen.width > 992)
+          next.children(':first-child').clone().appendTo($(this));
+      }
+    });
+
+  });
+
+</script>
+        
+        
+<style>
+  .ad {
+    position: absolute;
+    bottom: 70px;
+    right: 48px;
+    z-index: 992;
+    background-color:#f3f3f3;
+    position: fixed;
+    width: 155px;
+    padding:1px;
+  }
+
+  .ad-btn-hide {
+    position: absolute;
+    top: -10px;
+    left: -12px;
+    background: #fefefe;
+    background: rgba(240,240,240,0.9);
+    border: 0;
+    border-radius: 26px;
+    cursor: pointer;
+    padding: 2px;
+    height: 25px;
+    width: 25px;
+    font-size: 14px;
+    vertical-align:top;
+    outline: 0;
+  }
+
+  .carbon-img {
+    float:left;
+    padding: 10px;
+  }
+
+  .carbon-text {
+    color: #888;
+    display: inline-block;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: 400;
+    height: 60px;
+    margin-left: 9px;
+    width: 142px;
+    padding-top: 10px;
+  }
+
+  .carbon-text:hover {
+    color: #666;
+  }
+
+  .carbon-poweredby {
+    color: #6A6A6A;
+    float: left;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-top: 13px;
+    text-align: center;
+  }
+  
+  @media (max-width: 320px) {
+  .carousel-inner .active.left { left: -100%; }
+  .carousel-inner .next        { left:  100%; }
+  .carousel-inner .prev		 { left: -100%; }
+  .active > div { display:none; }
+  .active > div:first-child { display:block; height:38vh;}
+
+  }
+  
+  @media (min-width: 321px) and (max-width: 767px ) {
+  .carousel-inner .active.left { left: -100%; }
+  .carousel-inner .next        { left:  100%; }
+  .carousel-inner .prev		 { left: -100%; }
+  .active > div { display:none; }
+  .active > div:first-child { display:block; height:32vh;}
+
+  }
+  @media (min-width: 768px) and (max-width: 992px ) {
+    .carousel-inner .active.left { left: -50%; }
+    .carousel-inner .next        { left:  50%; }
+    .carousel-inner .prev		 { left: -50%; }
+    .active > div { display:none; }
+    .active > div:first-child { display:block;  height:20vh;}
+    .active > div:first-child + div { display:block; }
+  }
+  @media (min-width: 992px )and (max-width: 1024px )  {
+    .carousel-inner .active.left { left: -32%; }
+    .carousel-inner .next        { left:  32%; }
+    .carousel-inner .prev		 { left: -32%; }	
+    .active > div:first-child { display:block;  height:18vh;}
+  }
+  @media (min-width: 1025px ) {
+
+    .active > div:first-child { display:block;  height:20vh;}
+  }
+
+  
+</style>
+
+
+
+{% schema %}
+{
+  "name": "New Testimonials",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "select",
+      "id": "style",
+      "label": "Style",
+      "options": [
+        {
+          "value": "default-style",
+          "label": "Default"
+        },
+        {
+          "value": "accent-style",
+          "label": "Accent"
+        },
+        {
+          "value": "contrast-style",
+          "label": "Contrast"
+        }
+      ],
+      "default": "default-style"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Testimonials"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "New Testimonial",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "avatar",
+          "label": "Avatar",
+          "info": "64 x 60 prefered"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Content",
+          "default": "content"
+        },
+        {
+          "type": "text",
+          "id": "source",
+          "label": "Source",
+          "default": "Source's name."
+        },
+        {
+          "type": "text",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Text",
+      "name": "New Testimonials",
+      "settings": {
+        "style": "default"
+      },
+      "blocks": [
+        {
+          "type": "testimonial",
+          "settings": {
+            "source": "Jane"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "source": "John"
+          }
+        }
+      ]
+    }
+  ]
+}
+
+{% endschema %}

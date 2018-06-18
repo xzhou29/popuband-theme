@@ -1,0 +1,291 @@
+
+
+{% assign image = section.settings.image %}
+{% assign image_mobile = section.settings.image_mobile %}
+{% assign has_cta = false %}
+{% assign has_link_wrapper = false %}
+{% assign has_cta_2 = false %}
+{% assign has_link_wrapper_2 = false %}
+
+{%- if section.settings.title != blank or section.settings.caption != blank -%}
+  {% assign has_content = true %}
+{%- endif -%}
+
+{%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
+  {% assign has_cta = true %}
+  {% assign has_content = true %}
+{%- endif -%}
+
+{%- if section.settings.button_text_2 != blank and section.settings.button_link_2 != blank -%}
+  {% assign has_cta_2 = true %}
+  {% assign has_content_2 = true %}
+{%- endif -%}
+
+
+{%- if section.settings.button_text == blank and section.settings.button_link != blank -%}
+  {% assign has_link_wrapper = true %}
+{%- endif -%}
+
+{% if image != blank %}
+  {% assign image_size = '2048x2048' %}
+  {% assign background_image = image | img_url: image_size %}
+  {% assign background_image_mobile = image_mobile | img_url: image_size %}
+  {%- capture feature_image -%}
+    <img
+      class="feature-image"
+      alt="{{ image.alt | escape }}"
+      src="{{ image | img_url: image_size }}">
+  {%- endcapture -%}
+{% else %}
+  {%- capture background_image -%}
+    {%- include 'placeholder_svg_uri' placeholder: 'lifestyle-1' -%}
+  {%- endcapture -%}
+  {%- capture feature_image -%}
+    {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg feature-image' }}
+  {%- endcapture -%}
+{% endif %}
+
+{%- capture section_class -%}
+  {{ section.settings.style }}
+  full-width-background
+
+  {% unless has_content %}no-content{% endunless %}
+{%- endcapture -%}
+
+<style>
+
+  @media only screen and (min-width: 720px) {
+    .style{{ section.id }}{
+      	background-image: url('{{ background_image | strip }}');
+    }
+  }
+  @media only screen and (max-width: 719px) {
+    .style{{ section.id }}{
+      	background-image: url('{{ background_image_mobile | strip }}'); 
+        height:100vh;
+    }
+  }
+  
+
+  
+  
+</style>
+
+{%- capture feature_styles -%}
+color: {{ section.settings.text_color }};
+{%- endcapture -%}
+
+<section
+         class="module-container home-full-width-feature {{ section_class | strip_newlines }} style{{ section.id }}"
+         data-section-id="{{ section.id }}"
+         data-section-type="image-with-text-overlay"
+         data-image-with-text-layout="background"
+         >
+  
+  {% if has_link_wrapper %}
+  <a class="home-full-width-feature-link-wrapper" href="{{ section.settings.button_link }}"></a>
+  {% endif %}
+
+  {{ feature_image | strip }}
+
+  
+  
+
+  
+
+  
+  <!--   position left -->
+  {% if  section.settings.text_position  == "left" %}
+  {% if has_content %}
+  <div class="home-full-width-feature-content hide-mobile" data-feature-content>
+    <article class="module-inner" style="text-align:left; width: 50%; margin-left:12%;">
+      {% if section.settings.title != blank %}
+      <h1 class="feature-title" style="{{feature_styles | strip_newlines }}">{{ section.settings.title | escape }}</h1>
+      {% endif %}
+
+      {% if section.settings.caption != blank %}
+      <p class="text-caption" style="{{feature_styles | strip_newlines }}">{{ section.settings.caption }}</p>
+      {% endif %}
+
+      {% if has_cta %}
+      <div class="home-module-cta" style="text-align:left;">
+        <a class="button" href="{{ section.settings.button_link }}">{{section.settings.button_text | escape }}</a>&nbsp;&nbsp;
+        {% if has_cta_2 %}
+        <a class="button" href="{{ section.settings.button_link_2 }}">{{section.settings.button_text_2 | escape }}</a>
+        {% endif %}
+      </div>
+      {% endif %}
+    </article>
+  </div>
+  {% endif %}
+  {% endif %}
+  
+  <!--   position right -->
+  {% if  section.settings.text_position  == "right" %}
+  {% if has_content %}
+  <div class="home-full-width-feature-content hide-mobile" data-feature-content>
+    <article class="module-inner" style="text-align:left; width: 50%; margin-left:12%;">
+      {% if section.settings.title != blank %}
+      <h1 class="feature-title" style="{{feature_styles | strip_newlines }}">{{ section.settings.title | escape }}</h1>
+      {% endif %}
+
+      {% if section.settings.caption != blank %}
+      <p class="text-caption" style="{{feature_styles | strip_newlines }}">{{ section.settings.caption }}</p>
+      {% endif %}
+
+      {% if has_cta %}
+      <div class="home-module-cta" style="text-align:left;">
+        <a class="button" href="{{ section.settings.button_link }}">{{section.settings.button_text | escape }}</a>&nbsp;&nbsp;
+        {% if has_cta_2 %}
+        <a class="button" href="{{ section.settings.button_link_2 }}">{{section.settings.button_text_2 | escape }}</a>
+        {% endif %}
+      </div>
+      {% endif %}
+    </article>
+  </div>
+  {% endif %}
+  {% endif %}
+  
+  <!--   position center -->
+  {% if  section.settings.text_position  == "center" %}
+  {% if has_content %}
+  <div class="home-full-width-feature-content hide-mobile" data-feature-content>
+    <article class="module-inner" >
+      {% if section.settings.title != blank %}
+      <h1 class="feature-title" style="{{feature_styles | strip_newlines }}">{{ section.settings.title | escape }}</h1>
+      {% endif %}
+
+      {% if section.settings.caption != blank %}
+      <p class="text-caption" style="{{feature_styles | strip_newlines }}">{{ section.settings.caption }}</p>
+      {% endif %}
+
+      {% if has_cta %}
+      <div class="home-module-cta" style="text-align:left;">
+        <a class="button" href="{{ section.settings.button_link }}">{{section.settings.button_text | escape }}</a>&nbsp;&nbsp;
+        {% if has_cta_2 %}
+        <a class="button" href="{{ section.settings.button_link_2 }}">{{section.settings.button_text_2 | escape }}</a>
+        {% endif %}
+      </div>
+      {% endif %}
+    </article>
+  </div>
+  {% endif %}
+  {% endif %}
+
+
+
+
+
+</section>
+
+{% schema %}
+{
+  "name": "image with text 05",
+  "settings": [
+    {
+      "type": "select",
+      "id": "style",
+      "label": "Style",
+      "options": [
+        {
+          "value": "default-style",
+          "label": "Default"
+        },
+        {
+          "value": "accent-style",
+          "label": "Accent"
+        },
+        {
+          "value": "contrast-style",
+          "label": "Contrast"
+        }
+      ],
+      "default": "default-style"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000"
+    },
+    {
+      "type": "select",
+      "id": "text_position",
+      "label": "Text and button position",
+      "options": [
+          {
+          "value": "left",
+          "label": "left"
+          },
+          {
+          "value": "center",
+          "label": "center"
+          },
+          {
+          "value": "right",
+          "label": "right"
+          }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Image with text overlay"
+    },
+    {
+      "type": "text",
+      "id": "caption",
+      "label": "Text",
+      "default": "<p>Select imagery and text that relates to your style and story.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Link URL"
+    },
+    {
+      "type": "text",
+      "id": "button_text_2",
+      "label": "Button text 2"
+    },
+    {
+      "type": "url",
+      "id": "button_link_2",
+      "label": "Link URL 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Desktop Image"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity_strength",
+      "label": "Overlay opacity",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "default": 90
+    }
+  ],
+  "presets": [
+    {
+      "category": "Image",
+      "name": "image with text 05"
+    }
+  ]
+}
+
+{% endschema %}

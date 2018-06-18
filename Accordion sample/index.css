@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+		<style>
+		#ball{
+			background: url(https://thumbs.gfycat.com/DimpledInsistentGrebe-max-1mb.gif);
+			width: 300px;
+			height: 300px;
+		}
+		@keyframes ball-bounce {
+			from { background-position: 0px; }
+			to { background-position: -300px; }
+		}
+		@-webkit-keyframes ball-bounce {
+			from { background-position: 0px; }
+			to { background-position: -300px; }
+		}
+		</style>
+
+		<div data-playon="hover" id="ball"></div>
+		<button id="first_btn">Start</button>
+		<button id="second_btn">Stop</button>
+		<button id="third_btn">Stop</button>
+
+		<script>
+		first_btn.addEventListener("mouseover", function(){
+			ball.style.animation = "ball-bounce 0.7s steps(6) infinite";
+			ball.style.webkitAnimation = "ball-bounce 0.7s steps(6) infinite";
+		});
+		second_btn.addEventListener("mouseover", function(){
+			ball.style.animation = "ball-bounce 1s steps(10) infinite";
+			ball.style.webkitAnimation = "ball-bounce 1s steps(10) infinite";
+		});
+		third_btn.addEventListener("mouseover", function(){
+			ball.style.animation = "ball-bounce 0.2s steps(3) infinite";
+			ball.style.webkitAnimation = "ball-bounce 0.2s steps(3) infinite";
+		});
+
+
+		</script>
+
+
+		<style>
+		#ball{
+			background: url(https://thumbs.gfycat.com/DimpledInsistentGrebe-max-1mb.gif);
+			width: 300px;
+			height: 300px;
+			
+		}
+		@keyframes ball-bounce {
+			from { background-position: 0px; }
+			to { background-position: -300px; }
+		}
+		@-webkit-keyframes ball-bounce {
+			from { background-position: 0px; }
+			to { background-position: -300px; }
+		}
+		</style>
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="bower_components/jquery.gifplayer/dist/gifplayer.css">
+<script type="text/javascript" src="bower_components/jquery.gifplayer/dist/jquery.gifplayer.js"></script>
+</body>
+</html>
