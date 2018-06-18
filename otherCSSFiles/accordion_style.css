@@ -1,0 +1,153 @@
+    [data-component-id="801"] .accordion--image {
+      background-image: url('img/main.jpg');
+      background-position: center 33%;
+      background-size: cover;
+    }
+
+    @media (min-width: 768px) {
+      [data-component-id="801"] .accordion--image {
+        background-image: url('img/main.jpg');
+      }
+    }
+
+    @media (min-width: 1024px) {
+      [data-component-id="801"] .accordion {
+        background-image: url('img/accordion_main.jpg');
+        background-position: center 33%;
+        background-size: cover;
+      }
+
+      [data-component-id="801"] .accordion._is-open {
+        background-image: none;
+      }
+    }
+
+    [data-component-id="801"].accordion--container {
+      background-color: #ffb84d;
+    }
+
+    @media (min-width: 768px) {
+      [data-component-id="801"].accordion--container {
+        background-color: #ffb84d;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      [data-component-id="801"].accordion--container {
+        background-color: #ffb84d;
+      }
+    }
+
+    [data-component-id="801"] .accordion-item--content-title {
+      color: #263645;
+    }
+
+    [data-component-id="801"] .accordion-item--content-body {
+      color: #4E4E4E;
+    }
+
+    [data-component-id="801"] .accordion-item--fine-print {
+      color: #929292
+    }
+
+    [data-component-id="801"] .accordion-item--nav-label {
+      color: #000000;
+    }
+
+    [data-component-id="801"] .accordion-item--cover-blurb {
+      color: #263645;
+    }
+/*    part 2*/
+
+     [data-component-id="803"].accordion-item {
+      background-image: none;
+    }
+
+    [data-component-id="803"].accordion-item._item-open {
+      background-image: url('https://www.harrys.com/harrys-cdnx-prod/assets/images/accordion_item_small_background_images/attachments/dc28a1bd695af1f7d436c397db16c450c8ddd616.jpg');
+      background-position: 0 0 0 0;
+    }
+
+    @media (min-width: 768px) {
+      [data-component-id="803"].accordion-item {
+        background-image: none;
+      }
+
+      [data-component-id="803"].accordion-item._item-open {
+        background-image: url('https://www.harrys.com/harrys-cdnx-prod/assets/images/accordion_item_small_background_images/attachments/dc28a1bd695af1f7d436c397db16c450c8ddd616.jpg');
+        background-position: center;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      [data-component-id="803"].accordion-item._item-open {
+        background-image: url('https://www.harrys.com/harrys-cdnx-prod/assets/images/accordion_item_small_background_images/attachments/dc28a1bd695af1f7d436c397db16c450c8ddd616.jpg');
+        background-position: center;
+      }
+    }
+
+
+
+/* part 3*/
+
+  [data-component-id="804"].accordion-item {
+      background-image: none;
+    }
+
+    [data-component-id="804"].accordion-item._item-open {
+      background-image: url('https://www.harrys.com/harrys-cdnx-prod/assets/images/accordion_item_default_background_images/attachments/fb3339d8ad8fc146a05a453e572a45139a0d6569.jpg');
+      background-position: 0 0 0 0;
+    }
+
+    @media (min-width: 768px) {
+      [data-component-id="804"].accordion-item {
+        background-image: none;
+      }
+
+      [data-component-id="804"].accordion-item._item-open {
+        background-image: url('https://www.harrys.com/harrys-cdnx-prod/assets/images/accordion_item_small_background_images/attachments/3db44a7344c682ea857c0ef379c75341e804bebe.jpg');
+        background-position: center;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      [data-component-id="804"].accordion-item._item-open {
+        background-image: url('img/22.jpg');
+        background-position: center;
+      }
+    }
+
+
+/*    part 4*/
+    [data-component-id="805"].accordion-item {
+      background-image: none;
+    }
+
+    [data-component-id="805"].accordion-item._item-open {
+      background-image: url('https://www.harrys.com/harrys-cdnx-prod/assets/images/accordion_item_default_background_images/attachments/b957ec04defd3d91ac78632f5f31c10c35fa5cf4.jpg');
+      background-position: 0 0 0 0;
+    }
+
+    @media (min-width: 768px) {
+      [data-component-id="805"].accordion-item {
+        background-image: none;
+      }
+
+      [data-component-id="805"].accordion-item._item-open {
+        background-image: url('https://www.harrys.com/harrys-cdnx-prod/assets/images/accordion_item_small_background_images/attachments/78a499a0cb8e6d85a3541488b40fb07a81782ff4.jpg');
+        background-position: center;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      [data-component-id="805"].accordion-item._item-open {
+        background-image: url('img/33.jpg');
+        background-position: center;
+      }
+    }
+
+
+
+
+
+    
