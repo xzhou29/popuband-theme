@@ -373,20 +373,20 @@
         "type": "2-new-product-page",
         "settings": {
           "image_1": "shopify:\/\/shop_images\/led.jpg",
-          "title_1": "state-of-the-art",
-          "content_1": "72-LED silk smooth fretboard shows you exactly where to put your fingers to learn chords and enhance muscle memory.",
+          "title_1": "Lights Up",
+          "content_1": "72-LED fretboard lights up your learning and performance, literally. Memorize chords hassle-free. Mesmerize the audience with dazzling lights.",
           "image_2": "shopify:\/\/shop_images\/1.1.jpg",
           "title_2": "Premium quality",
           "content_2": "Comfortable grip with 18:1 quasi-closed tuning pegs, lightweight and durable build.",
           "image_3": "shopify:\/\/shop_images\/8100940-2__4.jpg",
-          "title_3": "Premium Materials",
-          "content_3": "First class spruce soundboard and Aquaila strings create clear and sweet sound.",
+          "title_3": "Strum On",
+          "content_3": "Strum a Populele. Hear its clear and sweet sound. Designed to optimize your strumming experience, Populele is made with first-class spruce soundboard and high-quality Aquila strings.",
           "image_4": "shopify:\/\/shop_images\/4.2.jpg",
-          "title_4": "wireless connection",
-          "content_4": "Bluetooth enabled smart ukulele  that connects to the free APP. Can be charged by regular power source with USB to Micro USB cable.",
+          "title_4": "Geek Out",
+          "content_4": "Amaze your techie friends with Populele’s built-in Bluetooth. Connect Populele with its companion app and rock on.",
           "image_5": "shopify:\/\/shop_images\/3.1.jpg",
-          "title_5": "Accessory Package",
-          "content_5": "Get all tools you need to play from a beginner to pro.",
+          "title_5": "Travel Great",
+          "content_5": "Take Populele anywhere. Lightweight and portable, Populele is your perfect travel companion. Made with high quality materials, Populele is built to last.",
           "mobile_image_1": "shopify:\/\/shop_images\/iPhone_6-7-8_5.jpg",
           "mobile_image_2": "shopify:\/\/shop_images\/iPhone_6-7-8_7_e29e00e6-21fd-4afa-bf06-41ecc3122a71.jpg",
           "mobile_image_3": "shopify:\/\/shop_images\/iPhone_6-7-8_6.jpg",
@@ -795,15 +795,15 @@
       "video-alternating-content": {
         "type": "video-alternating-content",
         "blocks": {
-          "1526419008398": {
-            "type": "image",
+          "1529339213595": {
+            "type": "video",
             "settings": {
               "media_alignment": "left",
-              "title": "Perfect Musical Gift for Everyone",
-              "caption": "A perfect musical gift for everyone",
-              "button_text": "Learn More",
-              "button_link": "shopify:\/\/pages\/musical-gift",
-              "image": "shopify:\/\/shop_images\/theadamgregory.jpg"
+              "title": "Alternating content",
+              "caption": "Employ up to three alternating features with an option to align images or videos to the left\/right and include a call to action below.",
+              "button_text": "",
+              "button_link": "",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
             }
           },
           "1526419012768": {
@@ -830,7 +830,7 @@
           }
         },
         "block_order": [
-          "1526419008398",
+          "1529339213595",
           "1526419012768",
           "1526419018656"
         ],
@@ -856,7 +856,7 @@
           "button_link": "shopify:\/\/products\/populele-with-accessory",
           "button_text_2": "LEARN MORE",
           "button_link_2": "shopify:\/\/pages\/faq",
-          "image_mobile": "shopify:\/\/shop_images\/banner_9509b3df-15ef-4e55-b979-25ddc3c1a625.jpg",
+          "image_mobile": "shopify:\/\/shop_images\/banner3_a1515068-a0a5-4314-b6a3-fadc33c44b42.gif",
           "image": "shopify:\/\/shop_images\/banner_5.29.gif",
           "overlay_opacity_strength": 0
         }
@@ -951,7 +951,7 @@
         "type": "2-new-imageTextOverlay",
         "settings": {
           "style": "default-style",
-          "text_color": "#000000",
+          "text_color": "#ffffff",
           "text_position": "center",
           "title": "The Perfect Smart Musical Gift for Everyone",
           "caption": "Start to enjoy the fun of music with no background",
@@ -960,8 +960,8 @@
           "button_text_2": "",
           "button_link_2": "",
           "image_mobile": "shopify:\/\/shop_images\/the_road_to_space-wallpaper-1920x540.jpg",
-          "image": "shopify:\/\/shop_images\/BANNER1.png",
-          "overlay_opacity_strength": 20
+          "image": "shopify:\/\/shop_images\/Populele_-Smart_Ukulele_20180618012220.jpg",
+          "overlay_opacity_strength": 40
         }
       },
       "2-musicGift-imageTextOverlay": {
@@ -1113,11 +1113,11 @@
         "type": "video-video-with-text",
         "settings": {
           "style": "default-style",
-          "title": "Video with text",
-          "caption": "<p>Select video and text that relates to your style and story.<\/p>",
+          "title": "MORE THAN AN UKULELE",
+          "caption": "<p>Learn &amp; Play in minutes! With no music background, you are able to follow the easy tutorials and start to play chords and songs in minutes!&nbsp;<\/p>",
           "button_text": "",
           "button_link": "",
-          "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+          "video_url": "https:\/\/www.youtube.com\/watch?v=8q8ANU2_ocw&t=4s",
           "media_layout": "regular"
         }
       },
@@ -1173,8 +1173,8 @@
           "1528995191906": {
             "type": "rich_text",
             "settings": {
-              "title": "MORE THAN AN UKULELE",
-              "content": "<p>Learn &amp; Play in minutes! With no music background, you are able to follow the easy tutorials and start to play chords and songs in minutes!&nbsp;<\/p>"
+              "title": "ENJOY THE FUN RIGHT AWAY",
+              "content": "<p>Play your favorite songs with Populele.&nbsp;Play your favorite sounds and samples using multiple positions and a range of intuitive techniques.&nbsp;Revolutionary digital strings.<\/p>"
             }
           }
         },
@@ -1192,8 +1192,8 @@
           "style": "default-style",
           "text_color": "#000",
           "text_position": "center",
-          "title": "Image with text overlay",
-          "caption": "<p>Select imagery and text that relates to your style and story.<\/p>",
+          "title": "A Smart Music Self-Learning Tool",
+          "caption": "Start to play your favorite songs in minutes!",
           "button_text": "",
           "button_link": "",
           "button_text_2": "",
@@ -1209,8 +1209,8 @@
           "style": "default-style",
           "text_color": "#000",
           "text_position": "center",
-          "title": "Image with text overlay",
-          "caption": "<p>Select imagery and text that relates to your style and story.<\/p>",
+          "title": "Create for All Music Lovers",
+          "caption": "Discover your talent in music.",
           "button_text": "",
           "button_link": "",
           "button_text_2": "",
@@ -1218,6 +1218,18 @@
           "image_mobile": "",
           "image": "shopify:\/\/shop_images\/Untitled-1_8d338d2a-9f57-4967-bcb0-26ac7dde6d84.jpg",
           "overlay_opacity_strength": 90
+        }
+      },
+      "video-video-with-text-2": {
+        "type": "video-video-with-text-2",
+        "settings": {
+          "style": "default-style",
+          "title": "Populele - Smart Ukulele",
+          "caption": "<p>Enhance your page with a video that relates to your style and story.<\/p>",
+          "button_text": "",
+          "button_link": "",
+          "video_url": "https:\/\/www.youtube.com\/watch?v=ERrxLluowbA",
+          "media_layout": "regular"
         }
       }
     },
