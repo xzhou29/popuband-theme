@@ -5,7 +5,7 @@
 {% endcomment %}
 
 <nav class="navigation {% if style %}{{ style }}{% endif %}">
-  <ul class="primary">
+  <ul class="primary" id="myP">
     {% for link in linklists[section.settings.menu].links %}
       {%
         include 'is-dropdown-or-meganav',
@@ -23,7 +23,7 @@
       {% endif %}
 
       <li class="{% if is_dropdown or is_meganav %}has-dropdown{% if is_meganav %} has-mega-nav{% else %} simple-dropdown{% endif %}{% endif %}">
-        <a class="main-nav-item" href="{{ link.url }}"{% if is_dropdown or is_meganav %} aria-haspopup{% endif %}>
+        <a  class="main-nav-item" href="{{ link.url }}"{% if is_dropdown or is_meganav %} aria-haspopup{% endif %}>
           {{ link.title }}
 
           {% if is_dropdown or is_meganav %}

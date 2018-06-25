@@ -42,9 +42,9 @@ assets/socicon-webfont.woff:
 assets/theme.js.liquid:
   development: 2018-06-06T10:28:39-05:00   3b0ec81d651d5919bc988d59aa4b8f6a
 assets/theme.scss.liquid:
-  development: 2018-06-18T11:12:39-05:00   12d3d550760e71bc897fc8e32ac97b6c
+  development: 2018-06-21T16:12:25-05:00   a99bf1e67c78b12fb016766ca274a8f9
 config/settings_data.json:
-  development: 2018-06-18T16:46:58-05:00   478b9280ab447d1026adc90d8015a39e
+  development: 2018-06-22T17:29:14-05:00   73679a38eaf7adf4c9775518702c8aef
 config/settings_schema.json:
   development: 2018-03-04T13:35:42-06:00   f4ec663a254896ea2eb81dd353c17604
 layout/theme.liquid:
@@ -58,13 +58,13 @@ sections/1-ImgTextOverlay.liquid:
 sections/1-NewButtonLightsTwinkle.liquid:
   development: 2018-04-20T11:07:53-05:00   f0e6acb62011da3b0a89bd1cbdbf1969
 sections/1-accordion_2.liquid:
-  development: 2018-06-20T11:36:35-05:00   a6fc766c8047e278a17975eeb052e839
+  development: 2018-06-22T13:27:59-05:00   4b9d8fda416944c478b34a9521775a3f
 sections/1-contentGrid.liquid:
   development: 2018-04-23T11:50:30-05:00   1b80458bd2883a3add3934d11b87a2ef
 sections/1-flexbox-accordion.liquid:
   development: 2018-04-06T11:47:14-05:00   9c7093e3e01ab3956d7709c9fae1ebd6
 sections/1-newTestimonials.liquid:
-  development: 2018-06-20T10:26:43-05:00   cfca9e6b2ab69d52d0e0e84e8cdf68d5
+  development: 2018-06-22T10:38:46-05:00   6a98e4d60d03aa0c31b5856511697af9
 sections/1-newbutton-ImgTextOverlay.liquid:
   development: 2018-05-18T10:02:35-05:00   01b27e0853e8fdd9dc0f45864ac8dc4d
 sections/1-popup_iframVideo.liquid:
@@ -73,12 +73,20 @@ sections/1-split-screen.liquid:
   development: 2018-04-02T10:02:18-05:00   12d47a4559ce4aaaa0d4da84b7837668
 sections/1-testimonials_test.liquid:
   development: 2018-06-14T10:47:15-05:00   dbe4cf54526d8f3bb05b6ecc7f448180
+sections/2-app-alternatingContent.liquid:
+  development: 2018-06-22T17:28:05-05:00   50cdb8824d425111b50dd6e9af4adb5c
+sections/2-app-imageText01.liquid:
+  development: 2018-06-22T17:26:03-05:00   8be39779e7016881f8c7e738adcfd876
+sections/2-app-imageText02.liquid:
+  development: 2018-06-22T17:25:55-05:00   0ee3655237ba8512cce64a6b540e9265
 sections/2-musicGift-imageTextOverlay.liquid:
   development: 2018-06-13T10:14:42-05:00   8b373c17bd677820a0054d3fd9bf4b3b
 sections/2-musicGift-imageTextOverlay2.liquid:
   development: 2018-06-14T10:28:07-05:00   9e522a225a4c734370db5f25dce04ef3
 sections/2-new-header.liquid:
   development: 2018-06-13T12:31:46-05:00   f8cad4d72d7e6194df97f86063de44c7
+sections/2-new-image-text.liquid:
+  development: 2018-06-22T15:33:09-05:00   6906264a444e4b8e1e6c900dcc641fc6
 sections/2-new-imageTextOverlay.liquid:
   development: 2018-06-18T10:02:18-05:00   c39ffe8558387e03c44e118d074ab7f6
 sections/2-new-imageTextOverlay02.liquid:
@@ -90,7 +98,7 @@ sections/2-new-imageTextOverlay04.liquid:
 sections/2-new-imageTextOverlay05.liquid:
   development: 2018-06-14T12:24:34-05:00   c5c6919f62d7d4f34123d0cc3b4a1809
 sections/2-new-product-page.liquid:
-  development: 2018-06-19T10:26:24-05:00   cf2e918c9c9dcf6789772f8b50e5f02d
+  development: 2018-06-21T16:01:46-05:00   c44a7720e973db136d3fdfb8a0e9e176
 sections/2-new-slideshow-2.liquid:
   development: 2018-05-30T15:19:03-05:00   eda46b0f60fb7eab069d5bd94ae6cb2b
 sections/2-new-slideshow.liquid:
@@ -98,7 +106,7 @@ sections/2-new-slideshow.liquid:
 sections/2-product-feature-tabs.liquid:
   development: 2018-06-18T14:13:17-05:00   d888d436b9663ea444ec357095f80827
 sections/2-specifications-2.liquid:
-  development: 2018-06-18T16:46:44-05:00   cd0d7428fc7a68179b81dc74d03770db
+  development: 2018-06-22T02:29:35-05:00   2cade23b9ce9a3340bbec45b3a3e81a8
 sections/2-specifications.liquid:
   development: 2018-06-14T15:38:14-05:00   506afee59803635830f448c316cfc628
 sections/app-alternating-content.liquid:
@@ -124,7 +132,7 @@ sections/customize-lights-twinkle.liquid:
 sections/customize-support-icons.liquid:
   development: 2018-03-12T10:23:36-05:00   5393a3f25b02037b0ca174cc608121a4
 sections/general-footer.liquid:
-  development: 2018-06-08T10:00:42-05:00   6d353ed2401ae3d00ae8cc3d207bd583
+  development: 2018-06-22T14:52:57-05:00   eec97570914070b34efa0d68580202f2
 sections/general-header.liquid:
   development: 2018-05-22T15:25:21-05:00   727fc1e1dfef6263687233653df4becc
 sections/general-newsletter.liquid:
@@ -153,6 +161,8 @@ sections/home-slideshow.liquid:
   development: 2018-06-14T11:43:52-05:00   1bd39d2a57b8918e297250d29b0994ed
 sections/home-testimonials.liquid:
   development: 2018-06-18T10:25:17-05:00   a5b326de9a3e4ba2de1bbd5520ec9623
+sections/home-text-2.liquid:
+  development: 2018-06-22T12:20:21-05:00   598acf2a860d547bfcf936a660327ebc
 sections/home-text-columns-with-images.liquid:
   development: 2018-03-04T13:35:37-06:00   c113b8905c51bc5b8fec15753cda90b0
 sections/home-text.liquid:
@@ -262,7 +272,7 @@ snippets/navigation-mega-nav.liquid:
 snippets/navigation-menu.liquid:
   development: 2018-03-04T13:35:41-06:00   1f9f8e2b38fd49d168e27872791b94d8
 snippets/navigation.liquid:
-  development: 2018-03-04T13:35:41-06:00   f7a68e58840381ff4cb698c858f4d46a
+  development: 2018-06-22T10:34:15-05:00   6a116d810c8c3da0d535686c96b42da8
 snippets/newsletter.liquid:
   development: 2018-03-04T13:35:41-06:00   9f02c94e45e1b1d46378857d9b3ee75e
 snippets/pagination.liquid:
@@ -326,11 +336,11 @@ templates/customers/reset_password.liquid:
 templates/gift_card.liquid:
   development: 2018-03-04T13:35:41-06:00   42eb49220aabdbc50aba61268b99fab4
 templates/index.liquid:
-  development: 2018-06-12T10:50:30-05:00   82c1349a64059902f287296b43b17c96
+  development: 2018-06-22T10:33:14-05:00   ddce275b2fc578d1a1b960abc37225ae
 templates/list-collections.liquid:
   development: 2018-03-04T13:35:41-06:00   1b12a002b4bab278848e90231057f2e3
 templates/page.app.liquid:
-  development: 2018-05-21T14:37:57-05:00   96230cde3a55c6ab6b2aa07c45950368
+  development: 2018-06-22T17:28:30-05:00   1d9ac2834cbcfe3b51be554ce06757ee
 templates/page.contact.liquid:
   development: 2018-05-22T10:16:11-05:00   683d4d365dcd7efb37c56ac7f235acbe
 templates/page.faq.liquid:
@@ -344,11 +354,11 @@ templates/page.musical-gift.liquid:
 templates/page.press.liquid:
   development: 2018-05-22T10:14:56-05:00   1134bdf86ccc8a059dbb37e16646526a
 templates/page.product.liquid:
-  development: 2018-06-07T10:38:05-05:00   669a6b2052a3f7b47b04f3a927442bf7
+  development: 2018-06-20T11:55:09-05:00   dabdd3f814a8f5924263673cd691a206
 templates/page.ukulele-learning.liquid:
   development: 2018-06-11T14:04:36-05:00   fc47c390a3cdcfa34c7e349be719becc
 templates/page.why-populele.liquid:
-  development: 2018-06-18T11:24:15-05:00   3f5ed6cd6c483f195766e561c71310e9
+  development: 2018-06-22T15:35:14-05:00   7e1ba882a124605b7f5ebc69a80e6ad9
 templates/password.liquid:
   development: 2018-03-04T13:35:41-06:00   3e72125f32324f2ff3399b1de830c8d1
 templates/product.liquid:

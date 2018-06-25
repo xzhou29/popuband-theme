@@ -2347,12 +2347,6 @@ $local-grey: #333;
   }
 }
 
-.new-header-effect {
-    background-color: $color-header-background;
-    border-bottom: 1px solid $color-border;
-
-}
-
 
 .main-header {
   @extend %clearfix;
@@ -2401,6 +2395,7 @@ $local-grey: #333;
     .main-header { border: 0 !important; }
   }
 }
+
 
 
 .branding {
@@ -3176,6 +3171,15 @@ input.header-search-input {
   .touch & {
     display: none;
   }
+}
+
+.new-header-effect {
+    background-color: $color-header-background;
+    border-bottom: 1px solid $color-border;
+    .navigation a{
+      color:#495053;
+    }
+
 }
 
 .below-header {

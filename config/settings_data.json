@@ -381,7 +381,7 @@
           "image_3": "shopify:\/\/shop_images\/8100940-2__4.jpg",
           "title_3": "Strum On",
           "content_3": "Strum a Populele. Hear its clear and sweet sound. Designed to optimize your strumming experience, Populele is made with first-class spruce soundboard and high-quality Aquila strings.",
-          "image_4": "shopify:\/\/shop_images\/4.2.jpg",
+          "image_4": "shopify:\/\/shop_images\/bluetooth_moduel4.1_0ea27344-1ef4-45d0-a63b-44a087190260.jpg",
           "title_4": "Geek Out",
           "content_4": "Amaze your techie friends with Populele’s built-in Bluetooth. Connect Populele with its companion app and rock on.",
           "image_5": "shopify:\/\/shop_images\/3.1.jpg",
@@ -390,8 +390,8 @@
           "mobile_image_1": "shopify:\/\/shop_images\/iPhone_6-7-8_5.jpg",
           "mobile_image_2": "shopify:\/\/shop_images\/iPhone_6-7-8_7_e29e00e6-21fd-4afa-bf06-41ecc3122a71.jpg",
           "mobile_image_3": "shopify:\/\/shop_images\/iPhone_6-7-8_6.jpg",
-          "mobile_image_4": "shopify:\/\/shop_images\/iPhone_6-7-8_8_3f1e6d57-f416-4be1-8bf1-51b4570610ad.jpg",
-          "mobile_image_5": "shopify:\/\/shop_images\/iPhone_6-7-8_9_1ac01409-6374-4b77-9a40-201168398744.jpg"
+          "mobile_image_4": "shopify:\/\/shop_images\/iPhone_6-7-8_8_2d5e7a1e-d6dc-4cf7-9f12-06ed3fbd5cd2.png",
+          "mobile_image_5": "shopify:\/\/shop_images\/iPhone_6-7-8_9_f1732684-ac0a-46b9-9755-2d1bcc23a9a3.png"
         }
       },
       "2-new-slideshow": {
@@ -806,38 +806,38 @@
               "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
             }
           },
-          "1526419012768": {
-            "type": "image",
+          "1529680127137": {
+            "type": "video",
             "settings": {
               "media_alignment": "right",
-              "title": "Smart Music Learning Tool",
-              "caption": "A pferfect musical gift for everyone",
-              "button_text": "Learn more",
-              "button_link": "shopify:\/\/pages\/ukulele-learning",
-              "image": "shopify:\/\/shop_images\/2.jpg"
+              "title": "Alternating content",
+              "caption": "Employ up to three alternating features with an option to align images or videos to the left\/right and include a call to action below.",
+              "button_text": "",
+              "button_link": "",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
             }
           },
-          "1526419018656": {
-            "type": "image",
+          "1529680130935": {
+            "type": "video",
             "settings": {
               "media_alignment": "left",
-              "title": "For All Music Lovers",
-              "caption": "A perfect musical gift for music lovers.",
-              "button_text": "Learn more",
-              "button_link": "shopify:\/\/pages\/music-lovers",
-              "image": "shopify:\/\/shop_images\/square10.jpg"
+              "title": "Alternating content",
+              "caption": "Employ up to three alternating features with an option to align images or videos to the left\/right and include a call to action below.",
+              "button_text": "",
+              "button_link": "",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
             }
           }
         },
         "block_order": [
           "1529339213595",
-          "1526419012768",
-          "1526419018656"
+          "1529680127137",
+          "1529680130935"
         ],
         "settings": {
-          "style": "default-style",
+          "style": "contrast-style",
           "title": "",
-          "show_borders": true
+          "show_borders": false
         }
       },
       "2-specifications": {
@@ -857,7 +857,7 @@
           "button_text_2": "LEARN MORE",
           "button_link_2": "shopify:\/\/pages\/faq",
           "image_mobile": "shopify:\/\/shop_images\/banner3_a1515068-a0a5-4314-b6a3-fadc33c44b42.gif",
-          "image": "shopify:\/\/shop_images\/banner_5.29.gif",
+          "image": "shopify:\/\/shop_images\/Untitled-1_90f966fb-9802-4341-a6ea-5912725dca49.jpg",
           "overlay_opacity_strength": 0
         }
       },
@@ -955,12 +955,12 @@
           "text_position": "center",
           "title": "The Perfect Smart Musical Gift for Everyone",
           "caption": "Start to enjoy the fun of music with no background",
-          "button_text": "SHOP NOw",
+          "button_text": "SHOP NOW",
           "button_link": "shopify:\/\/products\/populele-with-accessory",
           "button_text_2": "",
           "button_link_2": "",
-          "image_mobile": "shopify:\/\/shop_images\/the_road_to_space-wallpaper-1920x540.jpg",
-          "image": "shopify:\/\/shop_images\/Populele_-Smart_Ukulele_20180618012220.jpg",
+          "image_mobile": "shopify:\/\/shop_images\/firefox_2018-06-18_15-02-38-2.jpg",
+          "image": "shopify:\/\/shop_images\/firefox_2018-06-18_15-02-38-2.jpg",
           "overlay_opacity_strength": 40
         }
       },
@@ -1112,9 +1112,9 @@
       "video-video-with-text": {
         "type": "video-video-with-text",
         "settings": {
-          "style": "default-style",
-          "title": "MORE THAN AN UKULELE",
-          "caption": "<p>Learn &amp; Play in minutes! With no music background, you are able to follow the easy tutorials and start to play chords and songs in minutes!&nbsp;<\/p>",
+          "style": "contrast-style",
+          "title": "",
+          "caption": "",
           "button_text": "",
           "button_link": "",
           "video_url": "https:\/\/www.youtube.com\/watch?v=8q8ANU2_ocw&t=4s",
@@ -1124,12 +1124,12 @@
       "home-image-with-text": {
         "type": "home-image-with-text",
         "settings": {
-          "style": "default-style",
-          "title": "Image with text",
-          "caption": "<p>Select imagery and text that relates to your style and story.<\/p>",
+          "style": "contrast-style",
+          "title": "",
+          "caption": "",
           "button_text": "",
           "button_link": "",
-          "image": "shopify:\/\/shop_images\/11_8d0d5ef9-27b4-4609-98ec-08b8e22dfd5a.jpg",
+          "image": "shopify:\/\/shop_images\/EdisonAwds16_BRONZE.1.png",
           "media_layout": "regular"
         }
       },
@@ -1146,7 +1146,7 @@
           "button_text_2": "",
           "button_link_2": "",
           "image_mobile": "",
-          "image": "shopify:\/\/shop_images\/s1-2.jpg",
+          "image": "shopify:\/\/shop_images\/parents.png",
           "overlay_opacity_strength": 20
         }
       },
@@ -1163,7 +1163,7 @@
           "button_text_2": "",
           "button_link_2": "",
           "image_mobile": "",
-          "image": "shopify:\/\/shop_images\/Capture.PNG",
+          "image": "shopify:\/\/shop_images\/parents2.png",
           "overlay_opacity_strength": 0
         }
       },
@@ -1173,8 +1173,8 @@
           "1528995191906": {
             "type": "rich_text",
             "settings": {
-              "title": "ENJOY THE FUN RIGHT AWAY",
-              "content": "<p>Play your favorite songs with Populele.&nbsp;Play your favorite sounds and samples using multiple positions and a range of intuitive techniques.&nbsp;Revolutionary digital strings.<\/p>"
+              "title": "2018 Edison Awards Winner",
+              "content": "<p>An Innovation that changes the way we learn a string instrument, creating excellent learning &amp; playing experience for beginners.&nbsp;<\/p>"
             }
           }
         },
@@ -1182,7 +1182,7 @@
           "1528995191906"
         ],
         "settings": {
-          "style": "default-style",
+          "style": "contrast-style",
           "show_borders": false
         }
       },
@@ -1190,7 +1190,7 @@
         "type": "2-new-imageTextOverlay04",
         "settings": {
           "style": "default-style",
-          "text_color": "#000",
+          "text_color": "#ffffff",
           "text_position": "center",
           "title": "A Smart Music Self-Learning Tool",
           "caption": "Start to play your favorite songs in minutes!",
@@ -1199,7 +1199,7 @@
           "button_text_2": "",
           "button_link_2": "",
           "image_mobile": "",
-          "image": "shopify:\/\/shop_images\/banner2.png",
+          "image": "shopify:\/\/shop_images\/banner2_7ebf9743-e07a-4f77-8cc5-2227e4adf6be.png",
           "overlay_opacity_strength": 90
         }
       },
@@ -1207,7 +1207,7 @@
         "type": "2-new-imageTextOverlay05",
         "settings": {
           "style": "default-style",
-          "text_color": "#000",
+          "text_color": "#ffffff",
           "text_position": "center",
           "title": "Create for All Music Lovers",
           "caption": "Discover your talent in music.",
@@ -1216,7 +1216,7 @@
           "button_text_2": "",
           "button_link_2": "",
           "image_mobile": "",
-          "image": "shopify:\/\/shop_images\/Untitled-1_8d338d2a-9f57-4967-bcb0-26ac7dde6d84.jpg",
+          "image": "shopify:\/\/shop_images\/banner3.png",
           "overlay_opacity_strength": 90
         }
       },
@@ -1224,12 +1224,188 @@
         "type": "video-video-with-text-2",
         "settings": {
           "style": "default-style",
-          "title": "Populele - Smart Ukulele",
-          "caption": "<p>Enhance your page with a video that relates to your style and story.<\/p>",
+          "title": "",
+          "caption": "",
           "button_text": "",
           "button_link": "",
           "video_url": "https:\/\/www.youtube.com\/watch?v=ERrxLluowbA",
-          "media_layout": "regular"
+          "media_layout": "highlight"
+        }
+      },
+      "home-video-with-text": {
+        "type": "home-video-with-text",
+        "settings": {
+          "style": "default-style",
+          "title": "",
+          "caption": "",
+          "button_text": "",
+          "button_link": "",
+          "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+          "media_layout": "highlight"
+        }
+      },
+      "home-text-columns-with-images": {
+        "type": "home-text-columns-with-images",
+        "blocks": {
+          "1529598944613": {
+            "type": "text_column",
+            "settings": {
+              "title": "Feature title",
+              "caption": "<p>Display up to six features with an option to toggle images on or off, and add unique calls to action.<\/p>",
+              "button_text": "",
+              "button_link": "",
+              "image": "shopify:\/\/shop_images\/IMG_1246.png"
+            }
+          },
+          "1529598946937": {
+            "type": "text_column",
+            "settings": {
+              "title": "Feature title",
+              "caption": "<p>Display up to six features with an option to toggle images on or off, and add unique calls to action.<\/p>",
+              "button_text": "",
+              "button_link": "",
+              "image": "shopify:\/\/shop_images\/4_16_81326.JPG"
+            }
+          },
+          "1529598948273": {
+            "type": "text_column",
+            "settings": {
+              "title": "Feature title",
+              "caption": "<p>Display up to six features with an option to toggle images on or off, and add unique calls to action.<\/p>",
+              "button_text": "",
+              "button_link": "",
+              "image": "shopify:\/\/shop_images\/img_1312.png"
+            }
+          }
+        },
+        "block_order": [
+          "1529598944613",
+          "1529598946937",
+          "1529598948273"
+        ],
+        "settings": {
+          "style": "contrast-style",
+          "title": "Text columns with images"
+        }
+      },
+      "home-text-2": {
+        "type": "home-text-2",
+        "blocks": {
+          "1529688098927": {
+            "type": "rich_text",
+            "settings": {
+              "title": "Rich text",
+              "content": "<p>Use this section to welcome customers to your store, say a bit about your brand, or share news and seasonal promotions.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1529688098927"
+        ],
+        "settings": {
+          "style": "default-style",
+          "show_borders": false
+        }
+      },
+      "2-new-image-text": {
+        "type": "2-new-image-text",
+        "blocks": {
+          "1529699384788": {
+            "type": "rich_text",
+            "settings": {
+              "title": "Rich text",
+              "content": "<p>Use this section to welcome customers to your store, say a bit about your brand, or share news and seasonal promotions.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1529699384788"
+        ],
+        "settings": {
+          "style": "default-style",
+          "show_borders": false
+        }
+      },
+      "2-app-imageText01": {
+        "type": "2-app-imageText01",
+        "settings": {
+          "style": "default-style",
+          "text_color": "#000",
+          "text_position": "center",
+          "title": "Image with text overlay",
+          "caption": "<p>Select imagery and text that relates to your style and story.<\/p>",
+          "button_text": "",
+          "button_link": "",
+          "button_text_2": "",
+          "button_link_2": "",
+          "image_mobile": "",
+          "image": "",
+          "overlay_opacity_strength": 90
+        }
+      },
+      "2-app-alternatingContent": {
+        "type": "2-app-alternatingContent",
+        "blocks": {
+          "1529706542400": {
+            "type": "video",
+            "settings": {
+              "media_alignment": "left",
+              "title": "Alternating content",
+              "caption": "Employ up to three alternating features with an option to align images or videos to the left\/right and include a call to action below.",
+              "button_text": "",
+              "button_link": "",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+            }
+          },
+          "1529706545372": {
+            "type": "video",
+            "settings": {
+              "media_alignment": "right",
+              "title": "Alternating content",
+              "caption": "Employ up to three alternating features with an option to align images or videos to the left\/right and include a call to action below.",
+              "button_text": "",
+              "button_link": "",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+            }
+          },
+          "1529706547839": {
+            "type": "video",
+            "settings": {
+              "media_alignment": "left",
+              "title": "Alternating content",
+              "caption": "Employ up to three alternating features with an option to align images or videos to the left\/right and include a call to action below.",
+              "button_text": "",
+              "button_link": "",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+            }
+          }
+        },
+        "block_order": [
+          "1529706542400",
+          "1529706545372",
+          "1529706547839"
+        ],
+        "settings": {
+          "style": "default-style",
+          "title": "",
+          "show_borders": false
+        }
+      },
+      "2-app-imageText02": {
+        "type": "2-app-imageText02",
+        "settings": {
+          "style": "default-style",
+          "text_color": "#000",
+          "text_position": "center",
+          "title": "Image with text overlay",
+          "caption": "<p>Select imagery and text that relates to your style and story.<\/p>",
+          "button_text": "",
+          "button_link": "",
+          "button_text_2": "",
+          "button_link_2": "",
+          "image_mobile": "",
+          "image": "",
+          "overlay_opacity_strength": 90
         }
       }
     },

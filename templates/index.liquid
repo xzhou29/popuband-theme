@@ -1,4 +1,58 @@
+<style>
+/* 
+.header-tools .navigation{
+  
+  a{
+   
+	color:#fff;
+ 
+    &:hover {
+      color: #fff;
+    }
+  }
+
+}
+  
+.header-tools .navigation a:hover {
+   
+	color:#fff;
+}
+   */
+  
+/* .new-header-effect {
+    color:#495053;
+}
+   */
+  
+  .test {
+    .header-tools .navigation a{
+
+
+
+      color:#fff;
+
+    }
+  }
+
+</style>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("myP").className = "test";
+    } else {
+        document.getElementById("myP").className = "";
+    }
+}
+</script>
+
+
 {% section 'home-slideshow' %}
 
 
 {{ content_for_index }}
+
+
+
