@@ -1,0 +1,154 @@
+{% assign media_layout = section.settings.media_layout %}
+{% assign video_url = section.settings.video_url %}
+{% assign video_url_2 = section.settings.video_url_2 %}
+{% assign has_content = false %}
+{% assign has_cta = false %}
+
+{%- if section.settings.title != blank or section.settings.caption != blank -%}
+  {% assign has_content = true %}
+{%- endif -%}
+
+{%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
+  {% assign has_cta = true %}
+  {% assign has_content = true %}
+{%- endif -%}
+
+{%- capture section_class -%}
+  {{ section.settings.style }}
+  full-width-{{ media_layout | replace: '_', '-' }}
+  {% unless has_content %}no-content{% endunless %}
+{%- endcapture -%}
+
+
+
+<section
+  class="module-container home-full-width-feature {{ section_class | strip_newlines }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="image-with-text"
+  data-image-with-text-layout="{{ media_layout }}">
+
+  <div class="col-md-6 col-sm-6 col-xs-12" >
+    <article class="module-inner home-full-width-feature-content" data-feature-content>
+      {% if section.settings.title != blank %}
+      <h1 class="feature-title">{{ section.settings.title | escape }}</h1>
+      {% endif %}
+
+      {% if section.settings.caption != blank %}
+      <div class="rte">{{ section.settings.caption }}</div>
+      {% endif %}
+
+
+      <!-- (1) video wrapper -->
+      <div class="youtube-video" data-embed="{{ video_url.id }}"> 
+
+        <!-- (2) the "play" button -->
+        <div class="play-button"></div> 
+
+      </div>
+
+    </article>
+  </div>
+  <div class="col-md-6 col-sm-6 col-xs-12">
+    <article class="module-inner home-full-width-feature-content" data-feature-content>
+      {% if section.settings.title_2 != blank %}
+      <h1 class="feature-title">{{ section.settings.title_2 | escape }}</h1>
+      {% endif %}
+
+      {% if section.settings.caption_2 != blank %}
+      <div class="rte">{{ section.settings.caption_2 }}</div>
+      {% endif %}
+
+
+      <!-- (1) video wrapper -->
+      <div class="youtube-video" data-embed="{{ video_url_2.id }}"> 
+
+        <!-- (2) the "play" button -->
+        <div class="play-button"></div> 
+
+      </div>
+
+    </article>
+  </div>
+
+</section>
+
+
+
+{% schema %}
+{
+  "name": "double lazy videos",
+  "settings": [
+    {
+      "type": "select",
+      "id": "style",
+      "label": "Style",
+      "options": [
+        {
+          "value": "default-style",
+          "label": "Default"
+        },
+        {
+          "value": "accent-style",
+          "label": "Accent"
+        },
+        {
+          "value": "contrast-style",
+          "label": "Contrast"
+        }
+      ],
+      "default": "default-style"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Video with text"
+    },
+    {
+      "type": "richtext",
+      "id": "caption",
+      "label": "Text",
+      "default": "<p>Select video and text that relates to your style and story.</p>"
+    },
+    {
+      "type": "video_url",
+      "id": "video_url",
+      "label": "Youtube or Vimeo link",
+      "accept": [
+        "youtube",
+        "vimeo"
+      ],
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+    },
+    {
+      "type": "text",
+      "id": "title_2",
+      "label": "Heading 2",
+      "default": "Video with text"
+    },
+    {
+      "type": "richtext",
+      "id": "caption_2",
+      "label": "Text",
+      "default": "<p>Select video and text that relates to your style and story."
+    },
+    {
+      "type": "video_url",
+      "id": "video_url_2",
+      "label": "Youtube or Vimeo link 2",
+      "accept": [
+        "youtube",
+        "vimeo"
+      ],
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Video Page",
+      "name": "double lazy videos one row"
+    }
+  ]
+}
+
+{% endschema %}

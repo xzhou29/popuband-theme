@@ -62,7 +62,7 @@
   @media only screen and (max-width: 719px) {
     .style{{ section.id }}{
       	background-image: url('{{ background_image_mobile | strip }}'); 
-        height:100vh;
+        height:150vw;
     }
   }
   
@@ -97,7 +97,7 @@ color: {{ section.settings.text_color }};
   <!--   position left -->
   {% if  section.settings.text_position  == "left" %}
   {% if has_content %}
-  <div class="home-full-width-feature-content hide-mobile" data-feature-content>
+  <div class="home-full-width-feature-content hide-mobile" data-feature-content style="top: 15%;">
     <article class="module-inner" style="text-align:left; width: 50%; margin-left:12%;">
       {% if section.settings.title != blank %}
       <h1 class="feature-title" style="{{feature_styles | strip_newlines }}">{{ section.settings.title | escape }}</h1>
@@ -123,8 +123,8 @@ color: {{ section.settings.text_color }};
   <!--   position right -->
   {% if  section.settings.text_position  == "right" %}
   {% if has_content %}
-  <div class="home-full-width-feature-content hide-mobile" data-feature-content>
-    <article class="module-inner" style="text-align:left; width: 50%; margin-left:12%;">
+  <div class="home-full-width-feature-content hide-mobile" data-feature-content style="top: 15%;">
+    <article class="module-inner" style="text-align:left; width: 50%; margin-left:50%;" >
       {% if section.settings.title != blank %}
       <h1 class="feature-title" style="{{feature_styles | strip_newlines }}">{{ section.settings.title | escape }}</h1>
       {% endif %}
@@ -134,7 +134,7 @@ color: {{ section.settings.text_color }};
       {% endif %}
 
       {% if has_cta %}
-      <div class="home-module-cta" style="text-align:left;">
+      <div class="home-module-cta" style="text-align:right;">
         <a class="button" href="{{ section.settings.button_link }}">{{section.settings.button_text | escape }}</a>&nbsp;&nbsp;
         {% if has_cta_2 %}
         <a class="button" href="{{ section.settings.button_link_2 }}">{{section.settings.button_text_2 | escape }}</a>
@@ -149,7 +149,7 @@ color: {{ section.settings.text_color }};
   <!--   position center -->
   {% if  section.settings.text_position  == "center" %}
   {% if has_content %}
-  <div class="home-full-width-feature-content hide-mobile" data-feature-content>
+  <div class="home-full-width-feature-content hide-mobile" data-feature-content style="top: 15%;">
     <article class="module-inner" >
       {% if section.settings.title != blank %}
       <h1 class="feature-title" style="{{feature_styles | strip_newlines }}">{{ section.settings.title | escape }}</h1>
@@ -160,7 +160,7 @@ color: {{ section.settings.text_color }};
       {% endif %}
 
       {% if has_cta %}
-      <div class="home-module-cta" style="text-align:left;">
+      <div class="home-module-cta" style="text-align:center;">
         <a class="button" href="{{ section.settings.button_link }}">{{section.settings.button_text | escape }}</a>&nbsp;&nbsp;
         {% if has_cta_2 %}
         <a class="button" href="{{ section.settings.button_link_2 }}">{{section.settings.button_text_2 | escape }}</a>

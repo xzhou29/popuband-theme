@@ -372,19 +372,19 @@
       "2-new-product-page": {
         "type": "2-new-product-page",
         "settings": {
-          "image_1": "shopify:\/\/shop_images\/led.jpg",
+          "image_1": "shopify:\/\/shop_images\/led.2_356511ea-3d73-4f55-bef1-901ea14160f4.jpg",
           "title_1": "Lights Up",
           "content_1": "72-LED fretboard lights up your learning and performance, literally. Memorize chords hassle-free. Mesmerize the audience with dazzling lights.",
-          "image_2": "shopify:\/\/shop_images\/1.1.jpg",
+          "image_2": "shopify:\/\/shop_images\/1.2_c5fbf9e8-3ee6-4a7c-8eaa-1cebaa63da47.jpg",
           "title_2": "Premium quality",
           "content_2": "Comfortable grip with 18:1 quasi-closed tuning pegs, lightweight and durable build.",
           "image_3": "shopify:\/\/shop_images\/8100940-2__4.jpg",
           "title_3": "Strum On",
           "content_3": "Strum a Populele. Hear its clear and sweet sound. Designed to optimize your strumming experience, Populele is made with first-class spruce soundboard and high-quality Aquila strings.",
-          "image_4": "shopify:\/\/shop_images\/bluetooth_moduel4.1_0ea27344-1ef4-45d0-a63b-44a087190260.jpg",
+          "image_4": "shopify:\/\/shop_images\/bluetooth_moduel4.2_033e01bd-87aa-42e9-9940-ca1b0ba90e8c.jpg",
           "title_4": "Geek Out",
           "content_4": "Amaze your techie friends with Populele’s built-in Bluetooth. Connect Populele with its companion app and rock on.",
-          "image_5": "shopify:\/\/shop_images\/3.1.jpg",
+          "image_5": "shopify:\/\/shop_images\/3.2_702fd2d6-adb6-4f1d-b8d3-a000aeb6b1a2.jpg",
           "title_5": "Travel Great",
           "content_5": "Take Populele anywhere. Lightweight and portable, Populele is your perfect travel companion. Made with high quality materials, Populele is built to last.",
           "mobile_image_1": "shopify:\/\/shop_images\/iPhone_6-7-8_5.jpg",
@@ -464,7 +464,7 @@
           "1527890440043"
         ],
         "settings": {
-          "background_image": "shopify:\/\/shop_images\/qweewq.jpg"
+          "background_image": "shopify:\/\/shop_images\/VCG41628101754_5e2a40dc-bae0-42d2-8423-66507fab1401.jpg"
         }
       },
       "2-product-feature-tabs": {
@@ -803,7 +803,7 @@
               "caption": "Employ up to three alternating features with an option to align images or videos to the left\/right and include a call to action below.",
               "button_text": "",
               "button_link": "",
-              "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+              "video_url": "https:\/\/www.youtube.com\/watch?v=i2Dw4WuJL6c&t=276s"
             }
           },
           "1529680127137": {
@@ -814,7 +814,7 @@
               "caption": "Employ up to three alternating features with an option to align images or videos to the left\/right and include a call to action below.",
               "button_text": "",
               "button_link": "",
-              "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+              "video_url": "https:\/\/www.youtube.com\/watch?v=fzS-_6oQKrs"
             }
           },
           "1529680130935": {
@@ -825,7 +825,7 @@
               "caption": "Employ up to three alternating features with an option to align images or videos to the left\/right and include a call to action below.",
               "button_text": "",
               "button_link": "",
-              "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+              "video_url": "https:\/\/www.youtube.com\/watch?v=QKvXkbL6c4k"
             }
           }
         },
@@ -952,16 +952,16 @@
         "settings": {
           "style": "default-style",
           "text_color": "#ffffff",
-          "text_position": "center",
-          "title": "The Perfect Smart Musical Gift for Everyone",
-          "caption": "Start to enjoy the fun of music with no background",
-          "button_text": "SHOP NOW",
+          "text_position": "right",
+          "title": "The Perfect Musical Gift For Everyone",
+          "caption": "Give your loved ones the gift of music",
+          "button_text": "GET IT NOW",
           "button_link": "shopify:\/\/products\/populele-with-accessory",
           "button_text_2": "",
           "button_link_2": "",
           "image_mobile": "shopify:\/\/shop_images\/firefox_2018-06-18_15-02-38-2.jpg",
-          "image": "shopify:\/\/shop_images\/firefox_2018-06-18_15-02-38-2.jpg",
-          "overlay_opacity_strength": 40
+          "image": "shopify:\/\/shop_images\/IMG_9181__-1.png",
+          "overlay_opacity_strength": 0
         }
       },
       "2-musicGift-imageTextOverlay": {
@@ -1114,8 +1114,8 @@
         "settings": {
           "style": "contrast-style",
           "title": "",
-          "caption": "",
-          "button_text": "",
+          "caption": "<p>test&nbsp;<\/p>",
+          "button_text": "test",
           "button_link": "",
           "video_url": "https:\/\/www.youtube.com\/watch?v=8q8ANU2_ocw&t=4s",
           "media_layout": "regular"
@@ -1138,15 +1138,15 @@
         "settings": {
           "style": "default-style",
           "text_color": "#ff6161",
-          "text_position": "center",
-          "title": "",
-          "caption": "",
+          "text_position": "left",
+          "title": "Unleash the healing power of music",
+          "caption": "Don't let anything stand between your loved ones and the joy of mastering an instrument. With Populele, anyone and everyone, including those with special needs, can have their musical dream come true.",
           "button_text": "",
           "button_link": "",
           "button_text_2": "",
           "button_link_2": "",
           "image_mobile": "",
-          "image": "shopify:\/\/shop_images\/parents.png",
+          "image": "shopify:\/\/shop_images\/parents_2048x2048.png",
           "overlay_opacity_strength": 20
         }
       },
@@ -1155,15 +1155,15 @@
         "settings": {
           "style": "default-style",
           "text_color": "#ffffff",
-          "text_position": "left",
-          "title": "",
-          "caption": "",
+          "text_position": "right",
+          "title": "Bring the Joy of music to your family",
+          "caption": "Let Populele be your private family tutor. One time investment. Lifetime value of the entire family.",
           "button_text": "",
           "button_link": "",
           "button_text_2": "",
           "button_link_2": "",
           "image_mobile": "",
-          "image": "shopify:\/\/shop_images\/parents2.png",
+          "image": "shopify:\/\/shop_images\/parents2_2048x2048.png",
           "overlay_opacity_strength": 0
         }
       },
@@ -1192,15 +1192,15 @@
           "style": "default-style",
           "text_color": "#ffffff",
           "text_position": "center",
-          "title": "A Smart Music Self-Learning Tool",
-          "caption": "Start to play your favorite songs in minutes!",
-          "button_text": "",
-          "button_link": "",
+          "title": "Proven Success With Learners",
+          "caption": "The Populele methodology simply works! From preschoolers to grandpas, from music illiterate to talented singers, learners of all backgrounds and ages are having a blast with Populele.",
+          "button_text": "BUY NOW",
+          "button_link": "shopify:\/\/products\/populele-with-accessory",
           "button_text_2": "",
           "button_link_2": "",
           "image_mobile": "",
-          "image": "shopify:\/\/shop_images\/banner2_7ebf9743-e07a-4f77-8cc5-2227e4adf6be.png",
-          "overlay_opacity_strength": 90
+          "image": "shopify:\/\/shop_images\/IMG_0035-1.jpg",
+          "overlay_opacity_strength": 100
         }
       },
       "2-new-imageTextOverlay05": {
@@ -1209,23 +1209,23 @@
           "style": "default-style",
           "text_color": "#ffffff",
           "text_position": "center",
-          "title": "Create for All Music Lovers",
-          "caption": "Discover your talent in music.",
-          "button_text": "",
-          "button_link": "",
+          "title": "Recommended by Experts",
+          "caption": "Populele has amazed educators. Hear what they have to say about the world's first, and only, smart ukulele designed with a built-in self-learning system.",
+          "button_text": "SHOP NOW",
+          "button_link": "shopify:\/\/products\/populele-with-accessory",
           "button_text_2": "",
           "button_link_2": "",
           "image_mobile": "",
-          "image": "shopify:\/\/shop_images\/banner3.png",
-          "overlay_opacity_strength": 90
+          "image": "shopify:\/\/shop_images\/IMG_3450-2.png",
+          "overlay_opacity_strength": 0
         }
       },
       "video-video-with-text-2": {
         "type": "video-video-with-text-2",
         "settings": {
           "style": "default-style",
-          "title": "",
-          "caption": "",
+          "title": "asdgasfgadfg",
+          "caption": "<p>asdg adfg&nbsp;<\/p>",
           "button_text": "",
           "button_link": "",
           "video_url": "https:\/\/www.youtube.com\/watch?v=ERrxLluowbA",
@@ -1240,7 +1240,7 @@
           "caption": "",
           "button_text": "",
           "button_link": "",
-          "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+          "video_url": "https:\/\/www.youtube.com\/watch?v=dPPDhyaPzoE",
           "media_layout": "highlight"
         }
       },
@@ -1250,31 +1250,34 @@
           "1529598944613": {
             "type": "text_column",
             "settings": {
-              "title": "Feature title",
-              "caption": "<p>Display up to six features with an option to toggle images on or off, and add unique calls to action.<\/p>",
+              "title": "Education",
+              "header_link": "\/pages\/education-programs",
+              "caption": "",
               "button_text": "",
               "button_link": "",
-              "image": "shopify:\/\/shop_images\/IMG_1246.png"
+              "image": "shopify:\/\/shop_images\/summercamp_660x275.jpg"
             }
           },
           "1529598946937": {
             "type": "text_column",
             "settings": {
-              "title": "Feature title",
-              "caption": "<p>Display up to six features with an option to toggle images on or off, and add unique calls to action.<\/p>",
+              "title": "Blog",
+              "header_link": "\/blogs\/news",
+              "caption": "",
               "button_text": "",
               "button_link": "",
-              "image": "shopify:\/\/shop_images\/4_16_81326.JPG"
+              "image": "shopify:\/\/shop_images\/4_16_81326_660x275.jpg"
             }
           },
           "1529598948273": {
             "type": "text_column",
             "settings": {
-              "title": "Feature title",
-              "caption": "<p>Display up to six features with an option to toggle images on or off, and add unique calls to action.<\/p>",
+              "title": "Referral",
+              "header_link": "\/pages\/referral-program",
+              "caption": "",
               "button_text": "",
               "button_link": "",
-              "image": "shopify:\/\/shop_images\/img_1312.png"
+              "image": "shopify:\/\/shop_images\/IMG_1246_660x275.png"
             }
           }
         },
@@ -1285,7 +1288,7 @@
         ],
         "settings": {
           "style": "contrast-style",
-          "title": "Text columns with images"
+          "title": ""
         }
       },
       "home-text-2": {
@@ -1294,8 +1297,8 @@
           "1529688098927": {
             "type": "rich_text",
             "settings": {
-              "title": "Rich text",
-              "content": "<p>Use this section to welcome customers to your store, say a bit about your brand, or share news and seasonal promotions.<\/p>"
+              "title": "",
+              "content": ""
             }
           }
         },
@@ -1313,8 +1316,8 @@
           "1529699384788": {
             "type": "rich_text",
             "settings": {
-              "title": "Rich text",
-              "content": "<p>Use this section to welcome customers to your store, say a bit about your brand, or share news and seasonal promotions.<\/p>"
+              "title": "2018 Edison Awards Winner",
+              "content": "<p>Populele is the fun, easy and smart way to learn music<\/p>"
             }
           }
         },
@@ -1330,17 +1333,17 @@
         "type": "2-app-imageText01",
         "settings": {
           "style": "default-style",
-          "text_color": "#000",
+          "text_color": "#ffffff",
           "text_position": "center",
           "title": "Image with text overlay",
-          "caption": "<p>Select imagery and text that relates to your style and story.<\/p>",
-          "button_text": "",
-          "button_link": "",
+          "caption": "Select imagery and text that relates to your style and story",
+          "button_text": "LEARN MORE",
+          "button_link": "shopify:\/\/pages\/education-programs",
           "button_text_2": "",
           "button_link_2": "",
           "image_mobile": "",
-          "image": "",
-          "overlay_opacity_strength": 90
+          "image": "shopify:\/\/shop_images\/Populele_-Smart_Ukulele_20180621171737_62d11efd-c092-4a18-a2b1-bd7ec774fee8.jpg",
+          "overlay_opacity_strength": 0
         }
       },
       "2-app-alternatingContent": {
@@ -1407,6 +1410,132 @@
           "image": "",
           "overlay_opacity_strength": 90
         }
+      },
+      "2-app-songLib": {
+        "type": "2-app-songLib",
+        "settings": {}
+      },
+      "video-lazyLoad-01": {
+        "type": "video-lazyLoad-01",
+        "settings": {
+          "style": "default-style",
+          "title": "",
+          "caption": "",
+          "button_text": "",
+          "button_link": "",
+          "video_url": "https:\/\/www.youtube.com\/watch?v=8q8ANU2_ocw&t=4s"
+        }
+      },
+      "2-whyPopulele-image-01": {
+        "type": "2-whyPopulele-image-01",
+        "settings": {
+          "style": "default-style",
+          "image_mobile": "shopify:\/\/shop_images\/PAINPOINTS-01.png",
+          "image": "shopify:\/\/shop_images\/PAINPOINTS-01.png"
+        }
+      },
+      "video-lazyLoad-02": {
+        "type": "video-lazyLoad-02",
+        "settings": {
+          "style": "default-style",
+          "title": "",
+          "caption": "",
+          "button_text": "",
+          "button_link": "",
+          "video_url": "https:\/\/www.youtube.com\/watch?v=ERrxLluowbA"
+        }
+      },
+      "video-lazyLoad-03": {
+        "type": "video-lazyLoad-03",
+        "settings": {
+          "style": "contrast-style",
+          "title": "",
+          "caption": "",
+          "button_text": "",
+          "button_link": "",
+          "video_url": "https:\/\/www.youtube.com\/watch?v=dPPDhyaPzoE"
+        }
+      },
+      "video-lazyLoadAlternating-01": {
+        "type": "video-lazyLoadAlternating-01",
+        "blocks": {
+          "1530217395411": {
+            "type": "video",
+            "settings": {
+              "media_alignment": "left",
+              "title": "The Ukulele Teacher",
+              "caption": "“This is an awesome ukulele: fun, educational, and just plain cool; it’s a really good entry-level uke its own right, it’s a lot of fun to play while the app, too!”",
+              "button_text": "",
+              "button_link": "",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=8q8ANU2_ocw"
+            }
+          },
+          "1530217398209": {
+            "type": "video",
+            "settings": {
+              "media_alignment": "right",
+              "title": "Roomie",
+              "caption": "I really like the Populele, it feels really great. There is a big song library of a bunch of famous songs that you can play and it will show you exactly what to do both on the ukulele and in the app.",
+              "button_text": "",
+              "button_link": "",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=i2Dw4WuJL6c"
+            }
+          },
+          "1530217400571": {
+            "type": "video",
+            "settings": {
+              "media_alignment": "left",
+              "title": "Bernadette Teaches Music",
+              "caption": "It’s seriously such a cool thing, I really really really love it! It is really a great resource for anybody any age.",
+              "button_text": "",
+              "button_link": "",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=QKvXkbL6c4k"
+            }
+          }
+        },
+        "block_order": [
+          "1530217395411",
+          "1530217398209",
+          "1530217400571"
+        ],
+        "settings": {
+          "style": "default-style",
+          "title": "",
+          "show_borders": false
+        }
+      },
+      "2-new-imageTextOverlay06": {
+        "type": "2-new-imageTextOverlay06",
+        "settings": {
+          "style": "default-style",
+          "text_color": "#000",
+          "text_position": "center",
+          "title": "Awaken Your Inner Musician",
+          "caption": "One Populele. Endless possibilities. Mesmerize your audience with dazzling lights. Discover your inner musician.",
+          "button_text": "SHOP NOW",
+          "button_link": "shopify:\/\/products\/populele-with-accessory",
+          "button_text_2": "",
+          "button_link_2": "",
+          "image_mobile": "",
+          "image": "shopify:\/\/shop_images\/banner3_2048x2048_c6ceed9f-1ce9-4897-9c05-730d7f440b57.png",
+          "overlay_opacity_strength": 90
+        }
+      },
+      "2-whyPopulele-doubleV-01": {
+        "type": "2-whyPopulele-doubleV-01",
+        "settings": {
+          "style": "default-style",
+          "title": "",
+          "caption": "",
+          "video_url": "https:\/\/www.youtube.com\/watch?v=ERrxLluowbA",
+          "title_2": "",
+          "caption_2": "",
+          "video_url_2": "https:\/\/www.youtube.com\/watch?v=dPPDhyaPzoE"
+        }
+      },
+      "2-whyPopulele-image-02": {
+        "type": "2-whyPopulele-image-02",
+        "settings": {}
       }
     },
     "content_for_index": [

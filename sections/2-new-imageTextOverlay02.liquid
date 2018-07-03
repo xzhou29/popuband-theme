@@ -62,7 +62,7 @@
   @media only screen and (max-width: 719px) {
     .style{{ section.id }}{
       	background-image: url('{{ background_image_mobile | strip }}'); 
-        height:100vh;
+        height:150vw;
     }
   }
   
@@ -97,14 +97,14 @@ color: {{ section.settings.text_color }};
   <!--   position left -->
   {% if  section.settings.text_position  == "left" %}
   {% if has_content %}
-  <div class="home-full-width-feature-content hide-mobile" data-feature-content>
-    <article class="module-inner" style="text-align:left; width: 50%; margin-left:12%;">
+  <div class="home-full-width-feature-content hide-mobile" data-feature-content  style="top:25%;">
+    <article class="module-inner-whyPopulele" style="text-align:left; margin-left:12%;" >
       {% if section.settings.title != blank %}
-      <h1 class="feature-title" style="{{feature_styles | strip_newlines }}">{{ section.settings.title | escape }}</h1>
+      <h1 class="feature-title" style="{{feature_styles | strip_newlines }} font-size:24px;">{{ section.settings.title | escape }}</h1>
       {% endif %}
 
       {% if section.settings.caption != blank %}
-      <p class="text-caption" style="{{feature_styles | strip_newlines }}">{{ section.settings.caption }}</p>
+      <p class="text-caption" style="{{feature_styles | strip_newlines }} font-size:16px">{{ section.settings.caption }}</p>
       {% endif %}
 
       {% if has_cta %}
@@ -123,18 +123,18 @@ color: {{ section.settings.text_color }};
   <!--   position right -->
   {% if  section.settings.text_position  == "right" %}
   {% if has_content %}
-  <div class="home-full-width-feature-content hide-mobile" data-feature-content>
-    <article class="module-inner" style="text-align:left; width: 50%; margin-left:12%;">
+  <div class="home-full-width-feature-content hide-mobile" data-feature-content style="top:25%">
+    <article class="module-inner-whyPopulele" style="text-align:left; margin-left:48%;">
       {% if section.settings.title != blank %}
-      <h1 class="feature-title" style="{{feature_styles | strip_newlines }}">{{ section.settings.title | escape }}</h1>
+      <h1 class="feature-title" style="{{feature_styles | strip_newlines }} font-size:24px;">{{ section.settings.title | escape }}</h1>
       {% endif %}
 
       {% if section.settings.caption != blank %}
-      <p class="text-caption" style="{{feature_styles | strip_newlines }}">{{ section.settings.caption }}</p>
+      <p class="text-caption" style="{{feature_styles | strip_newlines }} font-size:16px">{{ section.settings.caption }}</p>
       {% endif %}
 
       {% if has_cta %}
-      <div class="home-module-cta" style="text-align:left;">
+      <div class="home-module-cta" style="text-align:right;">
         <a class="button" href="{{ section.settings.button_link }}">{{section.settings.button_text | escape }}</a>&nbsp;&nbsp;
         {% if has_cta_2 %}
         <a class="button" href="{{ section.settings.button_link_2 }}">{{section.settings.button_text_2 | escape }}</a>
@@ -149,18 +149,18 @@ color: {{ section.settings.text_color }};
   <!--   position center -->
   {% if  section.settings.text_position  == "center" %}
   {% if has_content %}
-  <div class="home-full-width-feature-content hide-mobile" data-feature-content>
-    <article class="module-inner" >
+  <div class="home-full-width-feature-content hide-mobile" data-feature-content  style="top:25%;">
+    <article class="module-inner-whyPopulele" >
       {% if section.settings.title != blank %}
-      <h1 class="feature-title" style="{{feature_styles | strip_newlines }}">{{ section.settings.title | escape }}</h1>
+      <h1 class="feature-title" style="{{feature_styles | strip_newlines }} font-size:24px;">{{ section.settings.title | escape }}</h1>
       {% endif %}
 
       {% if section.settings.caption != blank %}
-      <p class="text-caption" style="{{feature_styles | strip_newlines }}">{{ section.settings.caption }}</p>
+      <p class="text-caption" style="{{feature_styles | strip_newlines }} font-size:16px">{{ section.settings.caption }}</p>
       {% endif %}
 
       {% if has_cta %}
-      <div class="home-module-cta" style="text-align:left;">
+      <div class="home-module-cta" style="text-align:center;">
         <a class="button" href="{{ section.settings.button_link }}">{{section.settings.button_text | escape }}</a>&nbsp;&nbsp;
         {% if has_cta_2 %}
         <a class="button" href="{{ section.settings.button_link_2 }}">{{section.settings.button_text_2 | escape }}</a>

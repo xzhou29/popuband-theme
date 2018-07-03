@@ -1,0 +1,120 @@
+{% assign media_layout = section.settings.media_layout %}
+{% assign video_url = section.settings.video_url %}
+{% assign has_content = false %}
+{% assign has_cta = false %}
+
+{%- if section.settings.title != blank or section.settings.caption != blank -%}
+  {% assign has_content = true %}
+{%- endif -%}
+
+{%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
+  {% assign has_cta = true %}
+  {% assign has_content = true %}
+{%- endif -%}
+
+{%- capture section_class -%}
+  {{ section.settings.style }}
+  full-width-{{ media_layout | replace: '_', '-' }}
+  {% unless has_content %}no-content{% endunless %}
+{%- endcapture -%}
+
+
+
+<section
+  class="module-container home-full-width-feature {{ section_class | strip_newlines }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="image-with-text"
+  data-image-with-text-layout="{{ media_layout }}">
+
+  <article class="module-inner home-full-width-feature-content" data-feature-content>
+    {% if section.settings.title != blank %}
+      <h1 class="feature-title">{{ section.settings.title | escape }}</h1>
+    {% endif %}
+
+    {% if section.settings.caption != blank %}
+      <div class="rte">{{ section.settings.caption }}</div>
+    {% endif %}
+
+
+    
+    <!-- (1) video wrapper -->
+    <div class="youtube-video" data-embed="{{ video_url.id }}"> 
+
+      <div class="play-button"></div> 
+
+    </div>
+
+    
+    
+  </article>
+</section>
+
+
+
+
+{% schema %}
+{
+  "name": "Video with text",
+  "settings": [
+    {
+      "type": "select",
+      "id": "style",
+      "label": "Style",
+      "options": [
+        {
+          "value": "default-style",
+          "label": "Default"
+        },
+        {
+          "value": "accent-style",
+          "label": "Accent"
+        },
+        {
+          "value": "contrast-style",
+          "label": "Contrast"
+        }
+      ],
+      "default": "default-style"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Video with text"
+    },
+    {
+      "type": "richtext",
+      "id": "caption",
+      "label": "Text",
+      "default": "<p>Select video and text that relates to your style and story.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Link URL"
+    },
+    {
+      "type": "video_url",
+      "id": "video_url",
+      "label": "Youtube or Vimeo link",
+      "accept": [
+        "youtube",
+        "vimeo"
+      ],
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Video Page",
+      "name": "Lazy load video with text 03"
+    }
+  ]
+}
+
+{% endschema %}

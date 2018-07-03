@@ -24,7 +24,11 @@
 
         <article class="home-inline-text">
           {% if block.settings.title != blank %}
-            <h1 class="feature-title">{{ block.settings.title | escape }}</h1>
+          <h1 class="feature-title"> 
+            <a href="            {{ block.settings.header_link | escape }} ">
+            {{ block.settings.title | escape }} 
+            </a>
+          </h1>
           {% endif %}
 
           {% if block.settings.caption != blank%}
@@ -86,6 +90,11 @@
           "id": "title",
           "label": "Heading",
           "default": "Feature title"
+        },
+        {
+          "type": "text",
+          "id": "header_link",
+          "label": "Header Link"
         },
         {
           "type": "richtext",

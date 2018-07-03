@@ -1,8 +1,37 @@
+<style>
+  
+  .module-container {  
+    visibility:hidden;
+  }
+  
+</style>
+
+
+<div class="rte">
+  {{ page.content }}
+</div>
 
 
 {% section '2-app-imageText01' %}
 
 {% section '2-app-alternatingContent' %}
 
+{% section '2-app-songLib' %}
 
-{% section '2-app-imageText02' %}
+
+<script>
+  
+  window.onload = function(){
+    
+    var element = document.getElementById("control-main");
+
+    element.classList.remove("main-content");
+    
+    var visibility_control = document.getElementsByClassName('module-container');
+
+    for(var i = 0; i < visibility_control.length; i++){    
+    	visibility_control[i].style.visibility = 'visible';
+    }
+  };
+
+</script>

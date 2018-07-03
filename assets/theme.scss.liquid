@@ -487,6 +487,7 @@ $prefix-for-spec: true; // required for keyframe mixin
 // Layout
 $max-width: 1020px;
 $max-width-small: 640px;
+$max-width-medium: 800px;
 $max-width-large: 1200px;
 $gutter: 30px;
 $gutter-double: $gutter * 2;
@@ -1287,6 +1288,50 @@ body {
   &.module-hidden { display: none; }
 }
 
+.module-inner-whyPopulele {
+  width: 40%;
+  background-color: #ffb366;
+  max-width: $max-width;
+  padding: 1px $gutter;
+  margin: $gutter-vertical-large auto;
+
+  .section-title {
+    max-width: 500px;
+    margin: $gutter-vertical-large auto;
+  }
+
+  &.module-inline-items {
+    padding: 0 $gutter-half;
+    margin-top: $gutter-vertical-large / 2;
+    margin-bottom: $gutter-vertical-large / 2;
+
+    .section-title {
+      margin-top: $gutter-vertical-large;
+      margin-bottom: $gutter-vertical-large / 2;
+
+      @include breakpoint(s) {
+        margin-bottom: $gutter-vertical-large - $gutter-half;
+   
+      }
+    }
+  }
+
+  .module-inline-item {
+    display: inline-block;
+    padding: 0 $gutter-half;
+    margin-top: $gutter-vertical-large / 2;
+    margin-bottom: $gutter-vertical-large / 2;
+
+    @include breakpoint(s) {
+      margin-top: $gutter-half;
+      margin-bottom: $gutter-half;
+    }
+  }
+
+  &.module-hidden { display: none; }
+}
+
+
 .newsletter-section,
 .header-drawer,
 .header-promotion-bar,
@@ -1323,7 +1368,7 @@ body {
   > *:last-child { margin-bottom: 0; }
 
   @include all-elems {
-    max-width: $max-width-small;
+    max-width: $max-width-medium;
     margin-right: auto;
     margin-left: auto;
 
@@ -1665,7 +1710,71 @@ td {
   }
 }
 
+.dynamic-button-1 {
+  
+  display: inline-block;
+  padding: 8px 14px;
+  font-size: 12px;
 
+  @media (min-width: 1024px) {
+      padding: 8px 16px;
+      font-size: 14px;
+  }
+
+  font-family: $button-font;
+
+  font-weight: $button-font-weight;
+  line-height: 2;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  -webkit-appearance: none;
+
+  @if $button-font-smoothed { @extend %font-smoothing; }
+
+  &,
+  .contrast-style &.secondary, // Allows .contrast-style .secondary to inherit .button styles
+  .contrast-style & {
+    color: $color-button-primary;
+    background: $color-accent;
+
+    &:hover {
+      color: $color-button-primary;
+      background: $color-accent-hover;
+    }
+  }
+
+  .accent-style & {
+    color: $color-accent;
+    background: $color-body-background;
+
+    &:hover {
+      color: $color-accent;
+      background: morph($color-body-background);
+    }
+  }
+
+  @if $button-capitalize {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  &.secondary {
+    color: $color-button-secondary;
+    background: $color-button-secondary-background;
+
+    &:hover {
+      color: $color-button-secondary;
+      background: $color-button-secondary-background-hover;
+    }
+  }
+
+  &.disabled {
+    color: $color-button-disabled;
+    background: $color-button-disabled-background;
+    opacity: 1; // fix for iOS
+  }
+}
 
 form { font-size: 14px; }
 

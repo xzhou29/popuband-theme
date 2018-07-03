@@ -1,0 +1,85 @@
+
+<style type="text/css">
+  .old-way{
+    float:left;
+    width:50%;
+    text-align: right;
+  }
+  .new-way{
+    float:right;
+    width: 50%;
+  }
+
+  .why-populele-div-left{
+    padding-left: 0%; 
+  }
+  .why-populele-div-right{
+    padding-right: 0%; 
+  }
+
+  @media screen and (max-width: 1440px) and (min-width: 768px) {
+    .why-populele-div-left{
+      padding-left: 30%;
+      
+    }
+    .why-populele-div-right{
+      padding-right: 30%; 
+    }
+  }
+  @media screen and (min-width: 1441px) {
+    .why-populele-div-left{ 
+      padding-left: 50%;  
+    }
+    .why-populele-div-right{
+      padding-right: 50%; 
+    }
+  } 
+
+  .why-populele-img{
+    width:100%;
+    height:100%;
+  } 
+</style>
+
+<section class="module-container">
+    <div class="old-way">
+      <div class="why-populele-div-left" style="background-color: #E7E8E9;">
+          <img class="why-populele-img" src="//cdn.shopify.com/s/files/1/2021/3861/files/1_180702.png?13041016446959885270">
+      </div>
+      <div class="why-populele-div-left" style="background-color: #F3F3F4;">
+          <img class="why-populele-img" src="//cdn.shopify.com/s/files/1/2021/3861/files/3_180702.png?13041016446959885270">
+      </div>
+      <div class="why-populele-div-left" style="background-color: #E7E8E9;">
+          <img class="why-populele-img" src="//cdn.shopify.com/s/files/1/2021/3861/files/5_180702.png?13041016446959885270">
+      </div>
+
+    </div>
+
+    <div class="new-way">
+      <div class="why-populele-div-right" style="background-color: #F3F3F4;">
+          <img class="why-populele-img" src="//cdn.shopify.com/s/files/1/2021/3861/files/2_180702.png?13041016446959885270" >
+      </div>
+      <div class="why-populele-div-right" style="background-color: #E7E8E9;">
+          <img class="why-populele-img" src="//cdn.shopify.com/s/files/1/2021/3861/files/4_180702.png?13041016446959885270" >
+      </div>
+      <div class="why-populele-div-right" style="background-color: #F3F3F4;">
+          <img class="why-populele-img" src="//cdn.shopify.com/s/files/1/2021/3861/files/6_180702.png?13041016446959885270" >
+      </div>
+
+    </div>
+
+</section>
+
+
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

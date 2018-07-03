@@ -1,0 +1,131 @@
+
+
+{% assign image = section.settings.image %}
+{% assign image_mobile = section.settings.image_mobile %}
+{% assign has_cta = false %}
+{% assign has_link_wrapper = false %}
+{% assign has_cta_2 = false %}
+{% assign has_link_wrapper_2 = false %}
+
+{%- if section.settings.title != blank or section.settings.caption != blank -%}
+  {% assign has_content = true %}
+{%- endif -%}
+
+{%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
+  {% assign has_cta = true %}
+  {% assign has_content = true %}
+{%- endif -%}
+
+{%- if section.settings.button_text_2 != blank and section.settings.button_link_2 != blank -%}
+  {% assign has_cta_2 = true %}
+  {% assign has_content_2 = true %}
+{%- endif -%}
+
+
+{%- if section.settings.button_text == blank and section.settings.button_link != blank -%}
+  {% assign has_link_wrapper = true %}
+{%- endif -%}
+
+{% if image != blank %}
+  {% assign image_size = '2048x2048' %}
+  {% assign background_image = image | img_url: image_size %}
+  {% assign background_image_mobile = image_mobile | img_url: image_size %}
+  {%- capture feature_image -%}
+    <img
+      class="feature-image"
+      alt="{{ image.alt | escape }}"
+      src="{{ image | img_url: image_size }}">
+  {%- endcapture -%}
+{% else %}
+  {%- capture background_image -%}
+    {%- include and 'placeholder_svg_uri' placeholder: 'lifestyle-1' -%}
+  {%- endcapture -%}
+  {%- capture feature_image -%}
+    {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg feature-image' }}
+  {%- endcapture -%}
+{% endif %}
+
+{%- capture section_class -%}
+  {{ section.settings.style }}
+  full-width-background
+
+  {% unless has_content %}no-content{% endunless %}
+{%- endcapture -%}
+
+<style>
+  .why-populele-div{
+    margin-right: 0%;
+    margin-left: 0%;  
+  }
+
+  @media (min-width: 768px) and (max-width: 1440px) {
+    .why-populele-div{ 
+      margin-right: 10%;
+      margin-left: 10%;  
+    }
+  } 
+  @media (min-width: 1441px) {
+    .why-populele-div{ 
+      margin-right: 20%;
+      margin-left: 20%;  
+    }
+  } 
+
+  .why-populele-img{
+    width:100%;
+    height:100%;
+  }  
+</style>
+
+<section class="module-container why-populele-div {{ section_class | strip_newlines }} "
+         >
+  <div >
+      <img  class="why-populele-img" src="{{ background_image | strip }}" >
+  </div>
+
+</section>
+
+{% schema %}
+{
+  "name": "why populele image",
+  "settings": [
+    {
+      "type": "select",
+      "id": "style",
+      "label": "Style",
+      "options": [
+        {
+          "value": "default-style",
+          "label": "Default"
+        },
+        {
+          "value": "accent-style",
+          "label": "Accent"
+        },
+        {
+          "value": "contrast-style",
+          "label": "Contrast"
+        }
+      ],
+      "default": "default-style"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Desktop Image"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Image",
+      "name": "why populele image"
+    }
+  ]
+}
+
+{% endschema %}
