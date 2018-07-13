@@ -31,7 +31,7 @@
   {% endif %}
 
   <link rel="canonical" href="{{ canonical_url }}" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {{ content_for_header }}
 
@@ -87,6 +87,8 @@
 
   <!-- Scripts -->
   {{ 'jquery-1.10.0.min.js' | asset_url | script_tag }}
+<!--   <script src="//cdn.shopify.com/s/files/1/2021/3861/files/JQuery2.1.3.js?4865760218591848212" type="text/javascript"></script> -->
+ 
   {{ 'api.jquery.js' | shopify_asset_url | script_tag }}
 
   {% if template contains 'cart' %}

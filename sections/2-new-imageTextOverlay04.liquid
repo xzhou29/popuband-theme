@@ -1,7 +1,4 @@
 
-
-{% assign image = section.settings.image %}
-{% assign image_mobile = section.settings.image_mobile %}
 {% assign has_cta = false %}
 {% assign has_link_wrapper = false %}
 {% assign has_cta_2 = false %}
@@ -54,20 +51,11 @@
 
 <style>
 
-  @media only screen and (min-width: 720px) {
+  @media only screen and (min-width: 768px) {
     .style{{ section.id }}{
-      	background-image: url('{{ background_image | strip }}');
+      background-image: url('//cdn.shopify.com/s/files/1/2021/3861/files/IMG_0035-1_2048x2048.jpg?4925617515985929028');
     }
   }
-  @media only screen and (max-width: 719px) {
-    .style{{ section.id }}{
-      	background-image: url('{{ background_image_mobile | strip }}'); 
-        height:150vw;
-    }
-  }
-  
-
-  
   
 </style>
 
@@ -76,7 +64,7 @@ color: {{ section.settings.text_color }};
 {%- endcapture -%}
 
 <section
-         class="module-container home-full-width-feature {{ section_class | strip_newlines }} style{{ section.id }}"
+         class="hide-mobile module-container home-full-width-feature {{ section_class | strip_newlines }} style{{ section.id }}"
          data-section-id="{{ section.id }}"
          data-section-type="image-with-text-overlay"
          data-image-with-text-layout="background"
@@ -89,15 +77,10 @@ color: {{ section.settings.text_color }};
   {{ feature_image | strip }}
 
   
-  
-
-  
-
-  
   <!--   position left -->
   {% if  section.settings.text_position  == "left" %}
   {% if has_content %}
-  <div class="home-full-width-feature-content hide-mobile" data-feature-content style="top: 15%;">
+  <div class="home-full-width-feature-content " data-feature-content style="top: 30%;">
     <article class="module-inner" style="text-align:left; width: 50%; margin-left:12%;">
       {% if section.settings.title != blank %}
       <h1 class="feature-title" style="{{feature_styles | strip_newlines }}">{{ section.settings.title | escape }}</h1>
@@ -123,7 +106,7 @@ color: {{ section.settings.text_color }};
   <!--   position right -->
   {% if  section.settings.text_position  == "right" %}
   {% if has_content %}
-  <div class="home-full-width-feature-content hide-mobile" data-feature-content style="top: 15%;">
+  <div class="home-full-width-feature-content hide-mobile" data-feature-content style="top: 30%;">
     <article class="module-inner" style="text-align:left; width: 50%; margin-left:50%;" >
       {% if section.settings.title != blank %}
       <h1 class="feature-title" style="{{feature_styles | strip_newlines }}">{{ section.settings.title | escape }}</h1>
@@ -149,8 +132,8 @@ color: {{ section.settings.text_color }};
   <!--   position center -->
   {% if  section.settings.text_position  == "center" %}
   {% if has_content %}
-  <div class="home-full-width-feature-content hide-mobile" data-feature-content style="top: 15%;">
-    <article class="module-inner" >
+  <div class="home-full-width-feature-content hide-mobile" data-feature-content style="top: 30%;">
+    <article class="module-inner" style="max-width: 1160px;" >
       {% if section.settings.title != blank %}
       <h1 class="feature-title" style="{{feature_styles | strip_newlines }}">{{ section.settings.title | escape }}</h1>
       {% endif %}
@@ -258,16 +241,6 @@ color: {{ section.settings.text_color }};
       "type": "url",
       "id": "button_link_2",
       "label": "Link URL 2"
-    },
-    {
-      "type": "image_picker",
-      "id": "image_mobile",
-      "label": "Mobile Image"
-    },
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Desktop Image"
     },
     {
       "type": "range",

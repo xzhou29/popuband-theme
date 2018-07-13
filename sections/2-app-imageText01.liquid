@@ -54,12 +54,12 @@
 
 <style>
 
-  @media only screen and (min-width: 720px) {
+  @media only screen and (min-width: 768px) {
     .style{{ section.id }}{
       	background-image: url('{{ background_image | strip }}');
     }
   }
-  @media only screen and (max-width: 719px) {
+  @media only screen and (max-width: 767px) {
     .style{{ section.id }}{
       	background-image: url('{{ background_image_mobile | strip }}'); 
         height:150vw;
@@ -87,9 +87,6 @@ color: {{ section.settings.text_color }};
   {% endif %}
 
   {{ feature_image | strip }}
-
-  
-  
 
   
 
@@ -124,7 +121,7 @@ color: {{ section.settings.text_color }};
   {% if  section.settings.text_position  == "right" %}
   {% if has_content %}
   <div class="home-full-width-feature-content hide-mobile" data-feature-content>
-    <article class="module-inner" style="text-align:left; width: 50%; margin-left:12%;">
+    <article class="module-inner" style="text-align:left; width: 50%; margin-left:50%;">
       {% if section.settings.title != blank %}
       <h1 class="feature-title" style="{{feature_styles | strip_newlines }}">{{ section.settings.title | escape }}</h1>
       {% endif %}
@@ -238,7 +235,7 @@ color: {{ section.settings.text_color }};
       "type": "text",
       "id": "caption",
       "label": "Text",
-      "default": "Select imagery and text that relates to your style and story."
+      "default": "<p>Select imagery and text that relates to your style and story.</p>"
     },
     {
       "type": "text",

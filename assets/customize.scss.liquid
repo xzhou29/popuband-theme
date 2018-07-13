@@ -757,22 +757,22 @@
 }
 	
 // accordion_2 start
-
-    [data-component-id="801"] .accordion--image {
-      background-image: url('https://cdn.shopify.com/s/files/1/2021/3861/files/three_section_1534_x_444.jpg?10140076627254974321');
-      background-position: center 33%;
-      background-size: cover;
-    }
-
-    @media (min-width: 768px) {
+    @media (max-width: 767px) {
       [data-component-id="801"] .accordion--image {
-        background-image: url('https://cdn.shopify.com/s/files/1/2021/3861/files/three_section_1532x800.jpg?10140076627254974321');
+        background-image: url('//cdn.shopify.com/s/files/1/2021/3861/files/three_section_1534_x_444.jpg?10140076627254974321');
+        background-position: center 33%;
+        background-size: cover;
+      }
+    }
+    @media (min-width: 768px) and (min-width: 1023px) {
+      [data-component-id="801"] .accordion--image {
+        background-image: url('//cdn.shopify.com/s/files/1/2021/3861/files/three_section_1532x800.jpg?10140076627254974321');
       }
     }
 
     @media (min-width: 1024px) {
       [data-component-id="801"] .accordion {
-        background-image: url('https://cdn.shopify.com/s/files/1/2021/3861/files/three_section_2700x1160_7_09a89003-80d5-464e-abe8-89bb333f948a.jpg?10140076627254974321');
+        background-image: url('//cdn.shopify.com/s/files/1/2021/3861/files/three_section_2700x1160_7_09a89003-80d5-464e-abe8-89bb333f948a.jpg?10140076627254974321');
         background-position: center 33%;
         background-size: cover;
       }
@@ -823,25 +823,26 @@
       background-image: none;
     }
 
-    [data-component-id="803"].accordion-item._item-open {
-      background-image: url('https://cdn.shopify.com/s/files/1/2021/3861/files/ukulele_600_x_1200.jpg?6491785809759393923');
-      background-position: 0 0 0 0;
+    @media (max-width: 767px) {
+      [data-component-id="803"].accordion-item._item-open {
+        background-image: url('//cdn.shopify.com/s/files/1/2021/3861/files/ukulele.2_600_x_1200.png?18046345519511200499');
+        background-position: 0 0 0 0;
+      }
     }
-
-    @media (min-width: 768px) {
+    @media (min-width: 768px) and (max-width: 1023px) {
       [data-component-id="803"].accordion-item {
         background-image: none;
       }
 
       [data-component-id="803"].accordion-item._item-open {
-        background-image: url('https://cdn.shopify.com/s/files/1/2021/3861/files/bluetooth_1532_x_1012_87e8f480-bb33-4a52-b0f9-76ffba1c552e.jpg?3642688340075797050');
+        background-image: url('//cdn.shopify.com/s/files/1/2021/3861/files/bluetooth_1532_x_1012_87e8f480-bb33-4a52-b0f9-76ffba1c552e.jpg?3642688340075797050');
         background-position: center;
       }
     }
 
     @media (min-width: 1024px) {
       [data-component-id="803"].accordion-item._item-open {
-        background-image: url('https://cdn.shopify.com/s/files/1/2021/3861/files/bluetooth_2296_x_1160_0d68260a-94b3-4ecc-99c1-5a838ac2ecba.jpg?3642688340075797050');
+        background-image: url('//cdn.shopify.com/s/files/1/2021/3861/files/bluetooth_2296_x_1160_0d68260a-94b3-4ecc-99c1-5a838ac2ecba.jpg?3642688340075797050');
         background-position: center;
       }
     }
@@ -850,29 +851,30 @@
 
 /* part 3*/
 
-  [data-component-id="804"].accordion-item {
+    [data-component-id="804"].accordion-item {
       background-image: none;
     }
 
-    [data-component-id="804"].accordion-item._item-open {
-      background-image: url('https://cdn.shopify.com/s/files/1/2021/3861/files/lifestyle.png?18133904999004237362');
-      background-position: 0 0 0 0;
+    @media (max-width: 767px) {
+      [data-component-id="804"].accordion-item._item-open {
+        background-image: url('//cdn.shopify.com/s/files/1/2021/3861/files/why_ukulele.2_600_x_1200.png?18046345519511200499');
+        background-position: 0 0 0 0;
+      }
     }
-
-    @media (min-width: 768px) {
+    @media (min-width: 768px) and (max-width: 1023px){
       [data-component-id="804"].accordion-item {
         background-image: none;
       }
 
       [data-component-id="804"].accordion-item._item-open {
-        background-image: url('https://cdn.shopify.com/s/files/1/2021/3861/files/lifestyle_1532_x_1012_ca4c9e99-b897-403c-95ec-c41e6c99c5c3.jpg?15216980154505920652');
+        background-image: url('//cdn.shopify.com/s/files/1/2021/3861/files/lifestyle_1532_x_1012_ca4c9e99-b897-403c-95ec-c41e6c99c5c3.jpg?15216980154505920652');
         background-position: center;
       }
     }
 
     @media (min-width: 1024px) {
       [data-component-id="804"].accordion-item._item-open {
-        background-image: url('https://cdn.shopify.com/s/files/1/2021/3861/files/why_ukulele_2296x1160_46157c92-9388-4215-bdeb-b4aedb336d0e.jpg?1925308497529172664');
+        background-image: url('//cdn.shopify.com/s/files/1/2021/3861/files/why_ukulele_2296x1160_46157c92-9388-4215-bdeb-b4aedb336d0e.jpg?1925308497529172664');
         background-position: center;
       }
     }
@@ -883,25 +885,26 @@
       background-image: none;
     }
 
-    [data-component-id="805"].accordion-item._item-open {
-      background-image: url('https://cdn.shopify.com/s/files/1/2021/3861/files/app_600_x_1200_a53e0df1-9091-441c-a58d-26726295694f.jpg?6491785809759393923');
-      background-position: 0 0 0 0;
+    @media (max-width: 767px) {
+      [data-component-id="805"].accordion-item._item-open {
+        background-image: url('//cdn.shopify.com/s/files/1/2021/3861/files/app.2_600_x_1200.png?18046345519511200499');
+        background-position: 0 0 0 0;
+      }
     }
-
-    @media (min-width: 768px) {
+    @media (min-width: 768px) and (max-width: 1023px){
       [data-component-id="805"].accordion-item {
         background-image: none;
       }
 
       [data-component-id="805"].accordion-item._item-open {
-        background-image: url('https://cdn.shopify.com/s/files/1/2021/3861/files/app_1532_x_1012_344cdaa8-cb7a-4955-b127-28ea423feb41.jpg?2279268623217018732');
+        background-image: url('//cdn.shopify.com/s/files/1/2021/3861/files/app_1532_x_1012_344cdaa8-cb7a-4955-b127-28ea423feb41.jpg?2279268623217018732');
         background-position: center;
       }
     }
 
     @media (min-width: 1024px) {
       [data-component-id="805"].accordion-item._item-open {
-        background-image: url('https://cdn.shopify.com/s/files/1/2021/3861/files/app_2296_x_1160_1_b3b8d674-76d2-494e-a4c6-bb82cc19781c.jpg?2279268623217018732');
+        background-image: url('//cdn.shopify.com/s/files/1/2021/3861/files/app_2296_x_1160_1_b3b8d674-76d2-494e-a4c6-bb82cc19781c.jpg?2279268623217018732');
         background-position: center;
       }
     }
@@ -1204,3 +1207,6 @@ url(https://cdn.shopify.com/s/files/1/2021/3861/files/glyphicons-halflings-regul
 
 
 /* youtube video frame ends */
+
+
+

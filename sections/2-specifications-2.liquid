@@ -1,49 +1,50 @@
-
+<style>
+  @media only screen and (min-width: 1440px) {
+    .desktop-specification-img {
+      width: 100vw; 
+      height: 41vw;
+      background:url(//cdn.shopify.com/s/files/1/2021/3861/files/specification1.7.jpg?2230318510294781943);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+  @media only screen and (max-width: 1439px) and (min-width: 768px){
+    .ipad-specification-img {
+      width: 100vw;
+      height: 41vw;
+      background:url(//cdn.shopify.com/s/files/1/2021/3861/files/specification1.2__369.jpg?12803840547430287471);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .mobile-specification-img{
+      width: 100vw;
+      height: 150vw;
+      background:url(//cdn.shopify.com/s/files/1/2021/3861/files/iPhone_6-7-8_4.png?16293219907205306395);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+  
+</style>
 
 
 <!-- Desktop > 1024px -->
 
 
-<div  class="show-desktop-2"  style="width: 100vw; height: 41vw;
-            background:url(https://cdn.shopify.com/s/files/1/2021/3861/files/specification1.7.jpg?2230318510294781943);
-            background-size: 100%;
-            background-border:none;
-            background-repeat: no-repeat;">
-  
- 
-</div>
-
-
+<div  class="show-desktop-2 desktop-specification-img" > </div>
 
 <!-- 767 <  Pad < 1024 -->
 
-
-<div class="show-pad-2"  style="width: 100vw; height: 41vw;
-            background:url(https://cdn.shopify.com/s/files/1/2021/3861/files/specification1.2__369.jpg?12803840547430287471);
-            background-size: 100%;
-            background-border:none;
-            background-repeat: no-repeat;">
-  
- 
-</div>
-
+<div class="show-pad-2 ipad-specification-img"> </div>
 
 
 <!--  mobile < 768  -->
 
-<script>
-  
-$(document).ready(function(){
-    $("#more-specs").click(function(){
-        $("#test").toggle();
-    });
-});
-  
-</script>
+<div class="show-mobile-2 mobile-specification-img"> </div>
 
 
-<img class="show-mobile-2" src="https://cdn.shopify.com/s/files/1/2021/3861/files/iPhone_6-7-8_4.png?16293219907205306395" width="100%" height="100%">
-<!-- <h2 id="more-specs" class="show-mobile-2" style="text-align:center; background-color:grey;">POPULELE SPECS</h2> -->
 
 <div class="show-mobile-2" style=" margin-left: 0%; margin-right:0%; #p{font-size:10px;} "> 
 

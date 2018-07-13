@@ -54,12 +54,12 @@
 
 <style>
 
-  @media only screen and (min-width: 720px) {
+  @media only screen and (min-width: 768px) {
     .style{{ section.id }}{
       	background-image: url('{{ background_image | strip }}');
     }
   }
-  @media only screen and (max-width: 719px) {
+  @media only screen and (max-width: 767px) {
     .style{{ section.id }}{
       	background-image: url('{{ background_image_mobile | strip }}'); 
         height:150vw;
@@ -87,9 +87,6 @@ color: {{ section.settings.text_color }};
   {% endif %}
 
   {{ feature_image | strip }}
-
-  
-  
 
   
 

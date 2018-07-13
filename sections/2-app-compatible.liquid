@@ -1,0 +1,62 @@
+<style type="text/css">
+
+  .app-compatible {
+    position: relative;
+    text-align: center;
+    color: white;
+
+  }
+
+  .app-compatible-centered {
+        width:100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+  }
+  @media screen and (max-width: 1203px) and (min-width: 768px) {
+    .app-compatible-centered {
+      font-size: 30px;
+    }
+  }
+  @media screen and (max-width: 1440px) and (min-width: 1204px) {
+    .app-compatible-centered {
+      font-size: 40px;
+    }
+  }
+  @media screen and (min-width: 1441px) {
+    .app-compatible-centered {
+      font-size: 54px;
+    }  
+  } 
+
+</style>
+
+
+<br>
+
+<div class="app-compatible">
+  <img src="//cdn.shopify.com/s/files/1/2021/3861/files/googl_ios2Artboard_1.jpg?16866090901824921416"
+       alt="Compatible with Android and iOS" 
+       style="width:100%;">
+  <!--   <div class="app-compatible-centered">Compatible with Android and iOS</div> -->
+  <div class="app-compatible-centered">COMPATIBLE WITH ANDROID AND IOS</div>
+</div>
+
+<br>
+
+
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

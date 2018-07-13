@@ -1,7 +1,4 @@
 
-
-{% assign image = section.settings.image %}
-{% assign image_mobile = section.settings.image_mobile %}
 {% assign has_cta = false %}
 {% assign has_link_wrapper = false %}
 {% assign has_cta_2 = false %}
@@ -26,24 +23,16 @@
   {% assign has_link_wrapper = true %}
 {%- endif -%}
 
-{% if image != blank %}
-  {% assign image_size = '2048x2048' %}
-  {% assign background_image = image | img_url: image_size %}
-  {% assign background_image_mobile = image_mobile | img_url: image_size %}
+
   {%- capture feature_image -%}
     <img
       class="feature-image"
-      alt="{{ image.alt | escape }}"
-      src="{{ image | img_url: image_size }}">
+      alt="populele edison award"
+      src="//cdn.shopify.com/s/files/1/2021/3861/files/Banner_1.jpg?4925617515985929028"
+    >
   {%- endcapture -%}
-{% else %}
-  {%- capture background_image -%}
-    {%- include 'placeholder_svg_uri' placeholder: 'lifestyle-1' -%}
-  {%- endcapture -%}
-  {%- capture feature_image -%}
-    {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg feature-image' }}
-  {%- endcapture -%}
-{% endif %}
+
+
 
 {%- capture section_class -%}
   {{ section.settings.style }}
@@ -54,21 +43,17 @@
 
 <style>
 
-  @media only screen and (min-width: 720px) {
+  @media only screen and (min-width: 768px) {
     .style{{ section.id }}{
-      	background-image: url('{{ background_image | strip }}');
+      	background-image: url('//cdn.shopify.com/s/files/1/2021/3861/files/Banner_1.jpg?4925617515985929028');
     }
   }
-  @media only screen and (max-width: 719px) {
+  @media only screen and (max-width: 767px) {
     .style{{ section.id }}{
-      	background-image: url('{{ background_image_mobile | strip }}'); 
-        height:150vw;
+      background-image: url('//cdn.shopify.com/s/files/1/2021/3861/files/Banner_1.jpg?4925617515985929028');
+      height:150vw;
     }
   }
-  
-
-  
-  
 </style>
 
 {%- capture feature_styles -%}
@@ -76,7 +61,7 @@ color: {{ section.settings.text_color }};
 {%- endcapture -%}
 
 <section
-         class="module-container home-full-width-feature {{ section_class | strip_newlines }} style{{ section.id }}"
+         class="hide-mobile module-container home-full-width-feature {{ section_class | strip_newlines }} style{{ section.id }}"
          data-section-id="{{ section.id }}"
          data-section-type="image-with-text-overlay"
          data-image-with-text-layout="background"
@@ -87,24 +72,18 @@ color: {{ section.settings.text_color }};
   {% endif %}
 
   {{ feature_image | strip }}
-
-  
-  
-
-  
-
   
   <!--   position left -->
   {% if  section.settings.text_position  == "left" %}
   {% if has_content %}
-  <div class="home-full-width-feature-content hide-mobile" data-feature-content  style="top:25%;">
-    <article class="module-inner-whyPopulele" style="text-align:left; margin-left:12%;" >
+  <div class="home-full-width-feature-content" data-feature-content>
+    <article class="module-inner" style="text-align:left; width: 50%; margin-left:12%;">
       {% if section.settings.title != blank %}
-      <h1 class="feature-title" style="{{feature_styles | strip_newlines }} font-size:24px;">{{ section.settings.title | escape }}</h1>
+      <h1 class="feature-title" style="{{feature_styles | strip_newlines }}">{{ section.settings.title | escape }}</h1>
       {% endif %}
 
       {% if section.settings.caption != blank %}
-      <p class="text-caption" style="{{feature_styles | strip_newlines }} font-size:16px">{{ section.settings.caption }}</p>
+      <p class="text-caption" style="{{feature_styles | strip_newlines }}">{{ section.settings.caption }}</p>
       {% endif %}
 
       {% if has_cta %}
@@ -123,18 +102,18 @@ color: {{ section.settings.text_color }};
   <!--   position right -->
   {% if  section.settings.text_position  == "right" %}
   {% if has_content %}
-  <div class="home-full-width-feature-content hide-mobile" data-feature-content style="top:25%">
-    <article class="module-inner-whyPopulele" style="text-align:left; margin-left:48%;">
+  <div class="home-full-width-feature-content" data-feature-content>
+    <article class="module-inner" style="text-align:left; width: 50%; margin-left:50%;">
       {% if section.settings.title != blank %}
-      <h1 class="feature-title" style="{{feature_styles | strip_newlines }} font-size:24px;">{{ section.settings.title | escape }}</h1>
-      {% endif %}
+      <h2 class="feature-title" style="{{feature_styles | strip_newlines }}">{{ section.settings.title | escape }}</h2>
+	   {% endif %}
 
       {% if section.settings.caption != blank %}
-      <p class="text-caption" style="{{feature_styles | strip_newlines }} font-size:16px">{{ section.settings.caption }}</p>
+      <p class="text-caption" style="{{feature_styles | strip_newlines }}">{{ section.settings.caption }}</p>
       {% endif %}
 
       {% if has_cta %}
-      <div class="home-module-cta" style="text-align:right;">
+      <div class="home-module-cta" style="text-align:left;">
         <a class="button" href="{{ section.settings.button_link }}">{{section.settings.button_text | escape }}</a>&nbsp;&nbsp;
         {% if has_cta_2 %}
         <a class="button" href="{{ section.settings.button_link_2 }}">{{section.settings.button_text_2 | escape }}</a>
@@ -149,18 +128,18 @@ color: {{ section.settings.text_color }};
   <!--   position center -->
   {% if  section.settings.text_position  == "center" %}
   {% if has_content %}
-  <div class="home-full-width-feature-content hide-mobile" data-feature-content  style="top:25%;">
-    <article class="module-inner-whyPopulele" >
+  <div class="home-full-width-feature-content" data-feature-content>
+    <article class="module-inner" >
       {% if section.settings.title != blank %}
-      <h1 class="feature-title" style="{{feature_styles | strip_newlines }} font-size:24px;">{{ section.settings.title | escape }}</h1>
+      <h1 class="feature-title" style="{{feature_styles | strip_newlines }}">{{ section.settings.title | escape }}</h1>
       {% endif %}
 
       {% if section.settings.caption != blank %}
-      <p class="text-caption" style="{{feature_styles | strip_newlines }} font-size:16px">{{ section.settings.caption }}</p>
+      <p class="text-caption" style="{{feature_styles | strip_newlines }}">{{ section.settings.caption }}</p>
       {% endif %}
 
       {% if has_cta %}
-      <div class="home-module-cta" style="text-align:center;">
+      <div class="home-module-cta" >
         <a class="button" href="{{ section.settings.button_link }}">{{section.settings.button_text | escape }}</a>&nbsp;&nbsp;
         {% if has_cta_2 %}
         <a class="button" href="{{ section.settings.button_link_2 }}">{{section.settings.button_text_2 | escape }}</a>
@@ -225,7 +204,8 @@ color: {{ section.settings.text_color }};
           "value": "right",
           "label": "right"
           }
-      ]
+      ],
+      "default": "center"
     },
     {
       "type": "text",
@@ -237,7 +217,7 @@ color: {{ section.settings.text_color }};
       "type": "text",
       "id": "caption",
       "label": "Text",
-      "default": "Select imagery and text that relates to your style and story."
+      "default": "<p>Select imagery and text that relates to your style and story.</p>"
     },
     {
       "type": "text",

@@ -1,0 +1,725 @@
+<style>
+  .feature-title-edisionAward{
+  }
+
+</style>
+{% assign has_cta = false %}
+{% assign has_link_wrapper = false %}
+{% assign has_cta_2 = false %}
+{% assign has_link_wrapper_2 = false %}
+
+{%- if section.settings.title != blank or section.settings.caption != blank -%}
+  {% assign has_content = true %}
+{%- endif -%}
+
+{%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
+  {% assign has_cta = true %}
+  {% assign has_content = true %}
+{%- endif -%}
+
+{%- if section.settings.button_text_2 != blank and section.settings.button_link_2 != blank -%}
+  {% assign has_cta_2 = true %}
+  {% assign has_content_2 = true %}
+{%- endif -%}
+
+
+{%- if section.settings.button_text == blank and section.settings.button_link != blank -%}
+  {% assign has_link_wrapper = true %}
+{%- endif -%}
+
+
+  {%- capture feature_image -%}
+    <img
+      class="feature-image"
+      alt="populele edison award"
+      src="//cdn.shopify.com/s/files/1/2021/3861/files/Banner_1.jpg?4925617515985929028"
+    >
+  {%- endcapture -%}
+
+
+
+{%- capture section_class -%}
+  {{ section.settings.style }}
+  full-width-background
+
+  {% unless has_content %}no-content{% endunless %}
+{%- endcapture -%}
+
+
+<style>
+.slider-container {
+  position: relative;
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: all-scroll;
+}
+
+.slider-control {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  width: 12%;
+  height: 100%;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  will-change: opacity;
+  opacity: 0;
+}
+.slider-control.inactive:hover {
+  cursor: auto;
+}
+.slider-control:not(.inactive):hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.slider-control.left {
+  left: 0;
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.slider-control.right {
+  right: 0;
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.18) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.18) 100%);
+}
+
+.slider-pagi {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 2rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 0;
+  list-style-type: none;
+}
+.slider-pagi__elem {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.slider-pagi__elem:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+.slider-pagi__elem.active:before, .slider-pagi__elem:hover:before {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.slider {
+  z-index: 1;
+  position: relative;
+  height: 100%;
+}
+.slider.animating {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  will-change: transform;
+}
+.slider.animating .slide__bg {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  will-change: transform;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.slide.active .slide__overlay,
+.slide.active .slide__text {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.slide__bg {
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  will-change: transform;
+}
+.slide:nth-child(1) {
+  left: 0;
+}
+  @media only screen and (max-width: 767px) {
+    .slide:nth-child(1) .slide__bg {
+      left: 0;
+      background-image: url("//cdn.shopify.com/s/files/1/2021/3861/files/1_4d05bd66-9ad9-4f48-982b-d73ced4b258f.jpg?7524520283862117295");
+    }
+  }
+.slide:nth-child(1) .slide__overlay-path {
+  fill: #e99c7e;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(1) .slide__text {
+    background-color: rgba(135, 138, 140, 0.6);
+  }
+}
+.slide:nth-child(2) {
+  left: 100%;
+}
+  @media only screen and (max-width: 767px) {
+    .slide:nth-child(2) .slide__bg {
+      left: -50%;
+      background-image: url("//cdn.shopify.com/s/files/1/2021/3861/files/2_183b14b3-8705-431d-bddf-b7afc5c07bbd.jpg?7524520283862117295");
+    }
+  }
+.slide:nth-child(2) .slide__overlay-path {
+  fill: #e1ccae;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(2) .slide__text {
+    background-color: rgba(225, 204, 174, 0.6);
+  }
+}
+.slide:nth-child(3) {
+  left: 200%;
+}
+  @media only screen and (max-width: 767px) {
+    .slide:nth-child(3) .slide__bg {
+      left: -100%;
+      background-image: url("//cdn.shopify.com/s/files/1/2021/3861/files/3.jpg?7524520283862117295");
+    }
+  }
+.slide:nth-child(3) .slide__overlay-path {
+  fill: #adc5cd;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(3) .slide__text {
+    background-color: rgba(30, 7, 166, 0.6);
+  }
+}
+.slide:nth-child(4) {
+  left: 300%;
+}
+  @media only screen and (max-width: 767px) {
+    .slide:nth-child(4) .slide__bg {
+      left: -150%;
+      background-image: url("//cdn.shopify.com/s/files/1/2021/3861/files/4_2e17c0bb-6312-4e2f-ba1e-d4299dc087e4.jpg?7524520283862117295");
+    }
+  }
+.slide:nth-child(4) .slide__overlay-path {
+  fill: #cbc6c3;
+}
+  
+@media (max-width: 991px) {
+  .slide:nth-child(4) .slide__text {
+    background-color: rgba(255, 170, 128, 0.6);
+  }
+}
+  
+.slide__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slide__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  min-height: 810px;
+  -webkit-transition: opacity 0.2s 0.5s, -webkit-transform 0.5s 0.5s;
+  transition: opacity 0.2s 0.5s, -webkit-transform 0.5s 0.5s;
+  transition: transform 0.5s 0.5s, opacity 0.2s 0.5s;
+  transition: transform 0.5s 0.5s, opacity 0.2s 0.5s, -webkit-transform 0.5s 0.5s;
+  will-change: transform, opacity;
+  -webkit-transform: translate3d(-20%, 0, 0);
+          transform: translate3d(-20%, 0, 0);
+  opacity: 0;
+}
+@media (max-width: 991px) {
+  .slide__overlay {
+    display: none;
+  }
+}
+.slide__overlay path {
+  opacity: 0.8;
+}
+.slide__text {
+  position: absolute;
+  width: 25%;
+  bottom: 15%;
+  left: 12%;
+  color: #fff;
+  -webkit-transition: opacity 0.5s 0.8s, -webkit-transform 0.5s 0.8s;
+  transition: opacity 0.5s 0.8s, -webkit-transform 0.5s 0.8s;
+  transition: transform 0.5s 0.8s, opacity 0.5s 0.8s;
+  transition: transform 0.5s 0.8s, opacity 0.5s 0.8s, -webkit-transform 0.5s 0.8s;
+  will-change: transform, opacity;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0;
+}
+@media (max-width: 991px) {
+  .slide__text {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 18rem;
+    text-align: center;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    -webkit-transition: opacity 0.5s 0.5s, -webkit-transform 0.5s 0.5s;
+    transition: opacity 0.5s 0.5s, -webkit-transform 0.5s 0.5s;
+    transition: transform 0.5s 0.5s, opacity 0.5s 0.5s;
+    transition: transform 0.5s 0.5s, opacity 0.5s 0.5s, -webkit-transform 0.5s 0.5s;
+    padding: 0 1rem;
+  }
+}
+.slide__text-heading {
+  font-size: 20px;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+@media (max-width: 991px) {
+  .slide__text-heading {
+/*     line-height: 20rem;
+    font-size: 3.5rem; */
+  }
+}
+.slide__text-desc {
+/*   font-family: "Open Sans", Helvetica, Arial, sans-serif; */
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 991px) {
+  .slide__text-desc {
+    /*display: none;*/
+  }
+}
+.slide__text-link {
+  z-index: 5;
+  display: inline-block;
+  position: relative;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 2.3rem;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+@media (max-width: 991px) {
+  .slide__text-link {
+    display: none;
+  }
+}
+.slide__text-link:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  -webkit-transform: rotateX(-85deg);
+          transform: rotateX(-85deg);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  will-change: transform;
+}
+.slide__text-link:hover:before {
+  -webkit-transform: rotateX(0);
+          transform: rotateX(0);
+}
+  
+</style>
+
+<style>
+
+  @media only screen and (min-width: 768px) {
+    .style{{ section.id }}{
+      	background-image: url('//cdn.shopify.com/s/files/1/2021/3861/files/Banner_1.jpg?4925617515985929028');
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .style{{ section.id }}{
+      background-image: url('//cdn.shopify.com/s/files/1/2021/3861/files/Banner_1.jpg?4925617515985929028');
+      height:150vw;
+    }
+  }
+
+
+</style>
+
+{%- capture feature_styles -%}
+color: {{ section.settings.text_color }};
+{%- endcapture -%}
+
+
+<section class="hide-desktop module-container "  style="height:100vh; overflow: hidden; font-size: 62.5%;">
+   <div class="slider-container">
+  <div class="slider-control left "></div>
+  <div class="slider-control right"></div>
+  <ul class="slider-pagi"></ul>
+  <div class="slider">
+    <div class="slide slide-0 active">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading">2018 EDISON AWARDS WINNER</h2>
+          <p class="slide__text-desc">The perfect musical gift for everyone. Give your loved ones the gift of music.</p>
+          <a class="slide__text-link">Project link</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide-1 ">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading">PROVEN SUCCESS WITH LEARNERS</h2>
+          <p class="slide__text-desc">The Populele methodology simply works! From preschoolers to grandpas, from music beginners to talented singers, learners of all backgrounds and ages are having a blast with Populele.</p>
+          <a class="slide__text-link">Project link</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide-2">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading">RECOMMENDED BY EXPERTS</h2>
+          <p class="slide__text-desc">Populele has amazed educators. Hear what they have to say about the world's first, and only, smart ukulele designed with a built-in self-learning system.</p>
+          <a class="slide__text-link">Project link</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide-3">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading">AWAKEN YOUR INNER MUSICIAN</h2>
+          <p class="slide__text-desc">One Populele. Endless possibilities. Mesmerize your audience with dazzling lights. Discover your inner musician.</p>
+          <a class="slide__text-link">Project link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section
+         class="hide-mobile module-container home-full-width-feature {{ section_class | strip_newlines }} style{{ section.id }}"
+         data-section-id="{{ section.id }}"
+         data-section-type="image-with-text-overlay"
+         data-image-with-text-layout="background"
+         >
+  
+  {% if has_link_wrapper %}
+  <a class="home-full-width-feature-link-wrapper" href="{{ section.settings.button_link }}"></a>
+  {% endif %}
+
+  {{ feature_image | strip }}
+  
+  
+  <!--   position right -->
+  {% if  section.settings.text_position  == "right" %}
+  {% if has_content %}
+  <div class="home-full-width-feature-content" data-feature-content style="top: 35%;">
+    <article class="module-inner" style="text-align:left; width: 40%; margin-left:50%;">
+
+      
+      <h2 class="feature-title" style="{{feature_styles | strip_newlines }} margin-bottom: 10px;">
+
+        2018 EDISON 
+        
+        <img style="vertical-align: middle;" alt="2018 Edison Awards Winner Populele"
+             src="//cdn.shopify.com/s/files/1/2021/3861/files/EdisonAwds16_BRONZE.1.png?1508385038948339232" 
+             width="100" >
+        
+      </h2>
+      <h2 class="feature-title" style="{{feature_styles | strip_newlines }} margin-top:0px;">AWARDS WINNER</h2>
+      
+      <p class="text-caption" style="{{feature_styles | strip_newlines }}">The perfect musical gift for everyone. Give your loved ones the gift of music.</p>  
+
+
+      {% if has_cta %}
+      <div class="home-module-cta" style="text-align:left;">
+        <a class="button" href="{{ section.settings.button_link }}">{{section.settings.button_text | escape }}</a>&nbsp;&nbsp;
+        {% if has_cta_2 %}
+        <a class="button" href="{{ section.settings.button_link_2 }}">{{section.settings.button_text_2 | escape }}</a>
+        {% endif %}
+      </div>
+      {% endif %}
+    </article>
+  </div>
+  {% endif %}
+  {% endif %}
+
+
+
+</section>
+
+<script src='//cdn.shopify.com/s/files/1/2021/3861/files/Jquery2.1.3.min.js?12079164062140471540'></script>
+
+
+<script>
+  
+  $(document).ready(function() {
+
+  var $slider = $(".slider"),
+      $slideBGs = $(".slide__bg"),
+      diff = 0,
+      curSlide = 0,
+      numOfSlides = $(".slide").length-1,
+      animating = false,
+      animTime = 500,
+      autoSlideTimeout,
+      autoSlideDelay = 6000,
+      $pagination = $(".slider-pagi");
+  
+  function createBullets() {
+    console.log("test");
+    for (var i = 0; i < numOfSlides+1; i++) {
+      var $li = $("<li class='slider-pagi__elem'></li>");
+      $li.addClass("slider-pagi__elem-"+i).data("page", i);
+      if (!i) $li.addClass("active");
+      $pagination.append($li);
+    }
+  };
+  
+  createBullets();
+  
+  function manageControls() {
+    $(".slider-control").removeClass("inactive");
+    if (!curSlide) $(".slider-control.left").addClass("inactive");
+    if (curSlide === numOfSlides) $(".slider-control.right").addClass("inactive");
+  };
+  
+  function autoSlide() {
+    autoSlideTimeout = setTimeout(function() {
+      curSlide++;
+      if (curSlide > numOfSlides) curSlide = 0;
+      changeSlides();
+    }, autoSlideDelay);
+  };
+  
+  autoSlide();
+  
+  function changeSlides(instant) {
+    if (!instant) {
+      animating = true;
+      manageControls();
+      $slider.addClass("animating");
+      $slider.css("top");
+      $(".slide").removeClass("active");
+      $(".slide-"+curSlide).addClass("active");
+      setTimeout(function() {
+        $slider.removeClass("animating");
+        animating = false;
+      }, animTime);
+    }
+    window.clearTimeout(autoSlideTimeout);
+    $(".slider-pagi__elem").removeClass("active");
+    $(".slider-pagi__elem-"+curSlide).addClass("active");
+    $slider.css("transform", "translate3d("+ -curSlide*100 +"%,0,0)");
+    $slideBGs.css("transform", "translate3d("+ curSlide*50 +"%,0,0)");
+    diff = 0;
+    autoSlide();
+  }
+
+  function navigateLeft() {
+    if (animating) return;
+    if (curSlide > 0) curSlide--;
+    else if(curSlide == 0) curSlide = numOfSlides;
+    changeSlides();
+  }
+
+  function navigateRight() {
+    if (animating) return;
+    if (curSlide < numOfSlides) curSlide++;
+    else if (curSlide == numOfSlides) curSlide = 0;
+    changeSlides();
+  }
+
+  $(document).on("mousedown touchstart", ".slider", function(e) {
+    if (animating) return;
+    window.clearTimeout(autoSlideTimeout);
+    var startX = e.pageX || e.originalEvent.touches[0].pageX,
+        winW = $(window).width();
+    diff = 0;
+    
+    $(document).on("mousemove touchmove", function(e) {
+      var x = e.pageX || e.originalEvent.touches[0].pageX;
+      diff = (startX - x) / winW * 70;
+      if ((!curSlide && diff < 0) || (curSlide === numOfSlides && diff > 0)) diff /= 2;
+      $slider.css("transform", "translate3d("+ (-curSlide*100 - diff) +"%,0,0)");
+      $slideBGs.css("transform", "translate3d("+ (curSlide*50 + diff/2) +"%,0,0)");
+    });
+  });
+  
+  $(document).on("mouseup touchend", function(e) {
+    $(document).off("mousemove touchmove");
+    if (animating) return;
+    if (!diff) {
+      changeSlides(true);
+      return;
+    }
+    if (diff > -8 && diff < 8) {
+      changeSlides();
+      return;
+    }
+    if (diff <= -8) {
+      navigateLeft();
+    }
+    if (diff >= 8) {
+      navigateRight();
+    }
+  });
+  
+  $(document).on("click", ".slider-control", function() {
+    if ($(this).hasClass("left")) {
+      navigateLeft();
+    } else {
+      navigateRight();
+    }
+  });
+  
+  $(document).on("click", ".slider-pagi__elem", function() {
+    curSlide = $(this).data("page");
+    changeSlides();
+  });
+  
+});
+  
+</script>
+
+{% schema %}
+{
+  "name": "edison award",
+  "settings": [
+    {
+      "type": "select",
+      "id": "style",
+      "label": "Style",
+      "options": [
+        {
+          "value": "default-style",
+          "label": "Default"
+        },
+        {
+          "value": "accent-style",
+          "label": "Accent"
+        },
+        {
+          "value": "contrast-style",
+          "label": "Contrast"
+        }
+      ],
+      "default": "default-style"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000"
+    },
+    {
+      "type": "select",
+      "id": "text_position",
+      "label": "Text and button position",
+      "options": [
+          {
+          "value": "right",
+          "label": "right"
+          }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "text",
+      "id": "caption",
+      "label": "Text",
+      "default": "<p>Select imagery and text that relates to your style and story.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Link URL"
+    },
+    {
+      "type": "text",
+      "id": "button_text_2",
+      "label": "Button text 2"
+    },
+    {
+      "type": "url",
+      "id": "button_link_2",
+      "label": "Link URL 2"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity_strength",
+      "label": "Overlay opacity",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "default": 90
+    }
+  ],
+  "presets": [
+    {
+      "category": "Image",
+      "name": "edison award"
+    }
+  ]
+}
+
+{% endschema %}

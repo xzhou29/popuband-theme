@@ -20,12 +20,24 @@
 {%- endcapture -%}
 
 
+<style>
+  .double-video-margin {
+    margin: 3% 10% 0% 10%;
+  }
+  @media only screen and (max-width: 767px) {
+    .double-video-margin {
+      margin: 0;
+    }
+  }
+</style>
+
 
 <section
-  class="module-container home-full-width-feature {{ section_class | strip_newlines }}"
+  class="module-container home-full-width-feature {{ section_class | strip_newlines }} double-video-margin"
   data-section-id="{{ section.id }}"
   data-section-type="image-with-text"
-  data-image-with-text-layout="{{ media_layout }}">
+  data-image-with-text-layout="{{ media_layout }}"
+         >
 
   <div class="col-md-6 col-sm-6 col-xs-12" >
     <article class="module-inner home-full-width-feature-content" data-feature-content>
@@ -47,6 +59,8 @@
       </div>
 
     </article>
+    <h2 align="center"> </h2>
+    
   </div>
   <div class="col-md-6 col-sm-6 col-xs-12">
     <article class="module-inner home-full-width-feature-content" data-feature-content>
@@ -68,6 +82,8 @@
       </div>
 
     </article>
+    
+    <h2 align="center"> </h2>
   </div>
 
 </section>

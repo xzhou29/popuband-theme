@@ -1,3 +1,14 @@
+<style>
+  
+  .content-title-whyPopulele{
+    color: #ffca57; 
+    font-size:31px;
+
+  }
+
+</style>
+
+
 <section
   class="module-container {{ section.settings.style }} {% if section.settings.show_borders %}borders{% endif %}"
   data-section-id="{{ section.id }}"
@@ -28,44 +39,25 @@
               {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg feature-image' }}
             {% endif %}
           {% elsif block.type == 'video' %}
-            <div class="video-wrapper">
-              {% if block.settings.video_url != blank %}
-                {% if block.settings.video_url.type == "youtube" %}
-                  <iframe
-                    src="//www.youtube.com/embed/{{ block.settings.video_url.id }}?rel=0&showinfo=0&vq=720"
-                    width="850"
-                    height="500"
-                    frameborder="0"
-                    allowfullscreen></iframe>
-                {% endif %}
-                {% if block.settings.video_url.type == "vimeo" %}
-                  <iframe
-                    src="//player.vimeo.com/video/{{ block.settings.video_url.id }}?byline=0&portrait=0&badge=0"
-                    width="850"
-                    height="480"
-                    frameborder="0"
-                    allowfullscreen></iframe>
-                {% endif %}
-              {% else %}
-                <iframe
-                  src="//www.youtube.com/embed/_9VUPq3SxOc?rel=0&showinfo=0&vq=720"
-                  width="850"
-                  height="480"
-                  frameborder="0"></iframe>
-              {% endif %}
-            </div>
+
+              <!-- (1) video wrapper -->
+              <div class="youtube-video" data-embed="{{ block.settings.video_url.id }}"> 
+
+                <div class="play-button"></div> 
+
+              </div>
           {% endif %}
         </div>
 
         <div class="home-left-right-text">
           {% if block.settings.title != blank %}
-            <h3 class="content-title">{{ block.settings.title | escape }}</h3>
+          <h3><span  class="content-title-whyPopulele"> {{ block.settings.title | escape }}</span></h3>
           {% endif %}
 
           {% if block.settings.caption != blank or has_button %}
             <div class="rte">
               {% if block.settings.caption != blank %}
-                <p class="video-description">{{ block.settings.caption | escape }}</p>
+                <p class="video-description" style="font-family:Open sans-serif;color:#666666;">{{ block.settings.caption | escape }}</p>
               {% endif %}
 
               {% if has_button %}
@@ -77,13 +69,14 @@
           {% endif %}
         </div>
       </article>
+
     {% endfor %}
 
   </div>
 </section>
 {% schema %}
 {
-  "name": "Alternating content app",
+  "name": "app Lazyload Videos",
   "max_blocks": 3,
   "settings": [
     {
@@ -231,7 +224,7 @@
   "presets": [
     {
       "category": "Video Page",
-      "name": "Video Alternating content app",
+      "name": "app Lazyload Videos",
       "blocks": [
         {
           "type": "image",
