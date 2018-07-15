@@ -107,8 +107,7 @@
 /* Element Queries — uses JS */
 
 .ck_form_content, .ck_form_fields {
-  width: 50%;
-  float: left;
+  width: 100%;
   padding: 5%;
 }
 
@@ -388,19 +387,20 @@ color: {{ section.settings.text_color }};
           <div class="ck_form_container ck_inline" data-ck-version="7">
 
           <div class="ck_form ck_vertical_subscription_form" style="margin:0; border-top:0;">
-          <div class="ck_form_content">
+<!--           <div class="ck_form_content" style="padding-top: 20px; padding-bottom: 20px;">
             <h3 class="ck_form_title">Join the newsletter</h3>
             <div class="ck_description">
               <span class="ck_image">
                 
               </span>
               <p>Subscribe to get our latest content by email.</p>
+              
             </div>
-          </div>
+          </div> -->
 
           <div class="ck_form_fields">
             <div id="ck_success_msg" style="display:none;">
-              <p>Success! Now check your email to confirm your subscription.</p>
+              <p>Success! Now check your email to view the list.</p>
             </div>
 
             <!--  Form starts here  -->
@@ -415,7 +415,7 @@ color: {{ section.settings.text_color }};
               </div>
               
               <div class="ck_control_group ck_first_name_field_group">
-                <label class="ck_label" for="ck_firstNameField">First Name</label>
+                <label class="ck_label" for="ck_firstNameField">Your Name</label>
                 <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" style="display:block;">
               </div>
               
@@ -433,7 +433,7 @@ color: {{ section.settings.text_color }};
 
 
               <button class="subscribe_button ck_subscribe_button btn fields" id="ck_subscribe_button">
-                Subscribe
+                Subscribe & View the List
               </button>
               <span class="ck_guarantee">
                 We won&#39;t send you spam. Unsubscribe at any time.

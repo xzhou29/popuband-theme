@@ -4,33 +4,60 @@
     position: relative;
     text-align: center;
     color: white;
+    background-image: url(//cdn.shopify.com/s/files/1/2021/3861/files/googl_ios2Artboard_1.jpg?16866090901824921416);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 
   }
 
   .app-compatible-centered {
-        width:100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width:100%;
+    position: relative;
     color: #fff;
     font-size: 20px;
+
+  }
+  .app-compatible-img{
+    margin-top:10px;
+    margin-bottom:0px;
+    height:60px;
+    width:60px;
   }
   @media screen and (max-width: 1203px) and (min-width: 768px) {
     .app-compatible-centered {
       font-size: 30px;
+    }
+    .app-compatible-img{
+      margin-top:14px;
+      margin-bottom:10px;
+      height:80px;
+      width:80px;
     }
   }
   @media screen and (max-width: 1440px) and (min-width: 1204px) {
     .app-compatible-centered {
       font-size: 40px;
     }
+    .app-compatible-img{
+      margin-top:20px;
+      margin-bottom:10px;
+      height:100px;
+      width:100px;
+    }
   }
   @media screen and (min-width: 1441px) {
     .app-compatible-centered {
       font-size: 54px;
     }  
-  } 
+    .app-compatible-img{
+      margin-top:20px;
+      margin-bottom:10px;
+      height:140px;
+      width:140px;
+    }
+  }
+
 
 </style>
 
@@ -38,11 +65,12 @@
 <br>
 
 <div class="app-compatible">
-  <img src="//cdn.shopify.com/s/files/1/2021/3861/files/googl_ios2Artboard_1.jpg?16866090901824921416"
-       alt="Compatible with Android and iOS" 
-       style="width:100%;">
-  <!--   <div class="app-compatible-centered">Compatible with Android and iOS</div> -->
+  
+  <img class="app-compatible-img"
+       src="//cdn.shopify.com/s/files/1/2021/3861/files/populele-app-icon02082018_-01.png?7821237282840569201"   
+       alt="Compatible with Android and iOS" >
   <div class="app-compatible-centered">COMPATIBLE WITH ANDROID AND IOS</div>
+  
 </div>
 
 <br>

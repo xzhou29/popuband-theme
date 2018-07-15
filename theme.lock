@@ -44,7 +44,7 @@ assets/theme.js.liquid:
 assets/theme.scss.liquid:
   development: 2018-07-13T11:25:00-05:00   ddded03b597f64f709d8083afa1aba9f
 config/settings_data.json:
-  development: 2018-07-13T10:41:57-05:00   2ba2a99f60d085357bf8403b41cdb130
+  development: 2018-07-15T17:36:10-05:00   82bce0fb63d15c0dc846c7e10a1cfd52
 config/settings_schema.json:
   development: 2018-03-04T13:35:42-06:00   f4ec663a254896ea2eb81dd353c17604
 layout/theme.liquid:
@@ -52,7 +52,7 @@ layout/theme.liquid:
 layout/theme.test.liquid:
   development: 2018-05-09T15:03:52-05:00   65d51439a9dac9fa96a07eab26743951
 locales/en.default.json:
-  development: 2018-04-16T12:30:05-05:00   d26c5a3097faac39f70edacdd0ecc4fd
+  development: 2018-07-15T17:26:07-05:00   47e024c19ce5469dcf3415ffd1652b62
 sections/1-ImgTextOverlay.liquid:
   development: 2018-04-30T09:46:43-05:00   3096425ec1b52f4d012f4be895381d6d
 sections/1-NewButtonLightsTwinkle.liquid:
@@ -68,23 +68,23 @@ sections/1-newTestimonials.liquid:
 sections/1-newbutton-ImgTextOverlay.liquid:
   development: 2018-05-18T10:02:35-05:00   01b27e0853e8fdd9dc0f45864ac8dc4d
 sections/1-popup_iframVideo.liquid:
-  development: 2018-06-26T10:29:47-05:00   b547a7579646ca0b36de9fe7597fae00
+  development: 2018-07-14T15:53:16-05:00   e2d0bc1d7e79d27b994a97a8c360a151
 sections/1-split-screen.liquid:
   development: 2018-04-02T10:02:18-05:00   12d47a4559ce4aaaa0d4da84b7837668
 sections/1-testimonials_test.liquid:
   development: 2018-06-14T10:47:15-05:00   dbe4cf54526d8f3bb05b6ecc7f448180
 sections/2-app-alternatingContent.liquid:
-  development: 2018-07-12T10:36:48-05:00   c0d97e8d1b2d9bcbe4dcd21bb4667d91
+  development: 2018-07-14T16:03:28-05:00   cb3c6646a9a488b3c7bd6d4a9f523bc6
 sections/2-app-compatible.liquid:
-  development: 2018-07-12T15:23:44-05:00   20298837c4d8d1a702c4a6db3aa993ed
+  development: 2018-07-14T16:38:23-05:00   19f62c6de6b1551842fc79c0a05988c1
 sections/2-app-imageText01.liquid:
   development: 2018-07-10T15:22:13-05:00   aca9b6ab52775b948d59bec5bd4efad2
 sections/2-app-imageText02.liquid:
   development: 2018-06-22T17:25:55-05:00   0ee3655237ba8512cce64a6b540e9265
 sections/2-app-lazyVideo.liquid:
-  development: 2018-07-11T15:54:34-05:00   c2aaab11d526967364c39be7a5e4bc2f
+  development: 2018-07-14T16:42:12-05:00   1ce05936ddf06e3fa922513fa576e696
 sections/2-app-songLib-2.liquid:
-  development: 2018-07-11T16:50:07-05:00   529b842baacbf2bbb3671051e99c1453
+  development: 2018-07-15T15:34:33-05:00   b9503193af5e2cc0f93480fcce8af265
 sections/2-app-songLib.liquid:
   development: 2018-07-11T16:49:13-05:00   f6dc190bec805d6465bfd846d4db694c
 sections/2-musicGift-imageTextOverlay.liquid:
@@ -108,21 +108,21 @@ sections/2-new-imageTextOverlay05.liquid:
 sections/2-new-imageTextOverlay06.liquid:
   development: 2018-07-10T11:50:02-05:00   09c2098e3e67a857775c05228ca1f9b5
 sections/2-new-product-page.liquid:
-  development: 2018-07-08T11:50:08-05:00   4e34b94522ddaf4ae1f298bf6ecd8e29
+  development: 2018-07-13T11:35:08-05:00   9cfd5af5666e0ef46ac95c43a635e6e4
 sections/2-new-slideshow-2.liquid:
   development: 2018-05-30T15:19:03-05:00   eda46b0f60fb7eab069d5bd94ae6cb2b
 sections/2-new-slideshow.liquid:
   development: 2018-07-08T11:53:13-05:00   4cdb83dce3c42a8c57c3d602af901bcf
 sections/2-product-feature-tabs.liquid:
-  development: 2018-07-13T10:42:51-05:00   5fdb50ccd777c8db713db6e452e55f62
+  development: 2018-07-15T17:49:29-05:00   c2815041a5d60f08a8ef66e8a7a3c123
 sections/2-specifications-2.liquid:
-  development: 2018-07-10T10:33:44-05:00   ea8662710e504b4bcccaadab2a7d19fc
+  development: 2018-07-15T14:36:06-05:00   4e57017e9fb383c655d2780928e81e06
 sections/2-specifications.liquid:
   development: 2018-06-14T15:38:14-05:00   506afee59803635830f448c316cfc628
 sections/2-whyPopulele-doubleV-01.liquid:
   development: 2018-07-10T17:52:35-05:00   43d582da80b99c57d202c83741f179f1
 sections/2-whyPopulele-edisonAward.liquid:
-  development: 2018-07-13T11:22:48-05:00   bd627a7fd045dee956716d30ade66d7e
+  development: 2018-07-15T15:51:06-05:00   a07dc2596bfcef44658bcecce2a18e2f
 sections/2-whyPopulele-image-01.liquid:
   development: 2018-06-29T17:52:31-05:00   5ecb9a039d2e2303df07d2ea2157d62e
 sections/2-whyPopulele-image-02.liquid:
@@ -388,7 +388,7 @@ templates/page.product.liquid:
 templates/page.ukulele-learning.liquid:
   development: 2018-06-11T14:04:36-05:00   fc47c390a3cdcfa34c7e349be719becc
 templates/page.why-populele.liquid:
-  development: 2018-07-10T12:10:11-05:00   066966dbf84d48c9cdceba28314b2634
+  development: 2018-07-13T11:48:36-05:00   6efe6255c3e70b55cf4bd3ef6c592ca6
 templates/password.liquid:
   development: 2018-03-04T13:35:41-06:00   3e72125f32324f2ff3399b1de830c8d1
 templates/product.liquid:

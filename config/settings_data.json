@@ -397,71 +397,106 @@
       "2-new-slideshow": {
         "type": "2-new-slideshow",
         "blocks": {
-          "1526320851518": {
+          "1531604765476": {
             "type": "slider",
             "settings": {
-              "avatar": "shopify:\/\/shop_images\/Facebook-Ads14.jpg"
+              "avatar": "shopify:\/\/shop_images\/3K8A1872_94688bc9-1f61-4268-ae51-022e378a2413.jpg"
             }
           },
-          "1526321384314": {
+          "1531604792205": {
             "type": "slider",
             "settings": {
-              "avatar": "shopify:\/\/shop_images\/IMG_0153_284be570-31ad-4d24-a058-101274847f15.jpg"
+              "avatar": "shopify:\/\/shop_images\/IMG_3450_0c1a4029-6880-4438-be83-64ee5ef8f4fb.jpg"
             }
           },
-          "1526320853569": {
+          "1531604802888": {
             "type": "slider",
             "settings": {
-              "avatar": "shopify:\/\/shop_images\/IMG_0035_7beb0d98-1c7c-4cfa-b383-09b06be379d7.png"
+              "avatar": "shopify:\/\/shop_images\/IMG_9052_0a6aa05b-3223-4dee-a7d3-0f0884b63828.jpg"
             }
           },
-          "1527883639996": {
+          "1531604808733": {
             "type": "slider",
             "settings": {
-              "avatar": "shopify:\/\/shop_images\/afashionnerd_4_082017_b5192fda-2cf2-4292-9578-39236b19a75a.jpg"
+              "avatar": "shopify:\/\/shop_images\/brittanyleighbergquist_def7dd0f-c0a0-4791-875e-5f5949ebb7d9.jpg"
             }
           },
-          "1527883833178": {
+          "1531604842215": {
             "type": "slider",
             "settings": {
-              "avatar": "shopify:\/\/shop_images\/brittanyleighbergquist_949eb44d-3d1f-4b24-b739-b89a26d45d4c.jpg"
+              "avatar": "shopify:\/\/shop_images\/IMG_9181_59fece02-62f1-4c5d-a0bb-089026a80f46.jpg"
             }
           },
-          "1527883931895": {
+          "1531604815716": {
             "type": "slider",
             "settings": {
-              "avatar": "shopify:\/\/shop_images\/IMG_9052__2_538e2ddf-17cb-47f2-a643-cb7c3e2acc44.jpg"
+              "avatar": "shopify:\/\/shop_images\/ukelele2079.jpg"
             }
           },
-          "1527884777270": {
+          "1531604857800": {
             "type": "slider",
             "settings": {
-              "avatar": "shopify:\/\/shop_images\/Meghan_Yancy_1_9ca3e811-9ef2-4b8d-9c6f-d588d95d2923.jpg"
+              "avatar": "shopify:\/\/shop_images\/AFashionNerd_4_082017_ecc135bd-5993-428a-944d-479d6788fa82.jpg"
             }
           },
-          "1527890340292": {
+          "1531604865615": {
             "type": "slider",
             "settings": {
-              "avatar": "shopify:\/\/shop_images\/IMG_3450_4618d372-e932-49ef-8014-f897cf0c0ad8.jpg"
+              "avatar": "shopify:\/\/shop_images\/summercamp_c12f945e-a340-422c-8a21-cb04ba649550.jpg"
             }
           },
-          "1527890440043": {
+          "1531604874487": {
             "type": "slider",
             "settings": {
-              "avatar": "shopify:\/\/shop_images\/IMG_9181_1fbc6ad8-0721-4b29-8775-5f4ed80656c0.jpg"
+              "avatar": "shopify:\/\/shop_images\/IMG_0035_14ac3833-a8a0-4d78-816d-87458795956f.jpg"
+            }
+          },
+          "1531604886828": {
+            "type": "slider",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/IMG_0153_9952ec15-e504-4227-b794-709e95680e41.jpg"
+            }
+          },
+          "1531604900205": {
+            "type": "slider",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/3K8A1159.jpg"
+            }
+          },
+          "1531604935766": {
+            "type": "slider",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/2g9a4557_d393c6ed-133c-42a7-9352-5d31700fc3f2.jpg"
+            }
+          },
+          "1531604960818": {
+            "type": "slider",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/Meghan_Yancy_1_4235654e-bc99-4a9e-8d1b-6dd8c63f257a.jpg"
+            }
+          },
+          "1531604974869": {
+            "type": "slider",
+            "settings": {
+              "avatar": "shopify:\/\/shop_images\/ukelele1873.jpg"
             }
           }
         },
         "block_order": [
-          "1526320851518",
-          "1526321384314",
-          "1526320853569",
-          "1527883639996",
-          "1527883833178",
-          "1527883931895",
-          "1527884777270",
-          "1527890340292",
-          "1527890440043"
+          "1531604765476",
+          "1531604792205",
+          "1531604802888",
+          "1531604808733",
+          "1531604842215",
+          "1531604815716",
+          "1531604857800",
+          "1531604865615",
+          "1531604874487",
+          "1531604886828",
+          "1531604900205",
+          "1531604935766",
+          "1531604960818",
+          "1531604974869"
         ],
         "settings": {
           "background_image": "shopify:\/\/shop_images\/VCG41628101754_5e2a40dc-bae0-42d2-8423-66507fab1401.jpg"
@@ -851,11 +886,11 @@
           "text_color": "#ffffff",
           "text_position": "left",
           "title": "POPULELE U1",
-          "caption": "The World's First Smart Ukulele",
+          "caption": "The World's 1st Smart Ukulele",
           "button_text": "BUY NOW",
           "button_link": "shopify:\/\/products\/populele-with-accessory",
           "button_text_2": "LEARN MORE",
-          "button_link_2": "shopify:\/\/pages\/faq",
+          "button_link_2": "shopify:\/\/pages\/product",
           "image_mobile": "shopify:\/\/shop_images\/banner4_e726a563-814a-470f-98c4-38102ef50ce1.gif",
           "image": "shopify:\/\/shop_images\/Untitled-1_90f966fb-9802-4341-a6ea-5912725dca49.jpg",
           "overlay_opacity_strength": 0
@@ -1305,44 +1340,44 @@
       "2-app-alternatingContent": {
         "type": "2-app-alternatingContent",
         "blocks": {
-          "1531175076077": {
-            "type": "image",
+          "1531602248726": {
+            "type": "video",
             "settings": {
               "media_alignment": "left",
-              "title": "Game",
-              "caption": "Employ up to three alternating features with an option to align images or videos to the left\/right and include a call to action below.",
+              "title": "Play Game & Learn",
+              "caption": "Gamified ukulele lessons in strumming, plucking, chord switching, and more!",
               "button_text": "",
               "button_link": "",
-              "image": "shopify:\/\/shop_images\/Game-GIF.gif"
+              "video_url": "\/\/cdn.shopify.com\/s\/files\/1\/2021\/3861\/files\/My_Movie_2.mp4?12844631252903333580"
             }
           },
-          "1531170425458": {
-            "type": "image",
+          "1531601807471": {
+            "type": "video",
             "settings": {
               "media_alignment": "right",
-              "title": "In-App Ukulele Tools",
-              "caption": "Teach yourself to tune your ukulele and more with Populele's in-app tools.",
+              "title": "Tools",
+              "caption": "Find a tuner, a chord library, and other useful tools all in one app. Turn on the dazzle mode or create your own LED pattern.",
               "button_text": "",
               "button_link": "",
-              "image": "shopify:\/\/shop_images\/My_Movie_20180710110532.gif"
+              "video_url": "\/\/cdn.shopify.com\/s\/files\/1\/2021\/3861\/files\/My_Movie.mp4?7821237282840569201"
             }
           },
-          "1531169835145": {
-            "type": "image",
+          "1531602284227": {
+            "type": "video",
             "settings": {
               "media_alignment": "left",
-              "title": "SONG LIBRARY",
-              "caption": "Constantly updated song collection and forever free!",
+              "title": "Song Library",
+              "caption": "Almost 100 songs in the song library and forever free. Let us know if you want to add more!",
               "button_text": "",
               "button_link": "",
-              "image": "shopify:\/\/shop_images\/My_Movie5_20180709174135.gif"
+              "video_url": "\/\/cdn.shopify.com\/s\/files\/1\/2021\/3861\/files\/My_Movie_3.mp4?7821237282840569201"
             }
           }
         },
         "block_order": [
-          "1531175076077",
-          "1531170425458",
-          "1531169835145"
+          "1531602248726",
+          "1531601807471",
+          "1531602284227"
         ],
         "settings": {
           "style": "default-style",
@@ -1514,7 +1549,7 @@
         "settings": {
           "style": "default-style",
           "title": "STEP BY STEP TUTORIAL",
-          "caption": "<p>Gamified learning process with instant feedback enabled by notes recognition technology.<\/p>",
+          "caption": "Gamified learning process with instant feedback enabled by notes recognition technology.",
           "button_text": "",
           "button_link": "",
           "video_url": "https:\/\/www.youtube.com\/watch?v=VAuRCVddwL4"
@@ -1527,7 +1562,7 @@
           "text_color": "#ffffff",
           "text_position": "center",
           "title": "POPULELE SONG LIBRARY",
-          "caption": "Simply subscribe us to view the song list",
+          "caption": "simply subscribe us to view the full list",
           "button_text": "Explore the list",
           "button_link": "shopify:\/\/products\/populele-with-accessory",
           "button_text_2": "",

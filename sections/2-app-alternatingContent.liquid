@@ -40,12 +40,13 @@
             {% endif %}
           {% elsif block.type == 'video' %}
 
-              <!-- (1) video wrapper -->
-              <div class="youtube-video" data-embed="{{ block.settings.video_url.id }}"> 
+              <video id="miniVideo" muted="" loop="" autoplay="true"
+                     height="100%"
+                     width = "100%"
+                     src="{{ block.settings.video_url}}" 
+                     poster="">
+              </video>
 
-                <div class="play-button"></div> 
-
-              </div>
           {% endif %}
         </div>
 
@@ -74,6 +75,10 @@
 
   </div>
 </section>
+
+
+
+
 {% schema %}
 {
   "name": "app Lazyload Videos",
@@ -209,13 +214,9 @@
           "label": "Link URL"
         },
         {
-          "type": "video_url",
+          "type": "text",
           "id": "video_url",
-          "label": "Youtube or Vimeo link",
-          "accept": [
-            "youtube",
-            "vimeo"
-          ],
+          "label": "video link",
           "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
         }
       ]

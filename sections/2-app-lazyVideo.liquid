@@ -32,9 +32,8 @@
     {% endif %}
 
     {% if section.settings.caption != blank %}
-      <div class="rte">{{ section.settings.caption }}</div>
+    <div class="rte"> <p  style="max-width: 100%;" > {{ section.settings.caption }} </p></div>
     {% endif %}
-
 
     
     <!-- (1) video wrapper -->
@@ -83,10 +82,10 @@
       "default": "Video with text"
     },
     {
-      "type": "richtext",
+      "type": "text",
       "id": "caption",
       "label": "Text",
-      "default": "<p>Select video and text that relates to your style and story.</p>"
+      "default": "Select video and text that relates to your style and story."
     },
     {
       "type": "text",
