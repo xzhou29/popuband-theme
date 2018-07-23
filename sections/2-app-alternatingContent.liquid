@@ -40,7 +40,7 @@
             {% endif %}
           {% elsif block.type == 'video' %}
 
-              <video id="miniVideo" muted="" loop="" autoplay="true"
+              <video id="miniVideo" muted="" loop="" autoplay playsinline
                      height="100%"
                      width = "100%"
                      src="{{ block.settings.video_url}}" 

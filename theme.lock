@@ -48,7 +48,7 @@ config/settings_data.json:
 config/settings_schema.json:
   development: 2018-03-04T13:35:42-06:00   f4ec663a254896ea2eb81dd353c17604
 layout/theme.liquid:
-  development: 2018-07-11T16:47:31-05:00   5408b9627fdff33620111cc217c1829a
+  development: 2018-07-15T18:07:19-05:00   4c3c33dbc74e1fb68e0fbb216ef028b1
 layout/theme.test.liquid:
   development: 2018-05-09T15:03:52-05:00   65d51439a9dac9fa96a07eab26743951
 locales/en.default.json:
@@ -58,7 +58,7 @@ sections/1-ImgTextOverlay.liquid:
 sections/1-NewButtonLightsTwinkle.liquid:
   development: 2018-04-20T11:07:53-05:00   f0e6acb62011da3b0a89bd1cbdbf1969
 sections/1-accordion_2.liquid:
-  development: 2018-06-29T12:33:16-05:00   a887fc3d6cb2e7687676c517603be2d3
+  development: 2018-07-16T14:31:01-05:00   c268c58e75d6e7fc10d10d23c0beedf3
 sections/1-contentGrid.liquid:
   development: 2018-04-23T11:50:30-05:00   1b80458bd2883a3add3934d11b87a2ef
 sections/1-flexbox-accordion.liquid:
@@ -74,7 +74,7 @@ sections/1-split-screen.liquid:
 sections/1-testimonials_test.liquid:
   development: 2018-06-14T10:47:15-05:00   dbe4cf54526d8f3bb05b6ecc7f448180
 sections/2-app-alternatingContent.liquid:
-  development: 2018-07-14T16:03:28-05:00   cb3c6646a9a488b3c7bd6d4a9f523bc6
+  development: 2018-07-16T13:33:08-05:00   a20ebc37709564fdb6724734bb3883b5
 sections/2-app-compatible.liquid:
   development: 2018-07-14T16:38:23-05:00   19f62c6de6b1551842fc79c0a05988c1
 sections/2-app-imageText01.liquid:
@@ -108,13 +108,13 @@ sections/2-new-imageTextOverlay05.liquid:
 sections/2-new-imageTextOverlay06.liquid:
   development: 2018-07-10T11:50:02-05:00   09c2098e3e67a857775c05228ca1f9b5
 sections/2-new-product-page.liquid:
-  development: 2018-07-13T11:35:08-05:00   9cfd5af5666e0ef46ac95c43a635e6e4
+  development: 2018-07-17T10:01:03-05:00   4e190e8ab2f804adac2922ff4f76a1d5
 sections/2-new-slideshow-2.liquid:
   development: 2018-05-30T15:19:03-05:00   eda46b0f60fb7eab069d5bd94ae6cb2b
 sections/2-new-slideshow.liquid:
   development: 2018-07-08T11:53:13-05:00   4cdb83dce3c42a8c57c3d602af901bcf
 sections/2-product-feature-tabs.liquid:
-  development: 2018-07-15T17:49:29-05:00   c2815041a5d60f08a8ef66e8a7a3c123
+  development: 2018-07-15T18:46:08-05:00   81f5348959fd55000e237aea889e238b
 sections/2-specifications-2.liquid:
   development: 2018-07-15T14:36:06-05:00   4e57017e9fb383c655d2780928e81e06
 sections/2-specifications.liquid:
@@ -128,7 +128,7 @@ sections/2-whyPopulele-image-01.liquid:
 sections/2-whyPopulele-image-02.liquid:
   development: 2018-07-02T16:55:45-05:00   d3fe7b2abd3c66035c7fce3c5f16bf65
 sections/2-whyPopulele-learners-01.liquid:
-  development: 2018-07-13T11:18:08-05:00   82f47c61ddd2dbcdcfe755fcd63f30d9
+  development: 2018-07-17T15:41:49-05:00   3440619cc40374cc75e577d2acb86bc0
 sections/app-alternating-content.liquid:
   development: 2018-03-12T10:20:10-05:00   71b8ea6a7e20a3eb5d15061c929d312d
 sections/app-download-badges.liquid:
@@ -212,7 +212,7 @@ sections/template-article.liquid:
 sections/template-blog.liquid:
   development: 2018-03-04T13:35:38-06:00   7b9a3d7e6f9e240c56f4658db228cc3f
 sections/template-cart.liquid:
-  development: 2018-07-11T16:09:00-05:00   db0c02edb4ef918eed06be35501362d7
+  development: 2018-07-16T13:40:28-05:00   afc31bb21fc789e26a65ce822a0a8ae3
 sections/template-collection.liquid:
   development: 2018-05-14T16:53:51-05:00   b6c77b08d54280977e1f2384698a9eae
 sections/template-list-collections.liquid:
@@ -239,6 +239,12 @@ sections/video-video-with-text-2.liquid:
   development: 2018-06-18T11:24:06-05:00   a7e95fab45107a7be3fab78e1967555e
 sections/video-video-with-text.liquid:
   development: 2018-03-12T10:26:33-05:00   1e6f7febe10d33b4c280954924169106
+snippets/SEOManager-404.liquid:
+  development: 2018-07-15T17:54:58-05:00   97ce683847116b0876a9208fb6796713
+snippets/SEOManager.liquid:
+  development: 2018-07-15T17:54:56-05:00   de3a357fb1e8c2f85810363786618c7f
+snippets/SEOMetaManager.liquid:
+  development: 2018-07-15T17:54:57-05:00   63248d1bdd7cdcb0e8ba9bfd7ea6e95a
 snippets/article-grid-item.liquid:
   development: 2018-03-04T13:35:40-06:00   1bc2b9acb8cb21edee84e7bb582854fc
 snippets/article-list-item.liquid:
@@ -340,7 +346,9 @@ snippets/svg-sprite.liquid:
 snippets/theme-options.liquid:
   development: 2018-03-04T13:35:41-06:00   320de7ec8e765fa23980fafb623295ac
 templates/404.liquid:
-  development: 2018-03-04T13:35:41-06:00   2f03969613a12936f0bff5714de522cb
+  development: 2018-07-15T17:54:59-05:00   adeeb96b05ffc0ce6d7071875497cb0e
+templates/404.preSEOManager.liquid:
+  development: 2018-07-15T17:54:58-05:00   2f03969613a12936f0bff5714de522cb
 templates/article.liquid:
   development: 2018-03-04T13:35:41-06:00   14bcc58c913250f664b9ec44e1ddeb3c
 templates/blog.liquid:
@@ -397,5 +405,7 @@ templates/product.new_product.liquid:
   development: 2018-05-14T16:57:34-05:00   ff2bb90fe2678c0e2c6e8b81eef49413
 templates/product.slideshow.liquid:
   development: 2018-04-07T17:09:44-05:00   5c1914702d31ceb0d370725138cc081b
+templates/search.SEOManagerTags.liquid:
+  development: 2018-07-15T17:54:57-05:00   50492ed9246da25cb26e58acf47fa9a3
 templates/search.liquid:
   development: 2018-03-04T13:35:42-06:00   4a5ddb250b16128a9a8257da409c4e16
