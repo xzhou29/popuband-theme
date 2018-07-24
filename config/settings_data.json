@@ -1514,11 +1514,11 @@
         "type": "2-whyPopulele-doubleV-01",
         "settings": {
           "style": "default-style",
-          "title": "",
-          "caption": "",
+          "title": "How Many Sounds Can Ukulele Possibly Make?",
+          "caption": "<p>One Populele. Endless possibilities.<\/p>",
           "video_url": "https:\/\/www.youtube.com\/watch?v=ERrxLluowbA",
-          "title_2": "",
-          "caption_2": "",
+          "title_2": "Have You Tried Populele Customized Patterns Founction?",
+          "caption_2": "<p>Mesmerize your audience with dazzling lights.&nbsp;<\/p>",
           "video_url_2": "https:\/\/www.youtube.com\/watch?v=dPPDhyaPzoE"
         }
       },
@@ -1548,7 +1548,7 @@
         "type": "2-app-lazyVideo",
         "settings": {
           "style": "default-style",
-          "title": "STEP BY STEP TUTORIAL",
+          "title": "",
           "caption": "Gamified learning process with instant feedback enabled by notes recognition technology.",
           "button_text": "",
           "button_link": "",
@@ -1562,7 +1562,7 @@
           "text_color": "#ffffff",
           "text_position": "center",
           "title": "POPULELE SONG LIBRARY",
-          "caption": "simply subscribe us to view the full list",
+          "caption": "",
           "button_text": "Explore the list",
           "button_link": "shopify:\/\/products\/populele-with-accessory",
           "button_text_2": "",

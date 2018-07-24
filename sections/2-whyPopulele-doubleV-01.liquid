@@ -41,13 +41,6 @@
 
   <div class="col-md-6 col-sm-6 col-xs-12" >
     <article class="module-inner home-full-width-feature-content" data-feature-content>
-      {% if section.settings.title != blank %}
-      <h1 class="feature-title">{{ section.settings.title | escape }}</h1>
-      {% endif %}
-
-      {% if section.settings.caption != blank %}
-      <div class="rte">{{ section.settings.caption }}</div>
-      {% endif %}
 
 
       <!-- (1) video wrapper -->
@@ -57,6 +50,15 @@
         <div class="play-button"></div> 
 
       </div>
+      
+      {% if section.settings.title != blank %}
+      <h2 style="font-size: 26px">{{ section.settings.title | escape }}</h2>
+      {% endif %}
+
+      {% if section.settings.caption != blank %}
+      <div class="rte" style="font-size: 18px">{{ section.settings.caption }}</div>
+      {% endif %}
+
 
     </article>
     <h2 align="center"> </h2>
@@ -64,13 +66,7 @@
   </div>
   <div class="col-md-6 col-sm-6 col-xs-12">
     <article class="module-inner home-full-width-feature-content" data-feature-content>
-      {% if section.settings.title_2 != blank %}
-      <h1 class="feature-title">{{ section.settings.title_2 | escape }}</h1>
-      {% endif %}
 
-      {% if section.settings.caption_2 != blank %}
-      <div class="rte">{{ section.settings.caption_2 }}</div>
-      {% endif %}
 
 
       <!-- (1) video wrapper -->
@@ -80,10 +76,16 @@
         <div class="play-button"></div> 
 
       </div>
+      {% if section.settings.title_2 != blank %}
+      <h2 style="font-size: 26px">{{ section.settings.title_2 | escape }}</h2>
+      {% endif %}
+
+      {% if section.settings.caption_2 != blank %}
+      <div class="rte" style="font-size: 18px">{{ section.settings.caption_2 }}</div>
+      {% endif %}
 
     </article>
     
-    <h2 align="center"> </h2>
   </div>
 
 </section>

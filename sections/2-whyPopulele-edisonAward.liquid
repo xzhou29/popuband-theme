@@ -32,10 +32,9 @@
     <img
       class="feature-image"
       alt="populele edison award"
-      src="//cdn.shopify.com/s/files/1/2021/3861/files/Banner_1.jpg?4925617515985929028"
+      src="https://cdn.shopify.com/s/files/1/2021/3861/files/DSC_3286_copy.jpg?3940988802205987901"
     >
   {%- endcapture -%}
-
 
 
 {%- capture section_class -%}
@@ -368,16 +367,16 @@
 
   @media only screen and (min-width: 768px) {
     .style{{ section.id }}{
-      	background-image: url('//cdn.shopify.com/s/files/1/2021/3861/files/Banner_1.jpg?4925617515985929028');
+      	background-image: url('https://cdn.shopify.com/s/files/1/2021/3861/files/DSC_3286_copy.jpg?3940988802205987901');
     }
   }
-  @media only screen and (max-width: 767px) {
+/*   @media only screen and (max-width: 767px) {
     .style{{ section.id }}{
       background-image: url('//cdn.shopify.com/s/files/1/2021/3861/files/Banner_1.jpg?4925617515985929028');
       height:150vw;
     }
   }
-
+ */
 
 </style>
 
@@ -471,22 +470,22 @@ color: {{ section.settings.text_color }};
   {% if  section.settings.text_position  == "right" %}
   {% if has_content %}
   <div class="home-full-width-feature-content" data-feature-content style="top: 35%;">
-    <article class="module-inner" style="text-align:left; width: 40%; margin-left:50%;">
+    <article class="module-inner" style="">
 
       
-      <h2 class="feature-title" style="{{feature_styles | strip_newlines }} margin-bottom: 10px;">
+      <h2 class="feature-title" style="{{feature_styles | strip_newlines }} ">
 
-        2018 EDISON 
+        2018 EDISON AWARDS WINNER
         
         <img style="vertical-align: middle;" alt="2018 Edison Awards Winner Populele"
              src="//cdn.shopify.com/s/files/1/2021/3861/files/EdisonAwds16_BRONZE.1.png?1508385038948339232" 
              width="100" >
         
       </h2>
-      <h2 class="feature-title" style="{{feature_styles | strip_newlines }} margin-top:0px;">AWARDS WINNER</h2>
-      
-      <p class="text-caption" style="{{feature_styles | strip_newlines }}">The perfect musical gift for everyone. Give your loved ones the gift of music.</p>  
 
+      <p class="text-caption " style="{{feature_styles | strip_newlines }}">The perfect musical gift for everyone. Give your loved ones the gift of music.</p>  
+
+<!--       <p class="text-caption " style="{{feature_styles | strip_newlines }}">THE PERFECT MUSICAL GIFT FOR EVERYONE. GIVE YOUR LOVED ONES THE GIFT OF MUSIC.</p>   -->
 
       {% if has_cta %}
       <div class="home-module-cta" style="text-align:left;">
